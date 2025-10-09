@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东《论政策》历史背景与当代价值分析</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --bg-light: #f8f9fa;
+            --text-color: #2c3e50;
+            --border-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: var(--bg-light);
+            padding: 2rem 1.5rem;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .sidebar h2 {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .nav-item {
+            display: block;
+            padding: 0.8rem 1rem;
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-item:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .main-content {
+            margin-left: 280px;
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 0;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .section h3 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem 0;
+            font-weight: 500;
+        }
+
+        .section p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8e6cf 0%, #a8e6cf 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 0.3em;
+            background-position: 0 88%;
+            font-weight: 500;
+        }
+
+        .emphasis {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: var(--bg-light);
+        }
+
+        .comparison-table tr:hover {
+            background: #e8f4f8;
+        }
+
+        .quote {
+            background: var(--bg-light);
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--secondary-color);
+            position: absolute;
+            top: -10px;
+            left: 15px;
+        }
+
+        .reference-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .reference-link:hover {
+            text-decoration: underline;
+        }
+
+        .references {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        .references h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .references ol {
+            padding-left: 1.5rem;
+        }
+
+        .references li {
+            margin-bottom: 0.8rem;
+        }
+
+        .references a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 80px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .sidebar {
+                position: relative;
+                width: 100%;
+                height: auto;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+            
+            .comparison-table th,
+            .comparison-table td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2><i class="fas fa-scroll"></i> 导航目录</h2>
+            <a href="#background" class="nav-item">历史背景与政策思想演变</a>
+            <a href="#theory" class="nav-item">核心理论框架与区别对待方法论</a>
+            <a href="#contemporary" class="nav-item">现实启示与当代价值</a>
+            <a href="#conclusion" class="nav-item">结语</a>
+            <a href="#references" class="nav-item">参考文献</a>
+        </nav>
+
+        <main class="main-content">
+            <header class="header" data-aos="fade-up">
+                <h1>毛泽东《论政策》的历史背景与当代价值分析</h1>
+                <p class="subtitle">探索抗日战争时期重要战略文件的理论内涵与时代启示</p>
+            </header>
+
+            <section id="background" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-history"></i> 历史背景与毛泽东政策思想的演变</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1940年12月25日</div>
+                        <p>毛泽东起草《论政策》文件，为中共中央制定抗日民族统一战线政策提供理论指导</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1940年3月</div>
+                        <p>成都抢米风潮事件爆发，成为国民党掀起第一次反共高潮的导火索 <a href="#ref-1" class="reference-link">[1]</a></p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1937年</div>
+                        <p>瓦窑堡会议提出抗日民族统一战线，标志着毛泽东统一战线思想的重要发展</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1935年</div>
+                        <p>遵义会议确立毛泽东领导地位，为其政策思想的成熟奠定基础</p>
+                    </div>
+                </div>
+
+                <p>1940年是中国抗日战争进入相持阶段的关键时期，也是国共关系急剧恶化的转折点。<span class="emphasis">《论政策》的直接背景是国民党在1940年掀起的第一次反共高潮</span>，其中最具代表性的是成都抢米风潮事件。1940年3月14日，成都发生饥民抢米事件，次日国民党当局便宣称这是中共四川地下党策划的暴动 <a href="#ref-1" class="reference-link">[1]</a>。四川省会警察局长唐毅等人伪造证据，将中共党员朱亚凡逮捕并篡改口供，编造"中共省委刘道生信"等伪证，导致贺国光等国民党高层产生误判，对中共地下组织展开大规模打击 <a href="#ref-2" class="reference-link">[2]</a>。</p>
+
+                <p>毛泽东起草《论政策》的深层历史背景，源于中国共产党在革命进程中政策思想的演变。<span class="emphasis">从第一次大革命到土地革命再到抗日战争，毛泽东的政策思想经历了从理论探索到实践检验再到理论升华的过程</span>。大革命时期，毛泽东认识到联合工农的重要性，提出"民众的大联合"思想；土地革命时期，他强调工农联盟和农村包围城市的革命道路，但受到王明"左"倾教条主义的干扰，导致第五次反"围剿"失败和根据地损失。</p>
+
+                <div class="quote">
+                    土地革命的后期，由于不认识中国革命是半殖民地的资产阶级民主革命和革命的长期性这两个基本特点而产生的许多过左的政策，如"在经济上消灭资产阶级"、"在肉体上消灭地主"等，不但在今天抗日时期，一概不能采用，就是在过去也是错误的。
+                </div>
+
+                <p>毛泽东在《论政策》中明确指出这一历史教训 <a href="#ref-3" class="reference-link">[3]</a>。毛泽东政策思想的成熟，以1935年遵义会议确立其领导地位和1937年瓦窑堡会议提出抗日民族统一战线为重要标志。<span class="emphasis">《论政策》标志着毛泽东统一战线思想的进一步发展，特别是在面对国民党反共高潮时如何灵活运用策略原则</span>。</p>
+            </section>
+
+            <section id="theory" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-cogs"></i> 核心理论框架与区别对待的政策方法论</h2>
+                
+                <p>《论政策》的核心理论框架建立在毛泽东《矛盾论》的哲学基础上，特别是矛盾的对立统一、主要矛盾与次要矛盾的分析方法。<span class="emphasis">毛泽东将马克思主义矛盾论与中国革命实践相结合，提出民族矛盾与阶级矛盾并存时，必须以民族矛盾为主导，同时兼顾阶级矛盾的特殊性</span>。</p>
+
+                <div class="quote">
+                    现在的抗日民族统一战线政策，既不是一切联合否认斗争，又不是一切斗争否认联合，而是综合联合和斗争两方面的政策。
+                </div>
+
+                <h3>三大核心原则</h3>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">战略总方针</div>
+                        <p><span class="emphasis">抗日民族统一战线是"抗日高于一切"的战略总方针</span>。毛泽东提出："在整个抗日战争时期，无论在何种情况下，我党的抗日民族统一战线的政策是决不会变更的。" <a href="#ref-3" class="reference-link">[3]</a></p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">策略原则</div>
+                        <p><span class="emphasis">"利用矛盾，争取多数，反对少数，各个击破"的策略原则</span> <a href="#ref-3" class="reference-link">[3]</a>。这一原则要求党在统一战线中既要坚持原则立场，又要灵活运用策略方法。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">分析方法</div>
+                        <p><span class="emphasis">"具体问题具体分析"作为政策制定的基本方法论</span>。要求党在政策制定中既要把握普遍规律，又要关注特殊性，避免教条主义和经验主义的错误。</p>
+                    </div>
+                </div>
+
+                <h3>区别对待的具体政策方法</h3>
+                
+                <p>基于这一理论框架，《论政策》提出了区别对待的具体政策方法论，主要体现在以下几个方面：</p>
+
+                <div class="section">
+                    <h4><i class="fas fa-handshake"></i> 对国民党顽固派采取"革命的两面政策"</h4>
+                    <p>毛泽东强调，对顽固派"既须统一，又须独立"，既要联合其抗日的一面，又要斗争其反共的一面 <a href="#ref-3" class="reference-link">[3]</a>。具体表现为"有理、有利、有节"的斗争方针，以及在敌占区和国民党统治区采取"荫蔽精干、长期埋伏、积蓄力量、以待时机"的政策 <a href="#ref-3" class="reference-link">[3]</a>。</p>
+                </div>
+
+                <div class="section">
+                    <h4><i class="fas fa-users"></i> 对国内各阶级实行"三势力"基本政策</h4>
+                    <p><span class="emphasis">"发展进步势力，争取中间势力，孤立反共顽固势力"</span>的基本政策 <a href="#ref-3" class="reference-link">[3]</a>。毛泽东将阶级关系分为三个层次：进步势力（工人、农民、城市小资产阶级）、中间势力（民族资产阶级、开明绅士）和顽固势力（亲日派大地主大资产阶级），并根据不同层次的特点制定差异化的政策。</p>
+                </div>
+
+                <div class="section">
+                    <h4><i class="fas fa-globe"></i> 对帝国主义采取"区别对待"的外交政策</h4>
+                    <p>毛泽东提出，虽然共产党反对任何帝国主义，但必须区分日本帝国主义和英美帝国主义，区分英美帝国主义在不同历史时期的态度变化，并据此制定灵活的外交策略 <a href="#ref-3" class="reference-link">[3]</a>。</p>
+                </div>
+
+                <p>这些区别对待的政策方法论，<span class="emphasis">体现了毛泽东对马克思主义矛盾论的创造性运用，将同一性与斗争性辩证统一于政策制定中</span>。他既强调抗日民族统一战线的同一性，要求全党"坚决地执行'三三制'，共产党员在政权机关中只占三分之一" <a href="#ref-3" class="reference-link">[3]</a>，又要通过斗争性维护党的独立自主，如在军事战略上坚持"战略统一下的独立自主的游击战争" <a href="#ref-3" class="reference-link">[3]</a>。</p>
+            </section>
+
+            <section id="contemporary" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-lightbulb"></i> 现实启示与当代价值</h2>
+                
+                <p>《论政策》中蕴含的政策思想和方法论，对当代中国政策制定和国际关系处理仍具有重要启示：</p>
+
+                <div class="section">
+                    <h3><i class="fas fa-puzzle-piece"></i> 政策制定方法论的现代应用</h3>
+                    <p><span class="emphasis">"区别对待"原则为当代社会治理提供了重要借鉴</span>。现代社会治理面临价值导向与工具导向、统一性与多样性、本土性与国际性等多对矛盾。《论政策》中"具体问题具体分析"的方法论，指导我们根据不同领域、不同地区、不同群体的特点制定差异化的政策。如在区域发展上，东部地区注重高质量发展，中西部地区则强调协调发展；在社会治理上，对不同阶层、不同利益群体采取"分类施策"，既维护共同利益，又尊重差异性。</p>
+                </div>
+
+                <div class="section">
+                    <h3><i class="fas fa-balance-scale"></i> 统一战线思想的创新发展</h3>
+                    <p>毛泽东统一战线思想为新时代统战工作提供了理论指导。<span class="emphasis">"发展进步势力，争取中间势力，孤立反动势力"的策略，在新时代转化为"大团结大联合"的主题和"一致性和多样性统一"的原则</span>。习近平总书记强调："必须正确处理一致性和多样性关系。关键是要坚持求同存异，发扬'团结—批评—团结'的优良传统，在尊重多样性中寻求一致性，找到最大公约数、画出最大同心圆。"这一理念与毛泽东的统一战线思想一脉相承，体现了政策思想的连续性和创新性。</p>
+                </div>
+
+                <div class="section">
+                    <h3><i class="fas fa-door-open"></i> 开放精神的历史传承</h3>
+                    <p><span class="emphasis">《论政策》中的开放精神为改革开放提供了历史渊源</span>。毛泽东在《论政策》中强调"开放"，如在文化教育政策上"应放手地吸收、放手地任用和放手地提拔"有抗日积极性的知识分子 <a href="#ref-5" class="reference-link">[5]</a>，在经济政策上"吸引愿来的外地资本家到我抗日根据地开办实业" <a href="#ref-3" class="reference-link">[3]</a>。这种开放精神在改革开放中得到继承和发展。邓小平曾说："打开窗户，新鲜空气会进来，苍蝇也会飞进来。" <a href="#ref-5" class="reference-link">[5]</a> 这一比喻与毛泽东在抗日时期"开放"精神形成历史呼应，体现了中国共产党在不同历史时期对开放政策的坚持与创新。</p>
+                </div>
+
+                <div class="section">
+                    <h3><i class="fas fa-chess"></i> 斗争策略的智慧借鉴</h3>
+                    <p><span class="emphasis">"有理、有利、有节"的斗争策略为当代国际关系处理提供了智慧借鉴</span>。在全球化背景下，中国既坚持独立自主原则，又积极参与国际合作 <a href="#ref-3" class="reference-link">[3]</a>。在处理国际关系时，中国秉持"共同但有区别的责任"原则，对不同国家采取差异化策略，如在"一带一路"倡议中，对沿线国家采取"以政促经"或"以经促政"的不同策略。这种灵活的斗争策略，既维护了国家利益，又促进了国际合作，体现了毛泽东思想的当代价值。</p>
+                </div>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>政策思想</th>
+                            <th>土地革命时期</th>
+                            <th>抗日战争时期</th>
+                            <th>改革开放时期</th>
+                            <th>新时代</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>核心原则</strong></td>
+                            <td>"一切斗争，否认联合" <a href="#ref-4" class="reference-link">[4]</a></td>
+                            <td>"联合与斗争相结合" <a href="#ref-3" class="reference-link">[3]</a></td>
+                            <td>"大团结小斗争"</td>
+                            <td>"强团结巧斗争"</td>
+                        </tr>
+                        <tr>
+                            <td><strong>统战对象</strong></td>
+                            <td>工农阶级</td>
+                            <td>抗日的工、农、兵、学、商 <a href="#ref-3" class="reference-link">[3]</a></td>
+                            <td>社会主义劳动者、建设者、爱国者</td>
+                            <td>致力于中华民族伟大复兴的爱国者</td>
+                        </tr>
+                        <tr>
+                            <td><strong>政策特点</strong></td>
+                            <td>阶级斗争尖锐化</td>
+                            <td>区别对待、灵活施策 <a href="#ref-3" class="reference-link">[3]</a></td>
+                            <td>改革开放、允许一部分人先富起来 <a href="#ref-6" class="reference-link">[6]</a></td>
+                            <td>全面深化改革、构建人类命运共同体</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="conclusion" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-flag-checkered"></i> 结语</h2>
+                
+                <p><span class="emphasis">毛泽东《论政策》是中国共产党在抗日战争时期的重要政策文件，其核心是抗日民族统一战线的正确方针和"区别对待"的政策方法论</span>。这一文献体现了中国共产党在复杂历史条件下灵活运用马克思主义理论解决实际问题的智慧，为抗日战争的胜利奠定了重要基础。</p>
+
+                <p>《论政策》的历史意义在于，它标志着中国共产党政策思想的成熟，特别是统一战线理论的发展。毛泽东通过总结历史经验教训，提出了一套科学的政策分析框架和区别对待的方法论，为中国革命和建设提供了重要指导。</p>
+
+                <p>《论政策》的当代价值在于，其蕴含的方法论原则对中国特色社会主义事业仍具有重要启示。<span class="emphasis">矛盾分析法、区别对待原则、开放包容精神和"有理、有利、有节"的斗争策略，构成了中国共产党处理复杂问题的基本方法论</span>，为构建中国特色社会主义现代化道路和推动全球治理体系变革提供了理论支持。</p>
+
+                <p>在新时代背景下，我们既要坚持毛泽东思想的基本原理，又要根据时代特点和发展需要进行创新性发展。通过深入研究《论政策》的历史背景和理论框架，我们可以更好地理解中国共产党的政策思想演变，为推进中国式现代化和构建人类命运共同体提供历史智慧和理论支持。</p>
+
+                <div class="quote">
+                    说明：报告内容由通义AI生成，仅供参考。
+                </div>
+            </section>
+
+            <section id="references" class="references" data-aos="fade-up">
+                <h2><i class="fas fa-book"></i> 参考文献</h2>
+                <ol>
+                    <li id="ref-1"><a href="https://sxyk.henu.edu.cn/info/1014/2675.htm" target="_blank">[1] 成都抢米风潮事件相关资料</a></li>
+                    <li id="ref-2"><a href="https://sxyk.henu.edu.cn/info/1014/2675.htm" target="_blank">[2] 国民党第一次反共高潮历史文献</a></li>
+                    <li id="ref-3"><a href="https://zhuanlan.zhihu.com/p/453452227" target="_blank">[3] 毛泽东《论政策》原文及研究</a></li>
+                    <li id="ref-4"><a href="https://baike.baidu.com/item/%E8%AE%BA%E6%94%BF%E7%AD%96/6858683" target="_blank">[4] 土地革命时期政策思想演变</a></li>
+                    <li id="ref-5"><a href="https://zhuanlan.zhihu.com/p/570525296" target="_blank">[5] 毛泽东开放政策思想研究</a></li>
+                    <li id="ref-6"><a href="https://www.ccps.gov.cn/zt/esjszqh/dxsy/dxsyqt/202408/t20240828_164214.shtml" target="_blank">[6] 改革开放政策理论基础</a></li>
+                </ol>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 初始化AOS动画
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
+        // 平滑滚动导航
+        document.querySelectorAll('.nav-item').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 引用链接点击跳转
+        document.querySelectorAll('.reference-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    // 高亮效果
+                    targetElement.style.background = '#fff3cd';
+                    setTimeout(() => {
+                        targetElement.style.background = '';
+                    }, 2000);
+                }
+            });
+        });
+
+        // 响应式导航
+        function handleResize() {
+            const sidebar = document.querySelector('.sidebar');
+            if (window.innerWidth <= 768) {
+                sidebar.style.position = 'relative';
+                sidebar.style.width = '100%';
+            } else {
+                sidebar.style.position = 'fixed';
+                sidebar.style.width = '280px';
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // 初始调用
+    </script>
+</body>
+</html>

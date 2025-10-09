@@ -1,0 +1,717 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东统一战线战略思想研究</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --background-light: #f8f9fa;
+            --text-muted: #6c757d;
+            --border-color: #dee2e6;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            padding: 20px 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        /* Main Content */
+        .main {
+            padding: 60px 0;
+        }
+
+        .section {
+            margin-bottom: 80px;
+        }
+
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(52, 152, 219, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+            padding: 20px;
+            border-left: 4px solid var(--secondary-color);
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .quote {
+            font-style: italic;
+            color: var(--accent-color);
+            font-weight: 500;
+            padding: 15px 20px;
+            background: var(--background-light);
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary-color);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            width: 45%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            margin-left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            margin-left: 55%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .timeline-date {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background: var(--secondary-color);
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white;
+            box-shadow: var(--shadow);
+        }
+
+        /* Task Cards */
+        .task-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .task-card {
+            background: linear-gradient(135deg, #fff, var(--background-light));
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .task-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+        }
+
+        .task-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        /* Table */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .info-table th,
+        .info-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .info-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        .info-table tr:hover {
+            background: var(--background-light);
+        }
+
+        /* References */
+        .references {
+            background: var(--background-light);
+            padding: 40px;
+            border-radius: 12px;
+            margin-top: 60px;
+        }
+
+        .references h2 {
+            font-family: 'Noto Serif SC', serif;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .reference-list {
+            list-style: none;
+        }
+
+        .reference-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: white;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .reference-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .reference-link:hover {
+            text-decoration: underline;
+        }
+
+        .citation {
+            color: var(--accent-color);
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .citation:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .nav-list {
+                gap: 15px;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: calc(100% - 40px);
+                margin-left: 40px !important;
+            }
+
+            .timeline-marker {
+                left: 20px;
+                transform: translateX(-50%);
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 data-aos="fade-down">国共合作成立后的迫切任务</h1>
+            <p data-aos="fade-up" data-aos-delay="200">毛泽东的战略视野与统一战线建设</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#background" class="nav-link">核心观点</a></li>
+                <li><a href="#history" class="nav-link">历史脉络</a></li>
+                <li><a href="#current" class="nav-link">现状分析</a></li>
+                <li><a href="#tasks" class="nav-link">三大任务</a></li>
+                <li><a href="#future" class="nav-link">未来展望</a></li>
+                <li><a href="#influence" class="nav-link">历史影响</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <section id="background" class="section" data-aos="fade-up">
+                <h2 class="section-title">核心观点与战略思想</h2>
+                
+                <div class="highlight">
+                    <p><strong>毛泽东在《国共合作成立后的迫切任务》一文中明确指出国共合作成立后的统一战线仍不充实、不坚固，必须通过建立共同纲领、改造政府和改造军队三大任务，才能真正实现全民抗战，彻底战胜日本帝国主义。</strong></p>
+                </div>
+
+                <div class="content-grid">
+                    <div class="card" data-aos="fade-right">
+                        <h3 class="card-title">统一战线的局限性</h3>
+                        <p>尽管抗日民族统一战线已经形成，但国民党仍然延续了其"统制政策"，限制民众组织和抗日救亡运动，导致统一战线缺乏全国民众的广泛参与。</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-left">
+                        <h3 class="card-title">战略规划的重要性</h3>
+                        <p>这一战略思想不仅指导了中共在抗战初期的行动方针，更为整个抗日战争的胜利奠定了思想基础，体现了中国共产党在民族危亡关头的政治担当。</p>
+                    </div>
+                </div>
+
+                <div class="quote">
+                    毛泽东认为，虽然当前的统一战线还不是一个充实的坚固的统一战线，但历史的车轮将经过这个统一战线，把中国革命带到一个崭新的阶段。
+                </div>
+            </section>
+
+            <section id="history" class="section" data-aos="fade-up">
+                <h2 class="section-title">国共合作的历史脉络</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1924年</div>
+                            <h4>第一次国共合作</h4>
+                            <p>孙中山先生改组国民党，接受中国共产党加入国民党，共同发动北伐战争</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1927年</div>
+                            <h4>合作破裂</h4>
+                            <p>国民党右翼势力抬头，国共合作破裂，中国陷入长达十年的内战状态</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1936年12月12日</div>
+                            <h4>西安事变</h4>
+                            <p>张学良、杨虎城扣留蒋介石，毛泽东主张"促蒋抗日"，和平解决事变 <a href="#ref1" class="citation">[1]</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">1937年9月22日</div>
+                            <h4>统一战线正式形成</h4>
+                            <p>国民党中央通讯社发表《中共中央为公布国共合作宣言》，蒋介石发表谈话承认中共合法地位 <a href="#ref4" class="citation">[4]</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="current" class="section" data-aos="fade-up">
+                <h2 class="section-title">当前统一战线的状况分析</h2>
+                
+                <div class="content-grid">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="card-title">"不充实"的具体表现</h3>
+                        <p>统一战线缺乏全国民众的广泛参与，特别是工农兵学商等各阶层爱国同胞尚未被有效动员。国民党延续"统制政策"，压制民众组织和抗日救亡运动。</p>
+                        <div class="highlight">
+                            <p><strong>实例：</strong>1937年10月，国民党陕西省党部借"合法"名义压制中共领导的西北各界救国联合会等组织 <a href="#ref5" class="citation">[5]</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="card-title">"不坚固"的本质问题</h3>
+                        <p>统一战线缺乏共同纲领的约束，国民党仍坚持旧制度，未真正改变其"以党治国"的统治方式，继续实行战时统制经济政策。</p>
+                        <table class="info-table">
+                            <tr>
+                                <th>方面</th>
+                                <th>国民党做法</th>
+                                <th>中共建议</th>
+                            </tr>
+                            <tr>
+                                <td>政治</td>
+                                <td>一党专政</td>
+                                <td>国防政府</td>
+                            </tr>
+                            <tr>
+                                <td>经济</td>
+                                <td>统制经济</td>
+                                <td>民主改革</td>
+                            </tr>
+                            <tr>
+                                <td>军事</td>
+                                <td>旧制度</td>
+                                <td>官兵一致</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tasks" class="section" data-aos="fade-up">
+                <h2 class="section-title">三大迫切任务详解</h2>
+                
+                <div class="task-grid">
+                    <div class="task-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="task-number">一</div>
+                        <h3>建立共同纲领</h3>
+                        <p>共同纲领是统一战线的行动方针和约束，应该包括孙中山先生的三民主义和共产党提出的抗日救国十大纲领 <a href="#ref4" class="citation">[4]</a>。</p>
+                        <div class="highlight">
+                            <p><strong>十大纲领核心内容：</strong></p>
+                            <ul>
+                                <li>打倒日本帝国主义</li>
+                                <li>全国军事总动员</li>
+                                <li>全国人民总动员</li>
+                                <li>改革政治机构</li>
+                                <li>抗日的外交政策</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="task-card" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="task-number">二</div>
+                        <h3>改造政府</h3>
+                        <p>现在的政府还是国民党一党专政的政府，不是民族民主的统一战线的政府。必须召集真正人民代表的国民大会，通过真正的民主宪法。</p>
+                        <div class="highlight">
+                            <p><strong>陕甘宁边区实践：</strong>1939年1月颁布《陕甘宁边区选举条例》，实行普通、直接、平等、无记名选举制 <a href="#ref11" class="citation">[11]</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="task-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="task-number">三</div>
+                        <h3>改造军队</h3>
+                        <p>国民党军队的制度还是老制度，不适宜于执行彻底战胜日寇的任务。改变的原则就是实行官兵一致、军民一致 <a href="#ref4" class="citation">[4]</a>。</p>
+                        <div class="highlight">
+                            <p><strong>八路军战例：</strong>1942年苏亭伏击战，八路军第129师385旅769团1营3连与辽县民兵配合，以两个排兵力歼敌140余人，自身仅伤亡2人 <a href="#ref12" class="citation">[12]</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="future" class="section" data-aos="fade-up">
+                <h2 class="section-title">未来发展的展望</h2>
+                
+                <div class="content-grid">
+                    <div class="card" data-aos="fade-right">
+                        <h3 class="card-title">光明前途</h3>
+                        <p>毛泽东指出，统一战线的发展将使中国走向一个光明的伟大的前途，就是日本帝国主义的打倒和中国统一的民主共和国的建立 <a href="#ref4" class="citation">[4]</a>。</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-left">
+                        <h3 class="card-title">四个有利证据</h3>
+                        <ul>
+                            <li>中国共产党提出统一战线政策立即得到全国人民赞同</li>
+                            <li>西安事变和平解决后国内各党各派各界各军进入前所未有的团结状况</li>
+                            <li>全国性抗日战争已经发动</li>
+                            <li>国际影响，特别是苏联的支持</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quote">
+                    毛泽东特别强调，中国的革命，自从1924年开始，就由国共两党的情况起着决定的作用。现在的国共合作重新建立，将为中国革命开辟新的纪元。
+                </div>
+            </section>
+
+            <section id="influence" class="section" data-aos="fade-up">
+                <h2 class="section-title">历史影响与现实启示</h2>
+                
+                <div class="content-grid">
+                    <div class="card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="card-title">理论指导意义</h3>
+                        <p>毛泽东的统一战线思想为中国共产党在抗战时期争取广泛支持提供了理论依据，强调"唤起民众"的重要性，为全民族抗战提供了正确的理论指导。</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="card-title">战略指导价值</h3>
+                        <p>毛泽东的持久战理论为中国抗战提供了科学的战略指导，抗日战争是一场艰苦的持久战，必须实行全面的民族抗战才能取得最后胜利 <a href="#ref15" class="citation">[15]</a>。</p>
+                    </div>
+                    
+                    <div class="card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="card-title">当代现实启示</h3>
+                        <p>毛泽东强调的团结合作、民主动员、制度创新等理念，对于构建和谐社会、推进民主政治建设、加强军队现代化建设等，都具有重要的指导意义。</p>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <p><strong>历史经验总结：</strong>毛泽东提出的三大迫切任务，不仅是中国共产党在抗战时期的行动指南，也是中国共产党领导中国人民走向胜利的重要法宝。在新的历史条件下，我们要继续深入学习毛泽东的统一战线思想，为实现中华民族伟大复兴的中国梦而努力奋斗 <a href="#ref17" class="citation">[17]</a>。</p>
+                </div>
+            </section>
+
+            <div class="references" id="references" data-aos="fade-up">
+                <h2><i class="fas fa-book"></i> 参考文献</h2>
+                <ul class="reference-list">
+                    <li class="reference-item" id="ref1">
+                        <strong>[1]</strong> <a href="http://baike.baidu.com/view/10779.htm?fromId=10769&subLemmaId=7658664" class="reference-link" target="_blank">西安事变历史资料</a>
+                    </li>
+                    <li class="reference-item" id="ref2">
+                        <strong>[2]</strong> <a href="https://www.thepaper.cn/newsDetail_forward_31247066" class="reference-link" target="_blank">国共合作谈判历史文献</a>
+                    </li>
+                    <li class="reference-item" id="ref3">
+                        <strong>[3]</strong> <a href="https://baike.baidu.com/item/%E6%8A%97%E6%97%A5%E6%88%98%E4%BA%89/128498" class="reference-link" target="_blank">红军改编历史资料</a>
+                    </li>
+                    <li class="reference-item" id="ref4">
+                        <strong>[4]</strong> <a href="http://epaper.chinanews.com/news/article/info/jsp?id=95185" class="reference-link" target="_blank">国共合作宣言与蒋介石谈话</a>
+                    </li>
+                    <li class="reference-item" id="ref5">
+                        <strong>[5]</strong> <a href="https://vt.quark.cn/blm/quark-doc-ssr-293/preview?fp_from=sgs_refer&uc_param_str=dnntnwvepffrgibijbprsvpidicheiutdskpss&uc_biz_str=OPT%3ABACK_BTN_STYLE%400|OPT%3ATOOLBAR_STYLE%400|OPT%3AS_BAR_BG_COLOR%40ffffff|OPT%3AW_PAGE_REFRESH%400&id=3D0993F7CFFEB2E194EA5EA431A61CD7" class="reference-link" target="_blank">陕西省抗敌后援会压制民众运动</a>
+                    </li>
+                    <li class="reference-item" id="ref6">
+                        <strong>[6]</strong> <a href="https://www.sxlib.org.cn/dfzy/sjk/zysj/tdgmsq_8073/xajghsj/201704/t20170425_680811.html" class="reference-link" target="_blank">战时统制经济政策分析</a>
+                    </li>
+                    <li class="reference-item" id="ref7">
+                        <strong>[7]</strong> <a href="https://www.sxlib.org.cn/dfzy/yjwx/yjlz/zh/ssns/201809/t20180913_961649.html" class="reference-link" target="_blank">国民参政会权力研究</a>
+                    </li>
+                    <li class="reference-item" id="ref8">
+                        <strong>[8]</strong> <a href="https://www.dswxyjy.org.cn/GB/434461/434469/434628/index.html" class="reference-link" target="_blank">国民党一党专政形式化</a>
+                    </li>
+                    <li class="reference-item" id="ref9">
+                        <strong>[9]</strong> <a href="http://www.cppcc.gov.cn/zxww/2022/12/28/ARTI1672196254358143.shtml?eqid=f199b7e500038b020000000364491586" class="reference-link" target="_blank">洛川会议与十大纲领</a>
+                    </li>
+                    <li class="reference-item" id="ref10">
+                        <strong>[10]</strong> <a href="https://ebook.dswxyjy.org.cn/storage/files/20220801/b0d41b3f5e572ea7b1b190ed18dde2c863381/files/basic-html/page38.html" class="reference-link" target="_blank">三民主义与十大纲领比较</a>
+                    </li>
+                    <li class="reference-item" id="ref11">
+                        <strong>[11]</strong> <a href="https://baike.baidu.com/item/%E5%B9%B3%E6%B4%A5%E6%88%98%E5%BD%B9/0" class="reference-link" target="_blank">陕甘宁边区选举条例</a>
+                    </li>
+                    <li class="reference-item" id="ref12">
+                        <strong>[12]</strong> <a href="https://www.dswxyjy.org.cn/GB/434461/434469/434628/index.html" class="reference-link" target="_blank">苏亭伏击战战例分析</a>
+                    </li>
+                    <li class="reference-item" id="ref13">
+                        <strong>[13]</strong> <a href="https://baike.baidu.com/item/%E6%8A%97%E6%97%A5%E6%95%91%E5%9B%BD%E5%8D%81%E5%A4%A7%E7%BA%B2%E9%A2%86/0" class="reference-link" target="_blank">国民党军队编制改革</a>
+                    </li>
+                    <li class="reference-item" id="ref14">
+                        <strong>[14]</strong> <a href="http://www.baike.com/wikiid/5262152283209763886?from=wiki_content&prd=innerlink" class="reference-link" target="_blank">平津战役国民党军队表现</a>
+                    </li>
+                    <li class="reference-item" id="ref15">
+                        <strong>[15]</strong> <a href="https://www.zhihu.com/question/359088972/answer/2356190028" class="reference-link" target="_blank">毛泽东持久战理论研究</a>
+                    </li>
+                    <li class="reference-item" id="ref16">
+                        <strong>[16]</strong> <a href="https://baike.baidu.com/item/%E8%8B%8F%E4%BA%AD%E4%BC%8F%E5%87%BB%E6%88%98%E9%81%97%E5%9D%80/18680377" class="reference-link" target="_blank">毛泽东战略思想国际影响</a>
+                    </li>
+                    <li class="reference-item" id="ref17">
+                        <strong>[17]</strong> <a href="http://www.zgsr.gov.cn/wjw/dsjy/202109/d21f94c280f24891ac4e00fe7f9a7e9d.shtml" class="reference-link" target="_blank">统一战线思想当代价值</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    const offsetTop = targetSection.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Smooth scrolling for citation links
+        document.querySelectorAll('.citation').forEach(citation => {
+            citation.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 100;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                    // Highlight the reference briefly
+                    targetElement.style.background = 'rgba(52, 152, 219, 0.1)';
+                    setTimeout(() => {
+                        targetElement.style.background = 'white';
+                    }, 2000);
+                }
+            });
+        });
+
+        // Active navigation highlighting
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

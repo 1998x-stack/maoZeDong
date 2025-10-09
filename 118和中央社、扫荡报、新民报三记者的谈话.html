@@ -1,0 +1,657 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东与三记者谈话的政治智慧与历史意义</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #2F4F4F;
+            --accent-color: #DC143C;
+            --text-color: #333333;
+            --bg-color: #F5F5DC;
+            --light-bg: #FFFFFF;
+            --border-color: #DDD;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Serif SC', serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: var(--light-bg);
+            box-shadow: var(--shadow);
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            z-index: 100;
+        }
+
+        .sidebar-header {
+            padding: 2rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .sidebar-header h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar-header p {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .nav-menu {
+            padding: 1rem 0;
+        }
+
+        .nav-item {
+            display: block;
+            padding: 0.8rem 1.5rem;
+            color: var(--text-color);
+            text-decoration: none;
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background-color: #F8F8F8;
+            border-left-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .main-content {
+            flex: 1;
+            margin-left: 280px;
+            padding: 2rem;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 2rem;
+            margin: -2rem -2rem 3rem -2rem;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: var(--light-bg);
+            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-title i {
+            color: var(--accent-color);
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #FFF8DC, #F0F8FF);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.5rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent-color);
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .key-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .key-point {
+            background: #F8F9FA;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .key-point h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .quote-box {
+            background: #F0F8FF;
+            border-left: 4px solid var(--secondary-color);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote-box::before {
+            content: '"';
+            font-size: 3rem;
+            color: var(--secondary-color);
+            position: absolute;
+            top: -0.5rem;
+            left: 1rem;
+            opacity: 0.3;
+        }
+
+        .reference-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 2px 4px;
+            border-radius: 3px;
+            background: rgba(220, 20, 60, 0.1);
+        }
+
+        .reference-link:hover {
+            background: rgba(220, 20, 60, 0.2);
+        }
+
+        .references {
+            background: #F8F9FA;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+        }
+
+        .references h3 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .reference-item {
+            margin-bottom: 0.8rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .reference-item:last-child {
+            border-bottom: none;
+        }
+
+        .reference-item a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .reference-item a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .conclusion {
+            background: linear-gradient(135deg, #F5F5DC, #E6E6FA);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .conclusion h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+                padding: 1rem;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .key-points {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 200;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="mobile-menu-btn" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="container">
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h1>毛泽东与三记者谈话</h1>
+                <p>政治智慧与历史意义</p>
+            </div>
+            <div class="nav-menu">
+                <a href="#background" class="nav-item">历史背景</a>
+                <a href="#content" class="nav-item">核心内容</a>
+                <a href="#strategy" class="nav-item">战略思维</a>
+                <a href="#influence" class="nav-item">现实影响</a>
+                <a href="#contribution" class="nav-item">政治贡献</a>
+                <a href="#significance" class="nav-item">历史意义</a>
+                <a href="#conclusion" class="nav-item">结论</a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <div class="hero-section" data-aos="fade-up">
+                <h1 class="hero-title">毛泽东与三记者谈话的政治智慧与历史意义</h1>
+                <p class="hero-subtitle">中国共产党在抗日战争相持阶段初期的重要政治表态，确立了"人不犯我，我不犯人；人若犯我，我必犯人"的自卫原则</p>
+            </div>
+
+            <div class="highlight-box" data-aos="fade-right">
+                <strong>核心观点：</strong>毛泽东1939年9月16日与国民党中央社、扫荡报、新民报三记者的谈话，是中国共产党在抗日战争相持阶段初期的一次重要政治表态。谈话首次公开提出"人不犯我，我不犯人；人若犯我，我必犯人"的自卫原则，确立了中共在抗日民族统一战线中既坚持团结又坚决斗争的辩证立场 <a href="#ref-1" class="reference-link">[1]</a>，为中国共产党在复杂多变的国共关系中提供了明确的政治指导方针。
+            </div>
+
+            <section id="background" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-history"></i>
+                    谈话的历史背景与现实针对性
+                </h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1938年10月</div>
+                        <p>日军占领广州、武汉后，中国抗日战争进入战略相持阶段。日本侵略者调整对华政策，对国民党转变为以政治诱降为主、军事打击为辅的方针 <a href="#ref-2" class="reference-link">[2]</a>。</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1939年1月</div>
+                        <p>国民党召开五届五中全会，制定"溶共、防共、限共、反共"方针，并设立专门对付共产党的机关——"防共委员会" <a href="#ref-2" class="reference-link">[2]</a>。</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1939年6月12日</div>
+                        <p>国民党杨森部制造震惊全国的"平江惨案"，在湖南平江嘉义乡袭击新四军通讯处，杀害涂正坤等抗日人士 <a href="#ref-3" class="reference-link">[3]</a>。</p>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">1939年9月3日</div>
+                        <p>英法对德宣战，二战全面爆发，国际形势对中国抗日战争产生重要影响 <a href="#ref-5" class="reference-link">[5]</a>。</p>
+                    </div>
+                </div>
+
+                <p>谈话的直接导火索是国民党制造的一系列反共摩擦事件。面对这些情况，中共已在7月间由周恩来向蒋介石提出抗议，8月1日又由延安各界致电蒋委员长和国民政府，要求取消《限制异党活动办法》，但未得到国民党任何答复 <a href="#ref-4" class="reference-link">[4]</a>。</p>
+            </section>
+
+            <section id="content" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-comments"></i>
+                    谈话的核心内容与政治立场
+                </h2>
+                
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4>相持阶段判断</h4>
+                        <p>毛泽东认为相持阶段"是有条件地到来了"，条件是"在国际新形势之下，在日本更加困难和中国绝不妥协的条件之下" <a href="#ref-4" class="reference-link">[4]</a>。他明确区分了战略反攻与战役反攻的概念。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>自卫原则确立</h4>
+                        <p>面对国民党制造的反共摩擦，毛泽东首次公开提出"人不犯我，我不犯人；人若犯我，我必犯人"的自卫原则 <a href="#ref-4" class="reference-link">[4]</a>，强调严格的自卫立场。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>民主政治诉求</h4>
+                        <p>毛泽东强调"改革国内政治之所以非常重要，是因为敌人在目前，主要的是政治进攻，我们就要特别加强政治抵抗" <a href="#ref-4" class="reference-link">[4]</a>。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>边区合法性辩护</h4>
+                        <p>毛泽东指出："陕甘宁边区是民主的抗日根据地，是全国政治上最进步的区域，取消的理由何在？"并强调边区是国民政府承认的合法组织 <a href="#ref-4" class="reference-link">[4]</a>。</p>
+                    </div>
+                </div>
+
+                <div class="quote-box">
+                    我们根本反对抗日党派之间那种互相对消力量的磨擦。但是，任何方面的横逆如果一定要来，如果欺人太甚，如果实行压迫，那末，共产党就必须用严正的态度对待之。这态度就是：人不犯我，我不犯人；人若犯我，我必犯人。
+                </div>
+            </section>
+
+            <section id="strategy" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-chess"></i>
+                    谈话的战略思维与政治智慧
+                </h2>
+                
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4>战争形势判断</h4>
+                        <p>毛泽东准确把握了抗日战争的发展规律，区分了战略防御、战略相持和战略反攻三个阶段 <a href="#ref-4" class="reference-link">[4]</a>，指出相持阶段是"持久抗战转到最后胜利的枢纽"。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>统一战线辩证思维</h4>
+                        <p>他提出"以斗争求团结则团结存，以退让求团结则团结亡" <a href="#ref-5" class="reference-link">[5]</a>，采取"人不犯我，我不犯人；人若犯我，我必犯人"的自卫原则 <a href="#ref-4" class="reference-link">[4]</a>。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>政治斗争策略</h4>
+                        <p>毛泽东提出"发展进步势力、争取中间势力、孤立顽固势力"的策略思想 <a href="#ref-7" class="reference-link">[7]</a>，强调"凡举事无为亲厚者所痛，而为见仇者所快" <a href="#ref-4" class="reference-link">[4]</a>。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>国际形势运用</h4>
+                        <p>毛泽东分析了日本在国际新形势下面临的困难，以及中国绝不妥协的态度对相持阶段到来的影响 <a href="#ref-4" class="reference-link">[4]</a>，将中国抗战置于世界反法西斯战争框架下。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="influence" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-star"></i>
+                    谈话的现实影响与历史意义
+                </h2>
+                
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4>指导方针确立</h4>
+                        <p>"人不犯我，我不犯人；人若犯我，我必犯人"的自卫原则 <a href="#ref-4" class="reference-link">[4]</a>，成为中共在抗战时期处理国共关系的重要准则，为后来"有理、有利、有节"的斗争原则奠定基础。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>边区地位巩固</h4>
+                        <p>毛泽东通过引用国民党行政院1937年的决议，有力回击了国民党否认边区合法性的言论，巩固了边区的政治地位，成为中共抗战的重要战略支点。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>民主政治推进</h4>
+                        <p>谈话推动了中共在根据地推行"三三制"政权建设 <a href="#ref-7" class="reference-link">[7]</a>、减租减息政策，调动了广大农民的积极性，为抗战胜利提供了坚实的群众基础。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>统一战线理论</h4>
+                        <p>谈话提出的"发展进步势力、争取中间势力、孤立顽固势力"策略思想 <a href="#ref-7" class="reference-link">[7]</a>，以及"以斗争求团结则团结存，以退让求团结则团结亡" <a href="#ref-5" class="reference-link">[5]</a>，成为中国共产党处理统一战线问题的重要理论指导。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contribution" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    谈话对中国共产党政治策略的贡献
+                </h2>
+                
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4>政治底线确立</h4>
+                        <p>谈话确立了中共在抗战时期的政治底线和斗争原则。这一原则既明确了中共的底线立场，又强调了自卫的正当性，避免了中共被指责为主动挑起内战。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>统一战线理论发展</h4>
+                        <p>谈话丰富和发展了中共统一战线理论，提出辩证统一的斗争策略，使中共能够在复杂的国共关系中保持政治定力，既不盲目乐观也不消极悲观。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>民主政治建设依据</h4>
+                        <p>谈话为中共争取边区合法地位和民主政治建设提供了理论依据，通过强调"民主政治的问题，应当快点解决" <a href="#ref-4" class="reference-link">[4]</a>，推动了根据地的民主实践。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>政治斗争方法论</h4>
+                        <p>谈话为中国共产党在抗战时期的政治斗争提供了方法论指导，强调面对国民党的反共行径，中共既要坚决反对，又要讲究策略。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="significance" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-lightbulb"></i>
+                    谈话的历史启示与当代价值
+                </h2>
+                
+                <div class="key-points">
+                    <div class="key-point">
+                        <h4>政治定力与战略智慧</h4>
+                        <p>谈话体现了中国共产党在复杂政治环境中的政治定力和战略智慧，面对国民党的反共政策和边区合法地位的挑战，采取辩证分析的态度。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>统一战线辩证方法</h4>
+                        <p>谈话展示了中国共产党处理统一战线问题的辩证方法，提出"发展进步势力、争取中间势力、孤立顽固势力"的策略思想 <a href="#ref-7" class="reference-link">[7]</a>。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>民主政治建设重要性</h4>
+                        <p>谈话强调了民主政治建设的重要性，边区的民主实践为中国政治民主化积累了宝贵经验，也为战后建立新民主主义国家奠定了基础。</p>
+                    </div>
+                    
+                    <div class="key-point">
+                        <h4>维护国家统一立场</h4>
+                        <p>谈话彰显了中国共产党维护国家统一的坚定立场，强调"统一于抗战，统一于团结，统一于进步" <a href="#ref-4" class="reference-link">[4]</a>，体现了中国共产党作为中华民族利益代表者的政治担当。</p>
+                    </div>
+                </div>
+
+                <div class="quote-box">
+                    毛泽东在谈话中分析了国际形势的变化，强调日本在国际新形势下面临的困难，以及中国绝不妥协的态度对相持阶段到来的影响 <a href="#ref-4" class="reference-link">[4]</a>。他还将中国抗战与世界反法西斯战争联系起来，强调中国抗战是"世界反侵略的和平阵线的组成部分"，为中国共产党赢得了国际支持。
+                </div>
+            </section>
+
+            <section id="conclusion" class="conclusion" data-aos="fade-up">
+                <h3>结论</h3>
+                <p>毛泽东1939年9月16日与三记者的谈话，是中国共产党在抗日战争相持阶段初期的重要政治声明，也是毛泽东思想在抗战时期的重要组成部分。谈话确立了"人不犯我，我不犯人；人若犯我，我必犯人"的自卫原则 <a href="#ref-4" class="reference-link">[4]</a>，为中国共产党在复杂多变的国共关系中提供了明确的政治指导方针。</p>
+                
+                <p>谈话的历史意义不仅在于当时对国共关系的积极影响，更在于它为中国共产党在抗战时期和后来的政治斗争提供了宝贵经验。谈话中体现的辩证思维、斗争策略和政治智慧，至今仍具有重要的理论价值和实践指导意义。在新时代背景下，重温毛泽东与三记者的谈话，对于理解中国共产党的政治立场、斗争策略和历史贡献，具有重要的启示作用。</p>
+                
+                <p>毛泽东与三记者的谈话，是中国共产党在抗日战争中坚持独立自主、团结抗战的重要体现，也是中国共产党政治智慧和战略思维的生动展现。它不仅为抗战胜利提供了政治保障，也为中共后来的发展奠定了思想基础，成为中国共产党历史上的重要里程碑。</p>
+            </section>
+
+            <div class="references" data-aos="fade-up">
+                <h3><i class="fas fa-bookmark"></i> 参考文献</h3>
+                <div class="reference-item" id="ref-1">
+                    [1] <a href="https://baike.baidu.com/item/%E4%BA%BA%E4%B8%8D%E7%8A%AF%E6%88%91%EF%BC%8C%E6%88%91%E4%B8%8D%E7%8A%AF%E4%BA%BA%EF%BC%9B%E4%BA%BA%E8%8B%A5%E7%8A%AF%E6%88%91%EF%BC%8C%E6%88%91%E5%BF%85%E7%8A%AF%E4%BA%BA/3799452" target="_blank">相关历史资料</a>
+                </div>
+                <div class="reference-item" id="ref-2">
+                    [2] <a href="https://www.toutiao.com/article/7547521400978833955/" target="_blank">抗日战争史相关文献</a>
+                </div>
+                <div class="reference-item" id="ref-3">
+                    [3] <a href="https://www.yueyang.gov.cn/yysqw/43338/43340/content_2196967.html" target="_blank">平江惨案史料</a>
+                </div>
+                <div class="reference-item" id="ref-4">
+                    [4] <a href="https://www.baike.com/wiki/%E5%92%8C%E4%B8%AD%E5%A4%AE%E7%A4%BE%E3%80%81%E6%89%AB%E8%8D%A1%E6%8A%A5%E3%80%81%E6%96%B0%E6%B0%91%E6%8A%A5%E4%B8%89%E8%AE%B0%E8%80%85%E7%9A%84%E8%B0%88%E8%AF%9D/8322717911900584512?view_id=543vkh3amj4000" target="_blank">毛泽东谈话原文及研究</a>
+                </div>
+                <div class="reference-item" id="ref-5">
+                    [5] <a href="http://www.sxdygbjy.gov.cn/ztzl/dsxxjy/xxyt/art/2025/art_69f978fd06724315bb70d4d9a51728e9.html" target="_blank">统一战线理论研究</a>
+                </div>
+                <div class="reference-item" id="ref-6">
+                    [6] <a href="https://www.jianshu.com/p/47f0119ba91a" target="_blank">国民党政治政策分析</a>
+                </div>
+                <div class="reference-item" id="ref-7">
+                    [7] <a href="http://www.cppcc.gov.cn/zxww/2021/07/01/ARTI1625118426771433.shtml" target="_blank">中共政治策略研究</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 初始化AOS动画
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // 导航栏功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const sections = document.querySelectorAll('.section, #conclusion');
+
+            // 点击导航项平滑滚动
+            navItems.forEach(item => {
+                item.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // 滚动时更新导航状态
+            window.addEventListener('scroll', function() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navItems.forEach(item => {
+                    item.classList.remove('active');
+                    if (item.getAttribute('href') === `#${current}`) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        // 移动端侧边栏切换
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        // 点击页面其他区域关闭移动端侧边栏
+        document.addEventListener('click', function(e) {
+            const sidebar = document.getElementById('sidebar');
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (window.innerWidth <= 768 && 
+                !sidebar.contains(e.target) && 
+                !mobileBtn.contains(e.target)) {
+                sidebar.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

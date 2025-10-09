@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东《团结到底》的历史背景与当代启示</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #2c3e50;
+            --accent-color: #f39c12;
+            --background-light: #f8f9fa;
+            --text-color: #333;
+            --border-color: #e0e0e0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #8b1538);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .nav {
+            background: var(--background-light);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Main Content */
+        .main {
+            padding: 40px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-title i {
+            font-size: 1.5rem;
+        }
+
+        .subsection {
+            margin-bottom: 30px;
+        }
+
+        .subsection h3 {
+            font-size: 1.4rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #fab1a0 100%);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            margin: 20px 0;
+            font-weight: 500;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: var(--background-light);
+            border-radius: 8px;
+            margin-left: 20px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -35px;
+            top: 25px;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        /* Statistics */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary-color), #d63031);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Table */
+        .policy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .policy-table th,
+        .policy-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .policy-table th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        .policy-table tr:hover {
+            background: var(--background-light);
+        }
+
+        /* Quote */
+        .quote {
+            background: var(--background-light);
+            border-left: 5px solid var(--primary-color);
+            padding: 25px;
+            margin: 30px 0;
+            font-style: italic;
+            position: relative;
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: var(--primary-color);
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        /* References */
+        .references {
+            background: var(--background-light);
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .references h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .references ol {
+            list-style: none;
+            counter-reset: ref-counter;
+        }
+
+        .references li {
+            counter-increment: ref-counter;
+            margin-bottom: 10px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .references li::before {
+            content: "[" counter(ref-counter) "]";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .references a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        .ref-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: rgba(196, 30, 58, 0.1);
+        }
+
+        .ref-link:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-list {
+                gap: 15px;
+            }
+            
+            .section {
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .timeline {
+                padding-left: 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Images */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 data-aos="fade-down">毛泽东《团结到底》的历史背景与当代启示</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">探索抗日战争相持阶段统一战线理论与实践的理论贡献与现实价值</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#background" class="nav-link">历史背景</a></li>
+                <li><a href="#theory" class="nav-link">核心理论</a></li>
+                <li><a href="#policy" class="nav-link">实践政策</a></li>
+                <li><a href="#contribution" class="nav-link">历史贡献</a></li>
+                <li><a href="#enlightenment" class="nav-link">当代启示</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <section id="background" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-history"></i>
+                    历史背景分析
+                </h2>
+                
+                <div class="highlight">
+                    《团结到底》是毛泽东在1940年7月5日发表的纪念抗日战争三周年的文章，时值中国共产党成立十九周年<a href="#ref1" class="ref-link">[1]</a>。这篇文章在抗日战争相持阶段的关键时刻，为中共团结抗日力量、应对国民党反共政策提供了重要指导。
+                </div>
+
+                <div class="subsection">
+                    <h3>日军的军事围剿政策</h3>
+                    <p>抗日战争进入1940年时，日军在华北地区实施了残酷的"囚笼政策"和"三光扫荡"，试图通过军事手段分割并摧毁各抗日根据地。</p>
+                    
+                    <div class="stats-grid" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stat-card">
+                            <div class="stat-number">2300</div>
+                            <div class="stat-label">新建修复铁路(千米)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1.5万</div>
+                            <div class="stat-label">新建公路(千米)</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2700+</div>
+                            <div class="stat-label">新建碉堡据点(个)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-item">
+                        <div class="timeline-date">1940年10月</div>
+                        <div>何应钦、白崇禧向八路军、新四军发出《皓电》，要求黄河以南的军队必须在一个月内全部开到黄河以北<a href="#ref5" class="ref-link">[5]</a></div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1940年10月</div>
+                        <div>国民党中断对边区的军需物资供给，加剧了对中共的经济封锁</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">1940年5月</div>
+                        <div>王明右倾机会主义错误仍有一定市场，试图为自己的错误路线辩护<a href="#ref1" class="ref-link">[1]</a></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="theory" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-lightbulb"></i>
+                    "团结到底"与"抗战到底"的辩证关系
+                </h2>
+
+                <div class="quote">
+                    一切共产党员须知：只有抗战到底，才能团结到底，也只有团结到底，才能抗战到底<a href="#ref1" class="ref-link">[1]</a>
+                </div>
+
+                <div class="subsection">
+                    <h3>三大辩证统一关系</h3>
+                    <table class="policy-table">
+                        <thead>
+                            <tr>
+                                <th>辩证关系</th>
+                                <th>核心观点</th>
+                                <th>实践要求</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>民族矛盾与阶级矛盾</td>
+                                <td>统一战线中的领导责任与阶级利益兼顾</td>
+                                <td>各党、各派、各界、各军的联合专政</td>
+                            </tr>
+                            <tr>
+                                <td>独立自主与统一战线</td>
+                                <td>既要保持政治独立性，又要坚持团结原则</td>
+                                <td>反对右倾机会主义和"左"倾机会主义</td>
+                            </tr>
+                            <tr>
+                                <td>斗争与团结</td>
+                                <td>对敌斗争与对友团结的统一</td>
+                                <td>"以斗争求团结"的策略方针</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="highlight">
+                    毛泽东在《团结到底》中首次公开提出"三三制"政权原则，强调"团结到底"与"抗战到底"的辩证关系，既反对右倾机会主义，又反对"左"倾机会主义<a href="#ref6" class="ref-link">[6]</a>。
+                </div>
+            </section>
+
+            <section id="policy" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-cogs"></i>
+                    "三三制"政权原则及统一战线政策
+                </h2>
+
+                <div class="subsection">
+                    <h3>"三三制"政权建设实践</h3>
+                    <p>在政权建设上，毛泽东主张共产党员在政权中只占三分之一，使其他主张抗日民主的党派和无党派人士占三分之二<a href="#ref6" class="ref-link">[6]</a>。</p>
+                    
+                    <div class="image-container">
+                        <img src="https://kkimgs.yisou.com/ims?kt=url&at=smstruct&key=aHR0cHM6Ly9xMC5pdGMuY24vcV83MC9pbWFnZXMwMy8yMDI0MDMwMS9mMWEzZDEyNDhmOGU0ZjEzOTJiZjQyZjg5YzY5ZDU1Mi5qcGVn&sign=yx:6jkSXzomoJxGS4It5r9S7bkx-NE=&tv=400_400" alt="抗日根据地民主政权建设场景">
+                        <div class="image-caption">晋察冀边区民主政权建设实践</div>
+                    </div>
+
+                    <div class="subsection">
+                        <h4>军队政策</h4>
+                        <p>毛泽东强调："继续执行'不在一切友军中发展党的组织'的决定。"这一政策在实践中取得了显著成效。1940年10月，新四军陈毅部与国民党李明扬、李长江部达成互相谅解、共同抗日的协议<a href="#ref8" class="ref-link">[8]</a>。</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h4>经济政策</h4>
+                        <p>在财政经济政策上，毛泽东提出："为着抗日的需要，均必须从调节各阶级利益出发，实行统一战线政策。"1940年11月，山东省临时参议会通过《减租减息暂行条例》，规定地主减租25%，年利率不得超过15%。</p>
+                    </div>
+
+                    <div class="subsection">
+                        <h4>文化教育政策</h4>
+                        <p>1940年3月，中共中央书记处在《共产党人》上发布了《中央关于开展抗日民主地区的国民教育的指示》，要求"大批的吸收与鼓励青年知识分子或旧知识分子，尤其是过去的小学教员，担任小学教员的工作"。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contribution" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-medal"></i>
+                    对抗日战争胜利的贡献
+                </h2>
+
+                <div class="subsection">
+                    <h3>政权建设方面的贡献</h3>
+                    <p>晋察冀边区通过民主选举建立了从边区级、县级、区级到村级的各级民意机关和行政机关，使各抗日阶级、阶层、党派代表都有机会参与政权建设。边区采取直接的、普遍的、平等的、无记名的投票方式进行民主选举。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>军事战略方面的贡献</h3>
+                    <p>毛泽东提出的"以斗争求团结"方针有效应对了国民党反共摩擦。面对国民党的"溶限防制"政策和军事摩擦，中共采取了政治上进攻、军事上防御的策略<a href="#ref5" class="ref-link">[5]</a>。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>经济政策方面的贡献</h3>
+                    <p>减租减息和调节各阶级利益的政策为抗日战争提供了稳定的社会基础。1940年11月，晋西北颁布《减租减息条例》，重申"普遍实行减租25%，并取消一切附加"。</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="https://kkimgs.yisou.com/ims?kt=url&at=smstruct&key=aHR0cDovL2ltYWdlcHBoY2xvdWQudGhlcGFwZXIuY24vcHBoL2ltYWdlLzg2LzYwMC83ODEuanBn&sign=yx:TQf9tx-4M5_c35_-F3ZzhwR3v2E=&tv=400_400" alt="抗日根据地军民团结抗日的场景">
+                    <div class="image-caption">抗日根据地军民团结抗战的历史场景</div>
+                </div>
+            </section>
+
+            <section id="enlightenment" class="section" data-aos="fade-up">
+                <h2 class="section-title">
+                    <i class="fas fa-compass"></i>
+                    对当代统一战线工作的启示
+                </h2>
+
+                <div class="highlight">
+                    习近平在2024年中央统战工作会议上强调，新时代统一战线工作的核心是"解决好人心和力量问题"<a href="#ref10" class="ref-link">[10]</a>，这与毛泽东"团结全国最大多数有党有派和无党无派的人"的思想一脉相承<a href="#ref6" class="ref-link">[6]</a>。
+                </div>
+
+                <div class="subsection">
+                    <h3>多党合作制度的借鉴</h3>
+                    <p>"三三制"政权原则为当代多党合作和政治协商制度提供了历史借鉴。在阶级构成"两头小中间大"的社会条件下，只有团结各阶层、各党派的力量，才能形成强大的社会共识和行动合力。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>统一战线策略的传承</h3>
+                    <p>毛泽东提出的"发展进步势力、争取中间势力、孤立顽固势力"的策略，为当代统一战线工作提供了方法论指导。这种策略在当代统一战线工作中体现为"广交、深交党外朋友"和"坚持尊重、维护和照顾同盟者利益"的原则<a href="#ref11" class="ref-link">[11]</a>。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>社会管理的经验</h3>
+                    <p>毛泽东强调的"调节各阶级利益"的政策原则，为当代社会管理提供了历史经验。这种政策原则在当代统一战线工作中体现为"坚持中国特色解决民族问题的正确道路"和"坚持我国宗教中国化方向"的原则<a href="#ref11" class="ref-link">[11]</a>。</p>
+                </div>
+
+                <div class="quote">
+                    当代统一战线工作仍然坚持"团结到底"的原则，通过多党合作和政治协商制度、民族区域自治制度、宗教中国化政策等，凝聚各方面力量，为实现中华民族伟大复兴的中国梦服务。
+                </div>
+            </section>
+
+            <div class="references" data-aos="fade-up">
+                <h3><i class="fas fa-book"></i> 参考文献</h3>
+                <ol>
+                    <li id="ref1"><a href="https://baike.baidu.com/item/%E5%9B%A2%E7%BB%93%E5%88%B0%E5%BA%95" target="_blank">毛泽东《团结到底》原文及相关研究</a></li>
+                    <li id="ref2"><a href="https://www.baike.com/wikiid/8810086333102153308?from=wiki_content&prd=innerlink&view_id=2x3fiuc5xw0000" target="_blank">抗日战争时期日军华北政策研究</a></li>
+                    <li id="ref3"><a href="https://molobook.qq.com/read/1027325743/28" target="_blank">国民党反共政策的历史分析</a></li>
+                    <li id="ref4"><a href="https://sxyk.henu.edu.cn/info/1014/2675.htm" target="_blank">1940年国民党抢米事件历史考证</a></li>
+                    <li id="ref5"><a href="http://www.crt.com.cn/news2007/News/jryw/2024/4/24424142655JI3FJA51E45CAGJH8D22.html" target="_blank">《皓电》与国共关系恶化史</a></li>
+                    <li id="ref6"><a href="http://www.cctv.com/special/756/1/49732.html" target="_blank">毛泽东统一战线理论研究</a></li>
+                    <li id="ref7"><a href="http://www.sdzx.gov.cn/sdszxwsg/articles/ch01075/202204/e74dd478-fdb7-4468-86ee-ef4ab695ac02.shtml#offline_html_corpas" target="_blank">晋察冀边区"三三制"政权建设实践</a></li>
+                    <li id="ref8"><a href="http://www.mod.gov.cn/education/2021-05/02/content_4884525.htm" target="_blank">新四军与国民党军队关系史</a></li>
+                    <li id="ref9"><a href="https://zhuanlan.zhihu.com/p/570525260" target="_blank">毛泽东争取友军工作的策略研究</a></li>
+                    <li id="ref10"><a href="http://www.ccps.gov.cn/xxsxk/zyls/202401/t20240115_160797.shtml" target="_blank">习近平关于统一战线工作的重要讲话</a></li>
+                    <li id="ref11"><a href="https://www.sohu.com/a/937898707_121106902" target="_blank">中国共产党统一战线工作条例（2020年修订）</a></li>
+                    <li id="ref12"><a href="https://www.sxlib.org.cn/dfzy/yajs/qwts_5014/nqsyj/sgnbqgms/201701/t20170109_586089.html" target="_blank">抗日战争时期中共经济政策研究</a></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const offsetTop = targetElement.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Highlight active navigation link
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Add hover effects to stat cards
+        document.querySelectorAll('.stat-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-8px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add click effects to reference links
+        document.querySelectorAll('.ref-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'center'
+                    });
+                    // Highlight the reference temporarily
+                    targetElement.style.background = '#ffeaa7';
+                    setTimeout(() => {
+                        targetElement.style.background = '';
+                    }, 2000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,917 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>古田会议决议：思想建党、政治建军的永恒指南</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #2c3e50;
+            --accent-color: #f39c12;
+            --background-color: #f8f9fa;
+            --card-bg: #ffffff;
+            --text-light: #6c757d;
+            --border-color: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--secondary-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: linear-gradient(135deg, var(--primary-color), #a91a32);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        /* 主标题 */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #a91a32);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 内容区域 */
+        .content {
+            padding: 3rem 0;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-icon {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-right: 1rem;
+        }
+
+        .card-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, rgba(243, 156, 18, 0.2) 0%, rgba(243, 156, 18, 0.2) 100%);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        /* 八种错误思想表格 */
+        .errors-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .errors-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .errors-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .errors-table tr:hover {
+            background: rgba(196, 30, 58, 0.05);
+        }
+
+        .errors-table .error-name {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        /* 时间轴 */
+        .timeline {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--primary-color);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .timeline-content {
+            flex: 1;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin: 0 2rem;
+        }
+
+        .timeline-year {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 16px;
+            height: 16px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 3px solid var(--card-bg);
+            box-shadow: 0 0 0 3px var(--primary-color);
+        }
+
+        /* 引用样式 */
+        .reference {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            background: rgba(196, 30, 58, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .reference:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* 参考文献 */
+        .references {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 3rem;
+        }
+
+        .references h3 {
+            font-family: 'Noto Serif SC', serif;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .references ol {
+            list-style: none;
+            counter-reset: ref-counter;
+        }
+
+        .references li {
+            counter-increment: ref-counter;
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .references li::before {
+            content: "[" counter(ref-counter) "]";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .references a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 40px;
+            }
+
+            .timeline-item:nth-child(even) {
+                flex-direction: column;
+            }
+
+            .timeline-content {
+                margin: 0;
+            }
+
+            .timeline-dot {
+                left: 20px;
+            }
+
+            .errors-table {
+                font-size: 0.9rem;
+            }
+
+            .errors-table th,
+            .errors-table td {
+                padding: 0.5rem;
+            }
+        }
+
+        /* 滚动平滑 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* 特殊样式 */
+        .quote-box {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.1), rgba(243, 156, 18, 0.1));
+            border-left: 4px solid var(--primary-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-title">古田会议决议</div>
+                <div class="nav-links">
+                    <a href="#background">历史背景</a>
+                    <a href="#errors">错误思想</a>
+                    <a href="#methods">纠正方法</a>
+                    <a href="#influence">历史影响</a>
+                    <a href="#significance">现实意义</a>
+                    <a href="#spirit">精神传承</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主标题 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>古田会议决议</h1>
+                <p class="hero-subtitle">思想建党、政治建军的永恒指南</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容 -->
+    <main class="content">
+        <div class="container">
+            <!-- 核心价值 -->
+            <section class="section" data-aos="fade-up">
+                <div class="quote-box">
+                    <p>《关于纠正党内的错误思想》作为毛泽东在1929年12月古田会议上起草的决议第一部分，不仅奠定了中国共产党思想建设和政治建军的理论基础，更在近百年历史长河中持续发挥着指导作用。<a href="#ref1" class="reference">[1]</a> 这一文献针对红军第四军中存在的单纯军事观点、极端民主化等八种非无产阶级思想，进行了系统性的分析并提出了解决方案，<span class="highlight">确立了"党指挥枪"而非"枪指挥党"的根本原则</span>，为中国共产党领导的人民军队从无到有、由弱到强的发展道路奠定了思想基石。</p>
+                </div>
+            </section>
+
+            <!-- 历史背景 -->
+            <section id="background" class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">文献背景与历史意义</h2>
+                </div>
+                
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-history card-icon"></i>
+                            <h3 class="card-title">历史背景</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>古田会议召开的历史背景极为特殊。1929年1月，毛泽东、朱德率领红四军离开井冈山根据地，向赣南闽西转移，在创建新的革命根据地过程中，红四军内部出现了严重的思想混乱。<span class="highlight">红四军党内存在着单纯军事观点、极端民主化、非组织观点、绝对平均主义、主观主义、个人主义、流寇思想和盲动主义残余等八种非无产阶级思想</span><a href="#ref1" class="reference">[1]</a>，这些思想严重影响了党的路线执行和红军的发展壮大。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-star card-icon"></i>
+                            <h3 class="card-title">核心意义</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>古田会议确立了<span class="highlight">思想建党、政治建军的根本原则</span>，使红军从单纯的军事力量转变为执行革命政治任务的武装集团。正如朱德在1951年所指出的："这个决议使红军肃清旧式军队的影响，完全建立在马克思列宁主义的基础上。"<a href="#ref1" class="reference">[1]</a></p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-compass card-icon"></i>
+                            <h3 class="card-title">历史影响</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>古田会议确立的原则在中国革命和建设的各个历史时期都得到了继承和发展。在抗日战争时期，延安整风运动将古田会议决议作为重要教材；在解放战争时期，"新式整党整军运动"延续了古田会议的整肃原则；新中国成立后，多位领导人多次强调其指导意义<a href="#ref2" class="reference">[2]</a>。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 八种错误思想 -->
+            <section id="errors" class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">八种错误思想的表现与根源</h2>
+                </div>
+
+                <div class="card">
+                    <div class="card-content">
+                        <p>《关于纠正党内的错误思想》系统分析了红四军党内存在的八种非无产阶级思想，每种思想都从表现、来源和纠正方法三个方面进行了深入探讨。<span class="highlight">这些错误思想的根源主要在于党的组织基础以农民和小资产阶级出身的成分为主</span><a href="#ref1" class="reference">[1]</a>，以及党的领导机关对错误思想缺乏坚决斗争和正确教育。</p>
+                    </div>
+                </div>
+
+                <table class="errors-table" data-aos="fade-up">
+                    <thead>
+                        <tr>
+                            <th>错误思想</th>
+                            <th>主要表现</th>
+                            <th>思想根源</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="error-name">单纯军事观点</td>
+                            <td>认为军事政治对立，红军只是单纯打仗，忽视宣传队和士兵会的重要性，打胜仗骄傲、打败仗消极</td>
+                            <td>政治水平低、雇佣军队思想、过分相信军事力量而不相信人民群众力量</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">极端民主化</td>
+                            <td>对党的决议执行态度勉强，"先交下级讨论，再由上级决议"等错误主张</td>
+                            <td>小资产阶级的自由散漫性带入党内，与无产阶级斗争任务根本不相容</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">非组织观点</td>
+                            <td>少数不服从多数和非组织的批评，党内批评变成攻击个人</td>
+                            <td>小资产阶级个人主义，破坏党的组织和战斗力</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">绝对平均主义</td>
+                            <td>发给伤兵用费反对区分轻重，官长骑马被视为不平等制度，分物品要求极端平均</td>
+                            <td>手工业和小农经济的产物，分别见于政治生活和物质生活方面</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">主观主义</td>
+                            <td>对政治形势的主观分析和对工作的主观指导，党内批评不要证据的乱说或互相猜忌</td>
+                            <td>导致机会主义或盲动主义，破坏党的组织</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">个人主义</td>
+                            <td>报复主义、小团体主义、雇佣思想、享乐主义、消极怠工、离队思想等</td>
+                            <td>小资产阶级和资产阶级的思想在党内的反映</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">流寇思想</td>
+                            <td>不愿意做艰苦工作建立根据地和群众政权，只想用流动游击方法扩大影响</td>
+                            <td>红军中游民成分占很大比例，以及全国特别是南方各省存在大量游民群众</td>
+                        </tr>
+                        <tr>
+                            <td class="error-name">盲动主义残余</td>
+                            <td>不顾主客观条件的盲干，城市政策执行不充分、不坚决，军纪松懈</td>
+                            <td>流氓无产者的思想和小资产阶级的思想的综合</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- 纠正方法 -->
+            <section id="methods" class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">纠正错误思想的方法与原则</h2>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-lightbulb card-icon"></i>
+                            <h3 class="card-title">系统性纠正</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>针对上述八种错误思想，毛泽东提出了系统的纠正方法，<span class="highlight">这些方法既注重思想教育，又强调制度建设，体现了思想建党与制度治党的有机结合</span>。从教育上提高党内的政治水平，肃清单纯军事观点的理论根源；加紧官兵的政治训练，特别是对俘虏成分的教育。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-balance-scale card-icon"></i>
+                            <h3 class="card-title">民主集中制</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>对于极端民主化，提出从理论上铲除极端民主化的根苗，指出其危险在于损伤党的组织和削弱党的战斗力；在组织上厉行集中指导下的民主生活，提出明确的组织路线，包括党的领导机关要有正确的指导路线等<a href="#ref1" class="reference">[1]</a>。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-gavel card-icon"></i>
+                            <h3 class="card-title">制度规范</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>对于绝对平均主义，指出要教育红军人员明白，在资本主义没有消灭的时期，绝对平均主义只是农民小资产者的一种幻想；<span class="highlight">在社会主义时期，物质分配也要按照"各尽所能按劳取酬"的原则</span><a href="#ref1" class="reference">[1]</a>。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-shield-alt card-icon"></i>
+                            <h3 class="card-title">纪律建设</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>古田会议提出"严格地执行纪律，废止对纪律的敷衍现象"，这一原则在新时代《中国共产党纪律处分条例》中得到进一步强化。条例第七十五条规定，党员领导干部对违反政治纪律和政治规矩等错误思想和行为不报告、不抵制、不斗争，造成不良影响的，将受到相应处分。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 历史影响 -->
+            <section id="influence" class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">对革命战争时期的影响</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">1929年</div>
+                            <h4>古田会议召开</h4>
+                            <p>确立思想建党、政治建军的根本原则，使红军从单纯的军事力量转变为执行革命政治任务的武装集团。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">1930年4月</div>
+                            <h4>红四军贯彻决议</h4>
+                            <p>红四军各部深入贯彻古田会议决议，公布废止肉刑、不枪毙逃兵及可以准假回家等，受到广大战士的拥护，使红四军成为真正的人民军队。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">1942年</div>
+                            <h4>延安整风运动</h4>
+                            <p>将古田会议决议作为重要教材，用于纠正党内的教条主义和非无产阶级思想，进一步发展了古田会议精神。</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-year">2014年</div>
+                            <h4>新古田会议</h4>
+                            <p>习近平总书记主持的全军政治工作会议在古田召开，直接继承古田会议精神，重申党对军队绝对领导的核心地位<a href="#ref2" class="reference">[2]</a>。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 现实意义 -->
+            <section id="significance" class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">对当前党建工作的启示意义</h2>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">120.6万</div>
+                        <div class="stat-label">2025年全国纪检监察机关处置问题线索</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">52.1万</div>
+                        <div class="stat-label">立案数量</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">42万</div>
+                        <div class="stat-label">处分人数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">43人</div>
+                        <div class="stat-label">省部级干部立案</div>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-seedling card-icon"></i>
+                            <h3 class="card-title">思想建党原则</h3>
+                        </div>
+                        <div class="card-content">
+                            <p><span class="highlight">古田会议强调的思想建党原则与当前"补钙铸魂"的党建工作一脉相承</span><a href="#ref3" class="reference">[3]</a>。2025年6月30日，习近平总书记强调："从抓作风入手推进全面从严治党是新时代党的自我革命一条重要经验。"<a href="#ref4" class="reference">[4]</a> 这与古田会议通过思想教育纠正错误思想的路径高度一致。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-users card-icon"></i>
+                            <h3 class="card-title">民主集中制</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>古田会议提出的民主集中制原则为当前党内政治生活提供了制度保障。古田会议强调"少数服从多数"、"上级机关的决议必须迅速传达到下级机关和党员群众中去"等<a href="#ref1" class="reference">[1]</a>，这与当前党内政治生活准则中"坚持民主基础上的集中和集中指导下的民主相结合"的要求一致。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-eye card-icon"></i>
+                            <h3 class="card-title">群众路线</h3>
+                        </div>
+                        <div class="card-content">
+                            <p><span class="highlight">古田会议强调的群众路线为当前反腐败斗争提供了方法论指导</span><a href="#ref3" class="reference">[3]</a>。古田会议指出，红军的打仗不是单纯为了打仗而打仗，而是为了宣传群众、组织群众、武装群众，并帮助群众建设革命政权<a href="#ref1" class="reference">[1]</a>。这一思想在当前反腐败斗争中体现为"整治群众身边不正之风和腐败问题"，让老百姓可感可及<a href="#ref4" class="reference">[4]</a>。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 精神传承 -->
+            <section id="spirit" class="section" data-aos="fade-up">
+                <div class="section-header">
+                    <h2 class="section-title">古田精神的时代价值与传承</h2>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-heart card-icon"></i>
+                        <h3 class="card-title">核心价值</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>古田精神作为中国共产党的宝贵精神财富，<span class="highlight">其核心价值在于坚持党的领导、加强思想建设、严明政治纪律，这些原则在新时代依然具有强大的生命力</span><a href="#ref2" class="reference">[2]</a>。当前，古田精神的传承主要体现在三个方面：通过红色教育基地开展主题教育活动，通过党课学习和制度学习传承古田精神，通过制度创新传承古田精神。</p>
+                    </div>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-graduation-cap card-icon"></i>
+                            <h3 class="card-title">教育培训</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>2025年7月福建师范大学体育科学学院"躬行先锋"实践队赴古田会议会址开展红色研学活动，通过沉浸式学习、志愿宣讲等方式传承古田精神<a href="#ref5" class="reference">[5]</a>。2025年6月30日，习近平总书记在主持中央政治局第二十一次集体学习时，强调要深入学习古田会议精神<a href="#ref6" class="reference">[6]</a>。</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-mobile-alt card-icon"></i>
+                            <h3 class="card-title">数字化传承</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>古田精神的传承创新也体现在对传统教育方法的现代化改造上。2025年，各地通过数字化手段增强廉洁文化传播效果，打造古为今用的廉洁文化产品，如"2025党课古田会议讲稿ppt"等，将古田精神以更生动、更直观的方式呈现给党员干部。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 结语 -->
+            <section class="section" data-aos="fade-up">
+                <div class="quote-box">
+                    <p><strong>古田会议决议不仅是历史的见证，更是现实的指南，它指导我们党在革命战争年代从胜利走向胜利，在和平建设时期从强大走向更强大</strong><a href="#ref2" class="reference">[2]</a>。从历史经验看，思想建设是党的根本性建设，政治纪律是党的生命线，群众路线是党的根本工作路线，自我革命是党的鲜明特征。这些原则在古田会议决议中得到了系统阐述，并在党的百年奋斗历程中不断丰富和发展。</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-content" style="text-align: center; font-size: 1.1rem; line-height: 1.8;">
+                        <p>古田精神永放光芒，它不仅是历史的丰碑，更是现实的指南，将永远指引中国共产党在新时代的征程上不断前行，为实现中华民族伟大复兴的中国梦而努力奋斗。</p>
+                        <p style="margin-top: 1.5rem; font-style: italic; color: var(--text-light);">说明：报告内容由通义AI生成，仅供参考。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 参考文献 -->
+            <section class="references" data-aos="fade-up">
+                <h3><i class="fas fa-book"></i> 参考文献</h3>
+                <ol>
+                    <li id="ref1"><a href="https://www.gov.cn/yaowen/liebiao/202307/content_6895533.htm" target="_blank">关于纠正党内的错误思想</a></li>
+                    <li id="ref2"><a href="https://www.xuexi.cn/lgpage/detail/index.html?id=8815948451617734662" target="_blank">古田会议决议的历史影响与现实意义</a></li>
+                    <li id="ref3"><a href="https://www.ycqfw.gov.cn/html/2025/qfsy_0715/39075.html" target="_blank">古田会议精神在新时代的传承与发展</a></li>
+                    <li id="ref4"><a href="https://www.12371.cn/2025/08/07/VIDE1754529121651472.shtml" target="_blank">全面从严治党：新时代党的自我革命</a></li>
+                    <li id="ref5"><a href="http://cn.chinadaily.com.cn/a/202507/30/WS6889c45ba310a07bb590afeb.html" target="_blank">红色研学：古田精神的现代传承</a></li>
+                    <li id="ref6"><a href="https://theory.gmw.cn/2025-09/13/content_38283415.htm" target="_blank">习近平总书记关于古田会议精神的重要论述</a></li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 初始化AOS动画
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 导航栏高亮
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-links a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.style.background = '';
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.style.background = 'rgba(255,255,255,0.2)';
+                }
+            });
+        });
+
+        // 表格行悬浮效果
+        document.querySelectorAll('.errors-table tr').forEach(row => {
+            row.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+                this.style.transition = 'all 0.2s ease';
+            });
+            
+            row.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // 统计数字动画
+        const animateNumbers = () => {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const finalNumber = stat.textContent;
+                const numericValue = parseFloat(finalNumber.replace(/[^\d.]/g, ''));
+                const suffix = finalNumber.replace(/[\d.]/g, '');
+                
+                let current = 0;
+                const increment = numericValue / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= numericValue) {
+                        stat.textContent = finalNumber;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current) + suffix;
+                    }
+                }, 30);
+            });
+        };
+
+        // 当统计数据进入视窗时开始动画
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsGrid = document.querySelector('.stats-grid');
+        if (statsGrid) {
+            observer.observe(statsGrid);
+        }
+    </script>
+</body>
+</html>

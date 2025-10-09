@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东《实践论》：马克思主义认识论的中国化阐释</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #f59e0b;
+            --text-color: #1f2937;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 导航栏 */
+        .navbar {
+            background: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .nav-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* 主要内容区域 */
+        .main-content {
+            margin-top: 80px;
+            padding: 2rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            margin-bottom: 3rem;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* 章节样式 */
+        .section {
+            background: var(--card-bg);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            color: var(--secondary-color);
+            font-size: 1.4rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        /* 引用样式 */
+        .quote {
+            background: #f1f5f9;
+            border-left: 4px solid var(--accent-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .quote strong {
+            color: var(--primary-color);
+        }
+
+        /* 引用标记 */
+        .ref {
+            color: var(--accent-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .ref:hover {
+            text-decoration: underline;
+        }
+
+        /* 表格样式 */
+        .table-container {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: #f8fafc;
+        }
+
+        /* 卡片网格 */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* 时间轴样式 */
+        .timeline {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--secondary-color);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+            width: 45%;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 55%;
+        }
+
+        .timeline-content {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .timeline-date {
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* 参考文献 */
+        .references {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 3rem;
+        }
+
+        .references h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .references ol {
+            list-style: none;
+            counter-reset: ref-counter;
+        }
+
+        .references li {
+            counter-increment: ref-counter;
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .references li::before {
+            content: "[" counter(ref-counter) "]";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .references a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item {
+                width: calc(100% - 40px);
+                left: 40px !important;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 滚动动画 */
+        [data-aos] {
+            pointer-events: none;
+        }
+
+        [data-aos].aos-animate {
+            pointer-events: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-title">《实践论》研究</div>
+                <ul class="nav-links">
+                    <li><a href="#overview">概述</a></li>
+                    <li><a href="#background">历史背景</a></li>
+                    <li><a href="#principles">哲学原理</a></li>
+                    <li><a href="#process">认识过程</a></li>
+                    <li><a href="#critique">错误批判</a></li>
+                    <li><a href="#significance">当代价值</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <div class="main-content">
+        <div class="container">
+            <!-- 英雄区域 -->
+            <div class="hero" data-aos="fade-up">
+                <h1>毛泽东《实践论》</h1>
+                <p>马克思主义认识论的中国化阐释</p>
+            </div>
+
+            <!-- 概述 -->
+            <section id="overview" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-book-open"></i> 核心概述</h2>
+                <div class="quote">
+                    <strong>《实践论》的核心在于强调实践是认识的来源、动力、标准和目的，揭示了人类认识发展的规律是"实践、认识、再实践、再认识"的无限循环过程</strong> <a href="#ref-2" class="ref">[2]</a>
+                </div>
+                <p>毛泽东的《实践论》是马克思主义哲学中国化的里程碑式著作，作为《辩证法唯物论(讲授提纲)》的第二章第十一节，它系统阐述了实践与认识的辩证关系，形成了具有鲜明中国特色的马克思主义认识论 <a href="#ref-1" class="ref">[1]</a>。这一思想不仅深刻批判了党内教条主义和经验主义错误，更为中国革命和建设提供了强大的思想武器，至今仍对当代社会实践具有重要指导意义。</p>
+            </section>
+
+            <!-- 历史背景 -->
+            <section id="background" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-history"></i> 历史背景与写作目的</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">1931-1934年</div>
+                            <h4>教条主义盛行</h4>
+                            <p>中国共产党内盛行王明"左"倾教条主义，生搬硬套马列主义只言片语，忽视中国革命具体实际。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-content">
+                            <div class="timeline-date">1935年1月</div>
+                            <h4>遵义会议</h4>
+                            <p>遵义会议后毛泽东重新获得军事指挥权，但理论上的教条主义仍威胁着党的正确路线。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-content">
+                            <div class="timeline-date">1937年7月</div>
+                            <h4>抗大讲授</h4>
+                            <p>毛泽东在延安抗日军政大学讲授哲学时，针对党内教条主义和经验主义错误，整理形成《实践论》 <a href="#ref-3" class="ref">[3]</a>。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote">
+                    <strong>《实践论》的根本目的，是用马克思主义的认识论观点揭露和批判党内的主观主义，特别是教条主义错误，强调认识必须从实践中来，又必须回到实践中去检验和指导实践</strong> <a href="#ref-1" class="ref">[1]</a>
+                </div>
+            </section>
+
+            <!-- 哲学原理 -->
+            <section id="principles" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-lightbulb"></i> 实践作为认识论第一和基本观点</h2>
+                
+                <div class="cards-grid">
+                    <div class="card" data-aos="zoom-in">
+                        <h4><i class="fas fa-seedling"></i> 实践是认识的来源</h4>
+                        <p>"你要有知识，你就得参加变革现实的实践。你要知道梨子的滋味，你就得变革梨子，亲口吃一吃。" <a href="#ref-5" class="ref">[5]</a></p>
+                    </div>
+                    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                        <h4><i class="fas fa-rocket"></i> 实践是发展动力</h4>
+                        <p>随着社会实践的发展，特别是生产活动的发展，人的认识也在不断深化和拓展。</p>
+                    </div>
+                    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                        <h4><i class="fas fa-check-circle"></i> 实践是检验标准</h4>
+                        <p>"判定认识或理论之是否真理，不是依主观上觉得如何而定，而是依客观上社会实践的结果如何而定。" <a href="#ref-2" class="ref">[2]</a></p>
+                    </div>
+                    <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                        <h4><i class="fas fa-target"></i> 实践是认识目的</h4>
+                        <p>"人们认识世界，是为了改造世界。" <a href="#ref-4" class="ref">[4]</a> 认识的根本目的是指导实践，改造客观世界。</p>
+                    </div>
+                </div>
+
+                <div class="quote">
+                    <strong>马克思主义的哲学辩证唯物论有两个最显著的特点：一个是它的阶级性，公然申明辩证唯物论是为无产阶级服务的；再一个是它的实践性，强调理论对于实践的依赖关系，理论的基础是实践，又转过来为实践服务</strong> <a href="#ref-2" class="ref">[2]</a>
+                </div>
+            </section>
+
+            <!-- 认识过程 -->
+            <section id="process" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-sync-alt"></i> 认识过程的两次飞跃</h2>
+                
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>飞跃过程</th>
+                                <th>阶段特点</th>
+                                <th>认识形式</th>
+                                <th>转化要求</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>第一次飞跃</td>
+                                <td>感性认识 → 理性认识</td>
+                                <td>感觉、知觉、表象 → 概念、判断、推理</td>
+                                <td>"去粗取精、去伪存真、由此及彼、由表及里"的改造制作工夫 <a href="#ref-6" class="ref">[6]</a></td>
+                            </tr>
+                            <tr>
+                                <td>第二次飞跃</td>
+                                <td>理性认识 → 实践</td>
+                                <td>理论指导实践</td>
+                                <td>将理性认识应用于实践，在实践中检验其正确性并指导实践 <a href="#ref-2" class="ref">[2]</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>感性认识与理性认识的辩证关系</h3>
+                <p><strong>认识过程的第一次飞跃是从感性认识到理性认识的飞跃</strong> <a href="#ref-2" class="ref">[2]</a>，这一过程需要人们在实践中积累丰富的感性材料，并通过改造制作工夫，将感性材料上升为理性认识。</p>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <h4>感性认识特点</h4>
+                        <ul>
+                            <li>直接性</li>
+                            <li>片面性</li>
+                            <li>表面性</li>
+                            <li>表现为感觉、知觉和表象</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>理性认识特点</h4>
+                        <ul>
+                            <li>间接性</li>
+                            <li>全面性</li>
+                            <li>深刻性</li>
+                            <li>表现为概念、判断和推理</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 错误批判 -->
+            <section id="critique" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-ban"></i> 教条主义与经验主义的批判</h2>
+                
+                <div class="quote">
+                    <strong>毛泽东指出，这两种错误思想都是主观主义的表现，都表现为脱离实际，把理论与实践割裂开来</strong> <a href="#ref-1" class="ref">[1]</a>
+                </div>
+
+                <div class="cards-grid">
+                    <div class="card" data-aos="slide-up">
+                        <h4><i class="fas fa-scroll"></i> 教条主义</h4>
+                        <p><strong>表现</strong>："以为上了书的就是对的"，"开口闭口'拿本本来'"的本本主义</p>
+                        <p><strong>案例</strong>：王明为代表的"左"倾教条主义者，盲目搬用苏联阵地战经验，导致红军在广昌战役中遭受重大伤亡 <a href="#ref-7" class="ref">[7]</a></p>
+                    </div>
+                    <div class="card" data-aos="slide-up" data-aos-delay="200">
+                        <h4><i class="fas fa-eye"></i> 经验主义</h4>
+                        <p><strong>表现</strong>：固守狭隘经验，不了解理论对实践的指导作用</p>
+                        <p><strong>危害</strong>：忽视理论对实践的指导作用，同样会导致实践中的失误</p>
+                    </div>
+                </div>
+
+                <div class="quote">
+                    <strong>正确的认识必须是主观和客观、理论和实践、知和行的具体的历史的统一</strong> <a href="#ref-1" class="ref">[1]</a>
+                </div>
+            </section>
+
+            <!-- 当代价值 -->
+            <section id="significance" class="section" data-aos="fade-up">
+                <h2><i class="fas fa-star"></i> 《实践论》的当代意义与价值</h2>
+                
+                <h3>理论层面</h3>
+                <p><strong>在理论层面</strong>，《实践论》为中国特色社会主义理论体系提供了认识论基础。党的二十大报告强调的"实干兴邦"、"实事求是"等思想，与《实践论》的实践标准、知行统一原则高度契合 <a href="#ref-8" class="ref">[8]</a>。</p>
+
+                <h3>实践层面</h3>
+                <p><strong>在实践层面</strong>，《实践论》的方法论为解决当代社会问题提供了科学指导。以构建新发展格局为例，这一战略的提出基于对国际逆全球化趋势和国内发展矛盾的实践分析，符合"认识源于实践"的原理。</p>
+
+                <h3>方法论层面</h3>
+                <p>人工智能的发展也充分体现了《实践论》的哲学思想。肖峰指出："人工智能与马克思主义实践观之间具有辩证的关系，它既充分体现了马克思主义实践观所蕴含的实践哲学精神，也丰富和发展了实践观的具体内容。"</p>
+
+                <div class="quote">
+                    <strong>历史只会眷顾坚定者、奋进者、搏击者，而不会等待犹豫者、懈怠者、畏难者。</strong> <a href="#ref-8" class="ref">[8]</a>
+                </div>
+            </section>
+
+            <!-- 现实应用 -->
+            <section class="section" data-aos="fade-up">
+                <h2><i class="fas fa-tools"></i> 现实应用与启示</h2>
+                
+                <div class="cards-grid">
+                    <div class="card">
+                        <h4><i class="fas fa-hand-paper"></i> 坚持实践第一观点</h4>
+                        <p>在处理任何社会问题时，都应坚持从实际出发，深入调查研究，获取丰富的感性材料，然后通过科学分析形成理性认识，再将理性认识应用于实践。</p>
+                    </div>
+                    <div class="card">
+                        <h4><i class="fas fa-balance-scale"></i> 理论与实践统一</h4>
+                        <p>在理论与实践的关系上坚持辩证统一，既要反对脱离实际的教条主义，也要反对忽视理论指导的经验主义 <a href="#ref-1" class="ref">[1]</a>。</p>
+                    </div>
+                    <div class="card">
+                        <h4><i class="fas fa-infinity"></i> 认识发展辩证</h4>
+                        <p>认识不是一次性的完成，而是不断发展的过程。面对复杂多变的社会现实，需要通过"实践、认识、再实践、再认识"的循环 <a href="#ref-2" class="ref">[2]</a>。</p>
+                    </div>
+                </div>
+
+                <h3>具体应用领域</h3>
+                <ol>
+                    <li><strong>科技创新问题</strong>：人工智能发展需要坚持实践导向，从实际需求出发，通过实践检验算法模型的有效性</li>
+                    <li><strong>经济政策制定</strong>：构建"双循环"新发展格局需要基于对国内外经济形势的实践分析</li>
+                    <li><strong>社会治理问题</strong>：解决社会矛盾需要深入基层调查研究，获取丰富的感性材料</li>
+                    <li><strong>个人成长问题</strong>：个人认识和能力的提升同样需要遵循"实践-认识-再实践"的规律 <a href="#ref-6" class="ref">[6]</a></li>
+                </ol>
+            </section>
+
+            <!-- 结语 -->
+            <section class="section" data-aos="fade-up">
+                <h2><i class="fas fa-flag"></i> 结语：实践论的永恒价值</h2>
+                <div class="quote">
+                    <strong>《实践论》的核心价值在于它揭示了人类认识发展的规律，强调了实践在认识过程中的决定性作用，为我们在新时代认识和改造世界提供了科学的方法论指导</strong>。
+                </div>
+                <p>在实现中华民族伟大复兴的中国梦的征程中，我们更需要深入学习《实践论》的思想精髓，坚持实践第一的观点，反对一切脱离实际的教条主义和经验主义，通过"实践、认识、再实践、再认识"的循环往复，不断开辟认识真理的道路，达到主观和客观、理论和实践、知和行的具体的历史的统一 <a href="#ref-1" class="ref">[1]</a>。</p>
+                <p>正如《实践论》所强调的："客观现实世界的变化永远没有完结，人们在实践中对于真理的认识也就永远没有完结。"在新时代的实践中，我们应当继续发扬《实践论》的哲学精神，坚持和发展马克思主义，为实现中华民族伟大复兴的中国梦和人类的美好未来而努力奋斗。</p>
+                <p><em>说明：报告内容由通义AI生成，仅供参考。</em></p>
+            </section>
+
+            <!-- 参考文献 -->
+            <section class="references" data-aos="fade-up">
+                <h2><i class="fas fa-bookmark"></i> 参考文献</h2>
+                <ol>
+                    <li id="ref-1"><a href="https://baike.baidu.com/item/%E3%80%8A%E5%AE%9E%E8%B7%B5%E8%AE%BA%E3%80%8B/4651899" target="_blank">毛泽东《实践论》核心思想研究</a></li>
+                    <li id="ref-2"><a href="http://www.gzdis.gov.cn/ztzl/dsxxjy/xxss_5908044/202211/t20221108_77039231.html" target="_blank">马克思主义认识论的中国化发展</a></li>
+                    <li id="ref-3"><a href="http://www.beihai.gov.cn/swbm/swdsyjs/bk3/dswt/t15884252.shtml" target="_blank">毛泽东哲学思想的历史背景</a></li>
+                    <li id="ref-4"><a href="https://zhuanlan.zhihu.com/p/699275420" target="_blank">实践论的哲学原理分析</a></li>
+                    <li id="ref-5"><a href="http://www.81.cn/yw_208727/16253926.html?tsrhfqcrfbh" target="_blank">认识与实践关系的辩证思考</a></li>
+                    <li id="ref-6"><a href="https://www.baike.com/wikiid/3420206870502851167?view_id=52fnj7jbq5c000" target="_blank">认识过程的两次飞跃研究</a></li>
+                    <li id="ref-7"><a href="https://baike.baidu.com/item/%E7%AC%AC%E4%BA%94%E6%AC%A1%E5%8F%8D%E5%9B%B4%E5%89%BF/10923140" target="_blank">王明教条主义的历史教训</a></li>
+                    <li id="ref-8"><a href="https://cpc.people.com.cn/n1/2025/0818/c459166-40544358.html" target="_blank">实践论在新时代的价值体现</a></li>
+                </ol>
+            </section>
+        </div>
+    </div>
+
+    <!-- 引入AOS动画库 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 初始化AOS动画
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            } else {
+                navbar.style.background = '#ffffff';
+                navbar.style.backdropFilter = 'none';
+            }
+        });
+
+        // 卡片悬停效果
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 8px 25px rgba(0,0,0,0.15)';
+                this.style.transition = 'all 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = '0 2px 8px rgba(0,0,0,0.1)';
+            });
+        });
+    </script>
+</body>
+</html>

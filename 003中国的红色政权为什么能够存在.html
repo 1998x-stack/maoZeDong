@@ -1,0 +1,655 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工农武装割据理论研究</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #2c3e50;
+            --accent-color: #f39c12;
+            --text-color: #333;
+            --bg-light: #f8f9fa;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #8b1538 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .header h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .header .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        /* Navigation */
+        .nav {
+            background: white;
+            padding: 1rem 0;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Main Content */
+        .main {
+            padding: 3rem 0;
+        }
+
+        .section {
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent-color);
+        }
+
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .card-title {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .card-content {
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Five Conditions */
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .condition-item {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent-color);
+        }
+
+        .condition-number {
+            background: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .condition-title {
+            font-weight: 600;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -27px;
+            top: 20px;
+            width: 12px;
+            height: 12px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px var(--primary-color);
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .highlight-box::before {
+            content: '\f0eb';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* References */
+        .references {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-top: 3rem;
+            box-shadow: var(--shadow);
+        }
+
+        .references h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .ref-list {
+            list-style: none;
+            counter-reset: ref-counter;
+        }
+
+        .ref-item {
+            counter-increment: ref-counter;
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .ref-item::before {
+            content: '[' counter(ref-counter) ']';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .ref-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .ref-link:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        /* Citation Links */
+        .cite {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 2px 4px;
+            border-radius: 3px;
+            background: rgba(196, 30, 58, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .cite:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .conditions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .card, .condition-item {
+                padding: 1.5rem;
+            }
+        }
+
+        /* Image Styles */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 data-aos="fade-down">工农武装割据理论的形成与意义</h1>
+            <p class="subtitle" data-aos="fade-up" data-aos-delay="200">毛泽东《中国的红色政权为什么能够存在？》研究</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#background" class="nav-link">历史背景</a></li>
+                <li><a href="#conditions" class="nav-link">核心条件</a></li>
+                <li><a href="#innovation" class="nav-link">理论创新</a></li>
+                <li><a href="#influence" class="nav-link">历史影响</a></li>
+                <li><a href="#significance" class="nav-link">现实启示</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <section class="section" data-aos="fade-up">
+                <div class="highlight-box">
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        毛泽东1928年10月5日撰写的《中国的红色政权为什么能够存在？》是中国共产党早期革命理论的重要文献，也是马克思主义中国化的奠基之作<a href="#ref-1" class="cite">[1]</a>。这篇文章以湘赣边界工农武装割据的实践为基础，系统回答了当时党内普遍存在的"红旗到底能打多久"的疑问，科学论证了红色政权在中国半殖民地半封建社会条件下存在的可能性与必要性<a href="#ref-2" class="cite">[2]</a>。<strong>该文创造性地提出并阐述了"工农武装割据"思想，标志着中国共产党独立自主探索中国革命道路的正式开始，为中国革命找到了一条适合国情的独特道路</strong><a href="#ref-3" class="cite">[3]</a>。
+                    </p>
+                </div>
+            </section>
+
+            <section id="background" class="section" data-aos="fade-up">
+                <h2 class="section-title">文章产生的历史背景</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-flag" style="color: var(--primary-color);"></i>
+                            政治环境
+                        </div>
+                        <div class="card-content">
+                            1928年中国处于大革命失败后的低潮期，国民党新军阀通过"四一二"和"七一五"政变背叛革命后，建立了以城市买办阶级和乡村豪绅阶级为基础的统治，对外投降帝国主义，对内实行反革命统治<a href="#ref-2" class="cite">[2]</a>。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-industry" style="color: var(--accent-color);"></i>
+                            经济结构
+                        </div>
+                        <div class="card-content">
+                            中国呈现出独特的半殖民地半封建特征。帝国主义通过不平等条约和势力范围划分对中国进行间接统治，各派军阀之间因帝国主义支持政策的差异而持续分裂与战争<a href="#ref-4" class="cite">[4]</a>。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-users" style="color: var(--secondary-color);"></i>
+                            党内思想
+                        </div>
+                        <div class="card-content">
+                            中共六大虽批判了"左"倾盲动主义，但仍坚持"城市中心论"，认为革命高潮即将到来。共产国际代表罗明纳兹等人反对农村割据，认为这种做法是"农民意识"<a href="#ref-4" class="cite">[4]</a>。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="conditions" class="section" data-aos="fade-up">
+                <h2 class="section-title">红色政权存在与发展的五个核心条件</h2>
+                <div class="conditions-grid">
+                    <div class="condition-item">
+                        <div class="condition-number">1</div>
+                        <div class="condition-title">帝国主义间接统治与地方农业经济的特殊性</div>
+                        <p>红色政权能够在白色政权包围中长期存在，是因为中国具有帝国主义间接统治的特殊政治经济结构<a href="#ref-2" class="cite">[2]</a>。这种结构导致国内军阀之间的长期分裂与战争，为红色政权提供了生存空间。</p>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-number">2</div>
+                        <div class="condition-title">工农阶级的革命基础</div>
+                        <p>中国红色政权首先发生和能够长期存在的地方，是在1926-1927年资产阶级民主革命过程中工农兵士群众曾经大大地起来过的地方<a href="#ref-4" class="cite">[4]</a>。这些地方有着广大的工会和农民协会组织。</p>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-number">3</div>
+                        <div class="condition-title">全国革命形势向前发展</div>
+                        <p>小地方民众政权能否长期存在，取决于全国革命形势是否向前发展<a href="#ref-4" class="cite">[4]</a>。只有全国革命形势继续向前发展，小块红色区域才能长期存在并发展。</p>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-number">4</div>
+                        <div class="condition-title">相当力量的正式红军的存在</div>
+                        <p>相当力量的正式红军的存在，是红色政权存在的必要条件<a href="#ref-4" class="cite">[4]</a>。只有拥有正规红军，才能抵御白色政权的进攻，建立和维持割据局面<a href="#ref-2" class="cite">[2]</a>。</p>
+                    </div>
+                    <div class="condition-item">
+                        <div class="condition-number">5</div>
+                        <div class="condition-title">共产党组织的有力和政策的正确</div>
+                        <p>这是红色政权长期存在和发展的关键条件<a href="#ref-4" class="cite">[4]</a>。党的力量和政策正确性是红色政权得以坚持的根本保证，批评了党内存在的右倾悲观倾向和"左"倾冒进错误。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="innovation" class="section" data-aos="fade-up">
+                <h2 class="section-title">"工农武装割据"思想的理论创新</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-lightbulb" style="color: var(--accent-color);"></i>
+                            突破苏联经验
+                        </div>
+                        <div class="card-content">
+                            这一思想是对苏联革命经验的突破。苏联十月革命以城市为中心，而毛泽东提出，由于中国特殊的政治经济条件，革命必须从农村开始，以农村包围城市，最终夺取城市和全国政权。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-balance-scale" style="color: var(--primary-color);"></i>
+                            三者有机结合
+                        </div>
+                        <div class="card-content">
+                            这一思想整合了武装斗争、土地革命和根据地建设三者的关系，形成了中国革命的三大支柱。毛泽东强调："工农武装割据"的思想，是共产党和割据地方的工农群众必须充分具备的一个重要的思想<a href="#ref-2" class="cite">[2]</a>。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-globe-asia" style="color: var(--secondary-color);"></i>
+                            本土化创新
+                        </div>
+                        <div class="card-content">
+                            这一思想对马克思主义国家学说进行了本土化创新。毛泽东提出的"工农民主专政"政权形式，不同于苏联的"无产阶级专政"，具有鲜明的中国特色<a href="#ref-3" class="cite">[3]</a>。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-mountain" style="color: var(--accent-color);"></i>
+                            战略价值强调
+                        </div>
+                        <div class="card-content">
+                            这一思想强调了农村根据地的战略价值。毛泽东认为，农村根据地是革命的重要依托，是"取得全国政权的许多力量中间的一个力量"<a href="#ref-4" class="cite">[4]</a>。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="influence" class="section" data-aos="fade-up">
+                <h2 class="section-title">文章的历史影响与当代价值</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-year">抗日战争时期</div>
+                        <p>毛泽东的"工农武装割据"思想被发展为敌后抗日根据地建设理论。1941年5月，浙东抗日根据地创建，直接遵循了毛泽东提出的"在敌强我弱时建立根据地、开展游击战"策略<a href="#ref-7" class="cite">[7]</a>。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">解放战争时期</div>
+                        <p>毛泽东将"波浪式推进"策略应用于战略反攻，指导解放军从农村根据地向城市推进，最终夺取全国政权。这一策略与他在文章中提出的"割据地区的扩大采取波浪式的推进政策，反对冒进政策"一脉相承<a href="#ref-2" class="cite">[2]</a>。</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-year">新中国成立后</div>
+                        <p>毛泽东思想中的群众路线、根据地建设经验等，为土地改革、人民公社化运动等提供了理论指导。1950年《中华人民共和国土地改革法》明确"废除地主阶级封建剥削的土地所有制，实行农民的土地所有制"<a href="#ref-8" class="cite">[8]</a>。</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="significance" class="section" data-aos="fade-up">
+                <h2 class="section-title">对当代中国的启示与现实价值</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-seedling" style="color: var(--primary-color);"></i>
+                            乡村振兴战略
+                        </div>
+                        <div class="card-content">
+                            <strong>乡村振兴战略继承了毛泽东重视农村发展的思想</strong>。毛泽东曾指出："谁没有解决好农民问题，谁就没有解决好中国革命的问题。"当前实施的乡村振兴战略，强调"产业兴旺、生态宜居、乡风文明、治理有效、生活富裕"，与毛泽东倡导的农村经济建设、政治建设、文化建设一脉相承。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-handshake" style="color: var(--accent-color);"></i>
+                            "枫桥经验"
+                        </div>
+                        <div class="card-content">
+                            <strong>新时代"枫桥经验"体现了毛泽东群众路线的当代价值</strong>。毛泽东在文章中强调深入土地革命，依靠群众进行斗争<a href="#ref-2" class="cite">[2]</a>。新时代"枫桥经验"坚持"把问题解决在基层、化解在萌芽状态"的原则，强调依靠群众、发动群众，与毛泽东的思想高度一致<a href="#ref-9" class="cite">[9]</a>。
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fas fa-cogs" style="color: var(--secondary-color);"></i>
+                            基层治理创新
+                        </div>
+                        <div class="card-content">
+                            <strong>基层治理创新延续了毛泽东根据地建设的思想</strong>。毛泽东在文章中提出"巩固此根据地的方法：修筑完备的工事；储备充足的粮食；建设较好的红军医院"<a href="#ref-2" class="cite">[2]</a>。当前基层治理强调基础设施建设、民生保障和公共服务，与毛泽东的思想一脉相承。
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" data-aos="fade-up">
+                <div class="highlight-box">
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-family: 'Noto Serif SC', serif;">结论与启示</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        《中国的红色政权为什么能够存在？》是中国共产党独立自主探索中国革命道路的里程碑，<strong>其核心价值在于将马克思主义基本原理与中国具体实际相结合，开创了适合中国国情的革命道路</strong><a href="#ref-3" class="cite">[3]</a>。这一理论创新不仅指导了当时革命斗争的胜利，也为后来中国革命和建设提供了宝贵经验。
+                    </p>
+                    <p style="font-size: 1rem; line-height: 1.8; margin-top: 1rem;">
+                        总之，<strong>这一理论创新和实践智慧，为我们今天推进国家治理体系和治理能力现代化提供了宝贵的历史经验和思想资源</strong>。
+                    </p>
+                </div>
+            </section>
+
+            <div class="references" data-aos="fade-up">
+                <h3><i class="fas fa-book" style="margin-right: 0.5rem; color: var(--primary-color);"></i>参考文献</h3>
+                <ol class="ref-list">
+                    <li id="ref-1" class="ref-item">
+                        <a href="https://www.zgbk.com/ecph/words?ID=84943&SiteID=1&SubID=51810&Type=bkzyb" class="ref-link" target="_blank">[1] 毛泽东《中国的红色政权为什么能够存在？》研究</a>
+                    </li>
+                    <li id="ref-2" class="ref-item">
+                        <a href="https://mks.qhu.edu.cn/xxyd/jdwx/53047.htm" class="ref-link" target="_blank">[2] 中国革命史资料选编</a>
+                    </li>
+                    <li id="ref-3" class="ref-item">
+                        <a href="https://www.ccps.gov.cn/bkjd/xzglgg/xgglgg2021_3/202103/t20210325_148139.shtml" class="ref-link" target="_blank">[3] 马克思主义中国化的历史进程</a>
+                    </li>
+                    <li id="ref-4" class="ref-item">
+                        <a href="http://m.jian.gov.cn/news-show-11104.html" class="ref-link" target="_blank">[4] 中国共产党历史文献选编</a>
+                    </li>
+                    <li id="ref-5" class="ref-item">
+                        <a href="https://lishiwenhua.snnu.edu.cn/info/1105/2012.htm" class="ref-link" target="_blank">[5] 近代中国社会经济史研究</a>
+                    </li>
+                    <li id="ref-6" class="ref-item">
+                        <a href="https://www.12371.gov.cn/Item/621709.aspx" class="ref-link" target="_blank">[6] 井冈山革命根据地史料</a>
+                    </li>
+                    <li id="ref-7" class="ref-item">
+                        <a href="http://jds.cass.cn/xscg/xslw/202505/t20250523_5875481.shtml" class="ref-link" target="_blank">[7] 抗日战争时期根据地建设研究</a>
+                    </li>
+                    <li id="ref-8" class="ref-item">
+                        <a href="https://www.gd.gov.cn/zwgk/gongbao/1950/3/content/post_3352060.html" class="ref-link" target="_blank">[8] 中华人民共和国土地改革法</a>
+                    </li>
+                    <li id="ref-9" class="ref-item">
+                        <a href="http://www.ccps.gov.cn/xxsxk/xzx/202311/t20231117_159933.shtml" class="ref-link" target="_blank">[9] 新时代基层治理理论与实践</a>
+                    </li>
+                    <li id="ref-10" class="ref-item">
+                        <a href="https://www.ahshitai.gov.cn/OpennessContent/show/1383926.html" class="ref-link" target="_blank">[10] 农村土地制度改革研究</a>
+                    </li>
+                    <li id="ref-11" class="ref-item">
+                        <a href="https://www.ccps.gov.cn/dxsy/202204/t20220411_153561.shtml" class="ref-link" target="_blank">[11] 中国共产党群众路线理论研究</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add active state to navigation
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>毛泽东《反对投降活动》的历史价值与政治意义</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #c41e3a;
+            --secondary-color: #1a365d;
+            --accent-color: #d4af37;
+            --text-color: #2d3748;
+            --bg-light: #f7fafc;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #8b1538 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Noto Serif SC', serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .date-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+
+        nav {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            padding: 15px 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .nav-item {
+            color: var(--secondary-color);
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .nav-item:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .section h2 {
+            font-family: 'Noto Serif SC', serif;
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            background: var(--accent-color);
+            border-radius: 50%;
+        }
+
+        .section h3 {
+            color: var(--secondary-color);
+            font-size: 1.3rem;
+            margin: 25px 0 15px 0;
+            font-weight: 600;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent-color);
+            font-weight: 500;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 20px 0 20px 80px;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 18px;
+            top: 25px;
+            width: 25px;
+            height: 25px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            border: 4px solid white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-content {
+            background: var(--bg-light);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .strategy-card {
+            background: var(--bg-light);
+            padding: 25px;
+            border-radius: 12px;
+            border: 2px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: var(--primary-color);
+        }
+
+        .strategy-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .quote {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            font-style: italic;
+            position: relative;
+            font-size: 1.1rem;
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 4rem;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .reference {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: rgba(196, 30, 58, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .reference:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .references {
+            background: var(--bg-light);
+            padding: 30px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        .references h2 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .references ol {
+            list-style: none;
+            counter-reset: ref-counter;
+        }
+
+        .references li {
+            counter-increment: ref-counter;
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .references li::before {
+            content: '[' counter(ref-counter) ']';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        .references a {
+            color: var(--secondary-color);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .conclusion-box {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #8b1538 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .conclusion-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 25px;
+            }
+            
+            .nav-container {
+                justify-content: flex-start;
+                overflow-x: auto;
+            }
+            
+            .timeline-item {
+                padding-left: 60px;
+            }
+            
+            .strategy-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+        }
+
+        .scroll-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 data-aos="fade-down">毛泽东《反对投降活动》的历史价值与政治意义</h1>
+                <p class="subtitle" data-aos="fade-up" data-aos-delay="200">抗日战争战略相持阶段的重要政治文献</p>
+                <div class="date-badge" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-calendar-alt"></i> 1939年6月30日
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#background" class="nav-item">历史背景</a>
+            <a href="#analysis" class="nav-item">和战问题剖析</a>
+            <a href="#strategies" class="nav-item">反投降策略</a>
+            <a href="#three-captions" class="nav-item">三大政治口号</a>
+            <a href="#significance" class="nav-item">政治意义</a>
+            <a href="#conclusion" class="nav-item">结论启示</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="highlight" data-aos="fade-up">
+            <strong>核心观点：</strong>毛泽东1939年6月30日发表的《反对投降活动》一文，是抗日战争进入战略相持阶段后，中国共产党应对日益严峻的投降主义危险、维护抗日民族统一战线的重要政治文献。这篇文章不仅深刻揭露了日本帝国主义诱降政策的本质，更系统批判了国民党内部投降派的阴谋活动，为后来中共中央提出"三大政治口号"奠定了理论基础。
+        </div>
+
+        <section id="background" class="section" data-aos="fade-up">
+            <h2><i class="fas fa-history"></i> 历史背景与时代挑战</h2>
+            
+            <p>1939年正值抗日战争两周年，中国战场形势发生了重大变化。武汉、广州相继失守后，日军推行"以政治诱降为主、军事打击为辅"的方针，试图通过分化中国内部来实现不战而胜。</p>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-date">1938年1月</div>
+                    <div class="timeline-content">
+                        日本声明"不以国民政府为对手"，提出"华中、华南撤兵"等条件
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-date">1939年6月</div>
+                    <div class="timeline-content">
+                        毛泽东发表《反对投降活动》一文，系统批判投降主义危险
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-date">1939年7月</div>
+                    <div class="timeline-content">
+                        中共中央提出"三大政治口号"，明确反投降斗争方针
+                    </div>
+                </div>
+            </div>
+
+            <p>与此同时，国际形势也日益复杂，英美法等国为自身利益考虑，开始对日本采取绥靖政策，甚至酝酿出卖中国的妥协方案，史称"东方慕尼黑" <a href="#ref1" class="reference">[1]</a>。在这一背景下，国民党内部投降派与日本侵略者内外勾结，制造了一系列反共摩擦事件，试图通过分裂抗日民族统一战线来实现妥协投降的企图。</p>
+
+            <div class="quote" data-aos="zoom-in">
+                战下去，团结下去，——中国必存。和下去，分裂下去，——中国必亡。
+                <br><small>——毛泽东《反对投降活动》</small>
+            </div>
+        </section>
+
+        <section id="analysis" class="section" data-aos="fade-up">
+            <h2><i class="fas fa-search"></i> 毛泽东对"和战问题"的深刻剖析</h2>
+            
+            <p>毛泽东在《反对投降活动》中对"和战问题"进行了系统的政治分析。他指出，"战或不战的问题"在卢沟桥事变后虽然暂时解决，但并未根本消除，而是转变为"战或和的问题" <a href="#ref2" class="reference">[2]</a>。</p>
+
+            <div class="strategy-grid">
+                <div class="strategy-card" data-aos="flip-left">
+                    <h4><i class="fas fa-exclamation-triangle"></i> 制造反共空气</h4>
+                    <p>挑拨国共摩擦，破坏抗日民族统一战线的团结</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="flip-left" data-aos-delay="100">
+                    <h4><i class="fas fa-heart-broken"></i> 寄希望于日本</h4>
+                    <p>期望日本帝国主义让步，实现不彻底的和平</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="flip-left" data-aos-delay="200">
+                    <h4><i class="fas fa-handshake"></i> 依赖国际压力</h4>
+                    <p>指望国际调停，以牺牲中国利益换取和平</p>
+                </div>
+            </div>
+
+            <h3>蒋介石集团的两面派行为</h3>
+            <p>毛泽东特别批判了蒋介石集团的两面派行为。他指出，汪精卫是公开的投降派头目，而蒋介石则是暗藏在抗日阵线内部的投降派头目 <a href="#ref2" class="reference">[2]</a>。他们"唱双簧"、"装红白脸"，一方面维持抗战姿态，另一方面却积极推行反共政策，企图分裂抗日民族统一战线 <a href="#ref3" class="reference">[3]</a>。</p>
+
+            <div class="highlight">
+                毛泽东深刻揭示了投降派的三套手段：一是制造反共空气，挑拨国共摩擦；二是寄希望于日本帝国主义让步；三是依赖国际压力逼迫中国妥协。
+            </div>
+        </section>
+
+        <section id="strategies" class="section" data-aos="fade-up">
+            <h2><i class="fas fa-chess"></i> 中共反投降斗争的策略与行动</h2>
+            
+            <p>面对日益严重的投降主义危险，中国共产党采取了系统性的反投降斗争策略。毛泽东在文章中明确提出："我们的基本任务是巩固扩大抗日民族统一战线，坚持国共合作与三民主义" <a href="#ref3" class="reference">[3]</a>。</p>
+
+            <div class="strategy-grid">
+                <div class="strategy-card" data-aos="fade-up">
+                    <h4><i class="fas fa-shield-alt"></i> 军事反击</h4>
+                    <p>坚持"攻势防御"原则，对国民党顽固派的进攻进行坚决反击。1939年12月，在陕甘宁边区、山西、河北等地发起自卫反击 <a href="#ref4" class="reference">[4]</a>。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="100">
+                    <h4><i class="fas fa-bullhorn"></i> 舆论斗争</h4>
+                    <p>通过《解放》周刊、《新华日报》等媒体密集发声，批判国民党反共政策 <a href="#ref6" class="reference">[6]</a>。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="fade-up" data-aos-delay="200">
+                    <h4><i class="fas fa-users"></i> 统一战线</h4>
+                    <p>实行"发展进步势力、争取中间势力、孤立顽固势力"的策略，通过"三三制"政权建设吸纳中间力量。</p>
+                </div>
+            </div>
+
+            <h3>晋西事变与秋林协议</h3>
+            <p>在晋西事变中，八路军与阎锡山达成秋林协议，既维护了抗日大局，又有效遏制了国民党反共势力的扩张 <a href="#ref5" class="reference">[5]</a>。这一策略体现了中共在复杂政治关系中既统一又独立的政治智慧。</p>
+        </section>
+
+        <section id="three-captions" class="section" data-aos="fade-up">
+            <h2><i class="fas fa-bullhorn"></i> 对"三大政治口号"的理论奠基</h2>
+            
+            <p>《反对投降活动》一文为后来中共中央提出"三大政治口号"奠定了坚实的理论基础。1939年7月7日，在全面抗日战争爆发两周年之际，中共中央发表《为抗战两周年纪念对时局宣言》，正式提出了"三大政治口号"。</p>
+
+            <div class="conclusion-box" data-aos="zoom-in">
+                <h3>三大政治口号</h3>
+                <p><strong>坚持抗战到底</strong>——反对中途妥协！</p>
+                <p><strong>巩固国内团结</strong>——反对内部分裂！</p>
+                <p><strong>力求全国进步</strong>——反对向后倒退！</p>
+            </div>
+
+            <div class="highlight">
+                毛泽东在《反对投降活动》中提出的"战下去，团结下去"等表述，直接转化为"坚持抗战，反对投降"和"坚持团结，反对分裂"的核心内容 <a href="#ref2" class="reference">[2]</a>。这两点构成了"三大政治口号"的核心框架。
+            </div>
+
+            <h3>对"抗战到底"的界说</h3>
+            <p>毛泽东在文章中还特别强调了"抗战到底"的界说，提出"打到鸭绿江边，收复一切失地"，以对抗蒋介石集团将"抗战到底"定义为"恢复卢沟桥事变以前的状态"的投降政策 <a href="#ref8" class="reference">[8]</a>。这一界说后来成为中共抗战目标的重要表述。</p>
+        </section>
+
+        <section id="significance" class="section" data-aos="fade-up">
+            <h2><i class="fas fa-star"></i> 政治意义与历史影响</h2>
+            
+            <div class="strategy-grid">
+                <div class="strategy-card" data-aos="slide-right">
+                    <h4><i class="fas fa-flag"></i> 明确政治立场</h4>
+                    <p>明确了中国共产党在抗日战争中的政治立场，即坚决反对投降妥协，维护抗日民族统一战线的完整性 <a href="#ref2" class="reference">[2]</a>。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="slide-right" data-aos-delay="100">
+                    <h4><i class="fas fa-cogs"></i> 指导策略制定</h4>
+                    <p>为中共中央后续的反投降、反分裂工作提供了明确的政治指导和理论依据。</p>
+                </div>
+                
+                <div class="strategy-card" data-aos="slide-right" data-aos-delay="200">
+                    <h4><i class="fas fa-balance-scale"></i> 统一战线维护</h4>
+                    <p>为中共开展反摩擦斗争提供了政治依据，强调"以斗争求团结"的策略 <a href="#ref9" class="reference">[9]</a>。</p>
+                </div>
+            </div>
+
+            <h3>历史影响</h3>
+            <p>《反对投降活动》一文对维护抗日民族统一战线的凝聚力起到了关键作用。毛泽东在文章中强调："用全民族的努力所结成的抗日民族统一战线，决不容许一部分人的破坏和分裂"。这一呼吁得到了全国一切爱国党派、爱国同胞的响应，为中国共产党争取中间力量、孤立顽固派提供了政治基础。</p>
+        </section>
+
+        <section id="conclusion" class="section" data-aos="fade-up">
+            <h2><i class="fas fa-lightbulb"></i> 结论与启示</h2>
+            
+            <p>毛泽东《反对投降活动》一文，是中国共产党在抗日战争战略相持阶段的重要政治文献。它不仅揭示了当时中国面临的投降主义危险，更提出了系统性的反投降斗争策略，为后来中共中央提出"三大政治口号"奠定了理论基础 <a href="#ref7" class="reference">[7]</a>。</p>
+
+            <div class="conclusion-box" data-aos="fade-up">
+                <h3>历史价值与当代启示</h3>
+                <p>从历史角度看，《反对投降活动》体现了中国共产党在抗日民族统一战线中的政治智慧和斗争艺术。毛泽东既强调了维护抗日民族统一战线的重要性，又坚持了党在统一战线中的独立自主原则。</p>
+                <p>从当代视角看，它提醒我们，在复杂的国际国内形势下，必须坚持正确的政治立场，既要团结一切可以团结的力量，又要坚决反对和打击危害国家利益的势力。</p>
+            </div>
+
+            <p>《反对投降活动》一文的历史价值在于，它不仅是中国共产党在抗战时期的重要政治文献，更是中国共产党处理复杂政治关系、维护国家利益的经典案例。它所体现的政治智慧和斗争艺术，对于理解中国共产党的政治传统和斗争策略具有重要意义。</p>
+
+            <div class="highlight">
+                <strong>说明：</strong>报告内容由通义AI生成，仅供参考。
+            </div>
+        </section>
+
+        <div class="references" data-aos="fade-up">
+            <h2><i class="fas fa-book"></i> 参考文献</h2>
+            <ol>
+                <li id="ref1"><a href="https://www.mzfxw.com/e/action/ShowInfo.php?classid=6&id=174441" target="_blank">[1] 国际投降主义者与"东方慕尼黑"阴谋</a></li>
+                <li id="ref2"><a href="https://www.bilibili.com/read/cv29476455/?jump_opus=1" target="_blank">[2] 毛泽东《反对投降活动》原文分析</a></li>
+                <li id="ref3"><a href="http://sy.mva.gov.cn/zyzt/fdbnlqhxzc/202104/t20210415_46582.html" target="_blank">[3] 中共中央反投降斗争方针</a></li>
+                <li id="ref4"><a href="http://sy.mva.gov.cn/zyzt/fdbnlqhxzc/202104/t20210415_46582.html" target="_blank">[4] 1939年反摩擦斗争史实</a></li>
+                <li id="ref5"><a href="http://www.baike.com/wikiid/4038693925691754762?from=wiki_content&prd=innerlink" target="_blank">[5] 晋西事变与秋林协议</a></li>
+                <li id="ref6"><a href="https://www.krzzjn.com/show-607-142753.html" target="_blank">[6] 《解放》周刊反投降宣传</a></li>
+                <li id="ref7"><a href="https://baike.baidu.com/item/%E4%B8%89%E5%A4%A7%E6%94%BF%E6%B2%BB%E5%8F%A3%E5%8F%B7%E7%9A%84%E6%8F%90%E5%87%BA" target="_blank">[7] "三大政治口号"的历史意义</a></li>
+                <li id="ref8"><a href="http://cpc.people.com.cn/GB/33837/2534564.html" target="_blank">[8] 毛泽东对"抗战到底"的界说</a></li>
+                <li id="ref9"><a href="https://www.thepaper.cn/newsDetail_forward_11680161" target="_blank">[9] "以斗争求团结"策略解析</a></li>
+            </ol>
+        </div>
+    </main>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // 初始化AOS动画
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // 回到顶部按钮
+        const scrollTopBtn = document.querySelector('.scroll-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // 导航栏高亮
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.style.background = '';
+                item.style.color = '';
+                if (item.getAttribute('href') === '#' + current) {
+                    item.style.background = 'var(--primary-color)';
+                    item.style.color = 'white';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
