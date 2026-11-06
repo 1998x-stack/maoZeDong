@@ -15,7 +15,7 @@
 | `sourceUrl` | 经逐篇打开确认的原著网页地址 |
 | `sourceLabel` | 原文来源性质/版本局限说明 |
 | `reviewStatus` | `catalogued` / `in_review` / `verified` |
-| `legacyReports` | 仓库中已有的研究评论文件相对路径 |
+| `legacyReports` | 迁移后 `reports/md/` 或 `reports/html/` 中研究评论文件的仓库相对路径 |
 | `notes` | 来源不确定性或版本考证备注 |
 
 ## 数据边界

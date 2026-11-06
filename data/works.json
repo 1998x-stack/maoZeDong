@@ -15,8 +15,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "001中国社会各阶级的分析.html",
-      "001中国社会各阶级的分析.md"
+      "reports/html/001中国社会各阶级的分析.html",
+      "reports/md/001中国社会各阶级的分析.md"
     ],
     "notes": "页面含选集编者说明；编者的事后判断不能写成1925年的已知信息。"
   },
@@ -36,8 +36,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "002湖南农民运动考察报告.html",
-      "002湖南农民运动考察报告.md"
+      "reports/html/002湖南农民运动考察报告.html",
+      "reports/md/002湖南农民运动考察报告.md"
     ],
     "notes": "不可用这篇1927年报告的内容证明1925年的写作心理。"
   },
@@ -57,8 +57,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "003中国的红色政权为什么能够存在.html",
-      "003中国的红色政权为什么能够存在.md"
+      "reports/html/003中国的红色政权为什么能够存在.html",
+      "reports/md/003中国的红色政权为什么能够存在.md"
     ],
     "notes": "选集标题带问号，仓库旧文件名不带问号。"
   },
@@ -78,8 +78,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "004井冈山的斗争.html",
-      "004井冈山的斗争.md"
+      "reports/html/004井冈山的斗争.html",
+      "reports/md/004井冈山的斗争.md"
     ],
     "notes": "调查事实、组织经验和后来编订的评价应分开。"
   },
@@ -99,8 +99,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "005关于纠正党内的错误思想.html",
-      "005关于纠正党内的错误思想.md"
+      "reports/html/005关于纠正党内的错误思想.html",
+      "reports/md/005关于纠正党内的错误思想.md"
     ],
     "notes": "根据来源页面采用月份精度，不伪造具体写作日。"
   },
@@ -120,8 +120,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "006星星之火，可以燎原.html",
-      "006星星之火，可以燎原.md"
+      "reports/html/006星星之火，可以燎原.html",
+      "reports/md/006星星之火，可以燎原.md"
     ],
     "notes": "需进一步比较《时局估量和红军行动问题》相关版本。"
   },
@@ -141,8 +141,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "007反对本本主义.html",
-      "007反对本本主义.md"
+      "reports/html/007反对本本主义.html",
+      "reports/md/007反对本本主义.md"
     ],
     "notes": "原标题《调查工作》及文本传播史需要单独考证。"
   },
@@ -162,10 +162,10 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "000实践论.html",
-      "000实践论.md",
-      "017实践论.html",
-      "017实践论.md"
+      "reports/html/000实践论.html",
+      "reports/md/000实践论.md",
+      "reports/html/017实践论.html",
+      "reports/md/017实践论.md"
     ],
     "notes": "两个编号对应不同研究稿，不等于两个原著版本。"
   },
@@ -185,9 +185,9 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "000矛盾论.html",
-      "000矛盾论.md",
-      "018矛盾论.md"
+      "reports/html/000矛盾论.html",
+      "reports/md/000矛盾论.md",
+      "reports/md/018矛盾论.md"
     ],
     "notes": "018矛盾论.html 为零字节文件，不作为可阅读研究稿展示。"
   },
@@ -207,8 +207,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "103反对自由主义.html",
-      "103反对自由主义.md"
+      "reports/html/103反对自由主义.html",
+      "reports/md/103反对自由主义.md"
     ],
     "notes": "研究稿引用来源需单独核查。"
   },
@@ -228,8 +228,8 @@
     "sourceLabel": "中文马克思主义文库《毛泽东选集》在线页（不等同于未经编订的原始手稿）",
     "reviewStatus": "catalogued",
     "legacyReports": [
-      "109论持久战.html",
-      "109论持久战.md"
+      "reports/html/109论持久战.html",
+      "reports/md/109论持久战.md"
     ],
     "notes": "三阶段论属于当时对未来的分析预测；不得将事后结果放入1938年已知信息。"
   }
