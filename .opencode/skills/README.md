@@ -38,3 +38,8 @@ OpenCode 官方约定：每个技能一个 `.opencode/skills/<name>/SKILL.md`，
 - 索引：`https://www.marxists.org/chinese/maozedong/index.htm`
 - 重构说明：`docs/ARCHITECTURE.md`
 - 本地检查：`node scripts/validate-content.mjs && node scripts/build-site.mjs`
+
+## 五环调度入口
+- **five-ring-decision-research**：五环 Prompt V1.0 总研究入口；协调现有 time-slice、actor-model、decision-mapping、decision-sandbox、evidence-audit 等技能。
+- **article-progressive-optimization**：针对全部旧 MD/HTML 的 P0—P4 分批迁移入口；从证据核对到结构化原创新稿及双格式发布。
+方法细则：.opencode/references/five-ring-methodology.md；迁移路线：docs/FIVE_RING_ROADMAP.md。

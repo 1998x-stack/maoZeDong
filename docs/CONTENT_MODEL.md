@@ -29,3 +29,9 @@
 
 ## 审校状态
 `catalogued` 只表示目录及 URL 已登记；不代表全文、历史解释、版本和版权均经过核查。
+
+## 五环研究增量模型
+data/legacy-inventory.json 为三位编号旧稿的 P0 文件盘点，不代表事实验证。
+research/articles/<id>.json 是新原创五环研究的唯一输入源，包含 T0、sources、rings（恰好五环）、alternatives、unresolved。
+research/published/<id>.md 与 .html 由 scripts/build-research.mjs 同源输出，不得手工改写。
+works[].researchBrief 是新研究 HTML 的链接；不能因为该字段存在就把 reviewStatus 自动升级为 verified。

@@ -25,3 +25,8 @@ source-research → edition-comparison → time-slice → actor-model → decisi
 - 文章资料与研究分析分别存储；论断需要可点击的 source ID。
 - 元数据以 `data/works.json` 为准；`index.html` 为生成物，不直接手工编辑。
 - 历史研究成果必须清楚写明“已核实 / 有条件推测 / 仍有争议”，不能只写动人的结论。
+
+## 五环研究与分阶段迁移
+新研究总调度：.opencode/skills/five-ring-decision-research/SKILL.md；方法规范：.opencode/references/five-ring-methodology.md。
+逐篇迁移编排：.opencode/skills/article-progressive-optimization/SKILL.md；路线图：docs/FIVE_RING_ROADMAP.md。
+research/articles 结构化研究 JSON 是新稿唯一编辑源；research/published 的 MD/HTML 是同步生成物，不手工编辑，不删除旧研究稿。运行 inventory-legacy --check 与 build-research --check。

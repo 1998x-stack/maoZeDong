@@ -46,3 +46,11 @@ node --test tests/*.test.mjs
 ## 迁移状态
 
 当前是结构化重构的第一阶段：统一数据与研究技能，搭建可使用的阅读目录，同时原有 HTML/Markdown 完整保留。研究级全文审校、整套选集目录、复杂的时间截面交互及人物关系网络属于后续增量。
+
+## 五环决策研究系统与渐进迁移
+五环专业 Prompt：.opencode/skills/five-ring-decision-research/SKILL.md；全文方法规范：.opencode/references/five-ring-methodology.md。
+文章阶段优化：.opencode/skills/article-progressive-optimization/SKILL.md；路线图：docs/FIVE_RING_ROADMAP.md。
+旧稿 61 组盘点见 data/legacy-inventory.json；P0 仅代表文件已发现，不是内容已审校。
+首篇新稿为《反对本本主义》五环研究草案：research/published/mao-1930-against-bookishness.html。研究 JSON 为唯一编辑源，两种呈现文件均由脚本生成，旧稿保持不变。
+
+同步校验：node scripts/inventory-legacy.mjs --check；node scripts/build-research.mjs --check。
