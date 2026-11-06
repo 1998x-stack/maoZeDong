@@ -18,7 +18,8 @@
       "reports/html/001中国社会各阶级的分析.html",
       "reports/md/001中国社会各阶级的分析.md"
     ],
-    "notes": "页面含选集编者说明；编者的事后判断不能写成1925年的已知信息。"
+    "notes": "页面含选集编者说明；编者的事后判断不能写成1925年的已知信息。",
+    "researchBrief": "research/published/mao-1925-class-analysis.html"
   },
   {
     "id": "mao-1927-hunan-peasant",
@@ -39,7 +40,8 @@
       "reports/html/002湖南农民运动考察报告.html",
       "reports/md/002湖南农民运动考察报告.md"
     ],
-    "notes": "不可用这篇1927年报告的内容证明1925年的写作心理。"
+    "notes": "不可用这篇1927年报告的内容证明1925年的写作心理。",
+    "researchBrief": "research/published/mao-1927-hunan-peasant.html"
   },
   {
     "id": "mao-1928-red-power",
@@ -60,7 +62,8 @@
       "reports/html/003中国的红色政权为什么能够存在.html",
       "reports/md/003中国的红色政权为什么能够存在.md"
     ],
-    "notes": "选集标题带问号，仓库旧文件名不带问号。"
+    "notes": "选集标题带问号，仓库旧文件名不带问号。",
+    "researchBrief": "research/published/mao-1928-red-power.html"
   },
   {
     "id": "mao-1928-jinggang",
@@ -81,7 +84,8 @@
       "reports/html/004井冈山的斗争.html",
       "reports/md/004井冈山的斗争.md"
     ],
-    "notes": "调查事实、组织经验和后来编订的评价应分开。"
+    "notes": "调查事实、组织经验和后来编订的评价应分开。",
+    "researchBrief": "research/published/mao-1928-jinggang.html"
   },
   {
     "id": "mao-1929-party-thought",
@@ -102,7 +106,8 @@
       "reports/html/005关于纠正党内的错误思想.html",
       "reports/md/005关于纠正党内的错误思想.md"
     ],
-    "notes": "根据来源页面采用月份精度，不伪造具体写作日。"
+    "notes": "根据来源页面采用月份精度，不伪造具体写作日。",
+    "researchBrief": "research/published/mao-1929-party-thought.html"
   },
   {
     "id": "mao-1930-spark",
@@ -123,7 +128,8 @@
       "reports/html/006星星之火，可以燎原.html",
       "reports/md/006星星之火，可以燎原.md"
     ],
-    "notes": "需进一步比较《时局估量和红军行动问题》相关版本。"
+    "notes": "需进一步比较《时局估量和红军行动问题》相关版本。",
+    "researchBrief": "research/published/mao-1930-spark.html"
   },
   {
     "id": "mao-1930-against-bookishness",
@@ -168,7 +174,8 @@
       "reports/html/017实践论.html",
       "reports/md/017实践论.md"
     ],
-    "notes": "两个编号对应不同研究稿，不等于两个原著版本。"
+    "notes": "两个编号对应不同研究稿，不等于两个原著版本。",
+    "researchBrief": "research/published/mao-1937-practice.html"
   },
   {
     "id": "mao-1937-contradiction",
@@ -190,7 +197,8 @@
       "reports/md/000矛盾论.md",
       "reports/md/018矛盾论.md"
     ],
-    "notes": "018矛盾论.html 为零字节文件，不作为可阅读研究稿展示。"
+    "notes": "018矛盾论.html 为零字节文件，不作为可阅读研究稿展示。",
+    "researchBrief": "research/published/mao-1937-contradiction.html"
   },
   {
     "id": "mao-1937-liberalism",
@@ -211,7 +219,8 @@
       "reports/html/103反对自由主义.html",
       "reports/md/103反对自由主义.md"
     ],
-    "notes": "研究稿引用来源需单独核查。"
+    "notes": "研究稿引用来源需单独核查。",
+    "researchBrief": "research/published/mao-1937-liberalism.html"
   },
   {
     "id": "mao-1938-protracted-war",
@@ -232,6 +241,7 @@
       "reports/html/109论持久战.html",
       "reports/md/109论持久战.md"
     ],
-    "notes": "三阶段论属于当时对未来的分析预测；不得将事后结果放入1938年已知信息。"
+    "notes": "三阶段论属于当时对未来的分析预测；不得将事后结果放入1938年已知信息。",
+    "researchBrief": "research/published/mao-1938-protracted-war.html"
   }
 ]
