@@ -61,6 +61,7 @@ function enhanceReaderHtml(html,a,w){
   .replace('信息条件优先于事后结论。</p></aside>','信息条件优先于事后结论。</p><div class="reader-evidence-key" aria-label="证据等级提示"><strong>证据标记</strong><span>A / 同期直接材料</span><span>B / 多来源支持</span><span>C / 条件性推断</span><span>D / 待核实或争议</span></div></aside>')
   .replace('<main id="main">','<main id="main"><div class="reader-path-label">RESEARCH ARTICLE · '+esc(a.t0.date)+'</div>')
   .replace('<h1>'+esc(w.title)+'<small>五环决策研究</small></h1>','<h1>'+esc(w.title)+'<small>史境 · 历史决策与证据研究</small></h1>')
+  .replace('<footer>原创研究草案','<div class="reader-downloads"><a href="../articles/'+encodeURIComponent(a.workId)+'.json">查看结构化证据 JSON ↗</a><a href="./'+encodeURIComponent(a.workId)+'.md">阅读 Markdown 版本 ↗</a></div><footer>原创研究草案')
   .replace('</body>','<button type="button" id="reader-back-to-top" class="reader-back-to-top" aria-label="回到顶部" hidden>↑</button></body>');
  return result;
 }
