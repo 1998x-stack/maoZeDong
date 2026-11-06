@@ -1,0 +1,718 @@
+{
+  "schemaVersion": 1,
+  "description": "旧研究稿根目录盘点；P0 只表示发现文件，并非史料审校",
+  "items": [
+    {
+      "base": "000公务员考试知识点系统",
+      "md": "000公务员考试知识点系统.md",
+      "html": "000公务员考试知识点系统.html",
+      "mdBytes": 27489,
+      "htmlBytes": 46863,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued",
+        "out-of-scope"
+      ]
+    },
+    {
+      "base": "000实践论",
+      "md": "000实践论.md",
+      "html": "000实践论.html",
+      "mdBytes": 15947,
+      "htmlBytes": 27642,
+      "workId": "mao-1937-practice",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "000矛盾论",
+      "md": "000矛盾论.md",
+      "html": "000矛盾论.html",
+      "mdBytes": 25390,
+      "htmlBytes": 38277,
+      "workId": "mao-1937-contradiction",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "001中国社会各阶级的分析",
+      "md": "001中国社会各阶级的分析.md",
+      "html": "001中国社会各阶级的分析.html",
+      "mdBytes": 17029,
+      "htmlBytes": 29407,
+      "workId": "mao-1925-class-analysis",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "002湖南农民运动考察报告",
+      "md": "002湖南农民运动考察报告.md",
+      "html": "002湖南农民运动考察报告.html",
+      "mdBytes": 20731,
+      "htmlBytes": 30551,
+      "workId": "mao-1927-hunan-peasant",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "003中国的红色政权为什么能够存在",
+      "md": "003中国的红色政权为什么能够存在.md",
+      "html": "003中国的红色政权为什么能够存在.html",
+      "mdBytes": 15564,
+      "htmlBytes": 29425,
+      "workId": "mao-1928-red-power",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "004井冈山的斗争",
+      "md": "004井冈山的斗争.md",
+      "html": "004井冈山的斗争.html",
+      "mdBytes": 15856,
+      "htmlBytes": 30494,
+      "workId": "mao-1928-jinggang",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "005关于纠正党内的错误思想",
+      "md": "005关于纠正党内的错误思想.md",
+      "html": "005关于纠正党内的错误思想.html",
+      "mdBytes": 21176,
+      "htmlBytes": 39664,
+      "workId": "mao-1929-party-thought",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "006星星之火，可以燎原",
+      "md": "006星星之火，可以燎原.md",
+      "html": "006星星之火，可以燎原.html",
+      "mdBytes": 14178,
+      "htmlBytes": 28975,
+      "workId": "mao-1930-spark",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "007反对本本主义",
+      "md": "007反对本本主义.md",
+      "html": "007反对本本主义.html",
+      "mdBytes": 13892,
+      "htmlBytes": 35265,
+      "workId": "mao-1930-against-bookishness",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "008必须注意经济工作",
+      "md": "008必须注意经济工作.md",
+      "html": "008必须注意经济工作.html",
+      "mdBytes": 13853,
+      "htmlBytes": 38034,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "009怎样分析农村阶级",
+      "md": "009怎样分析农村阶级.md",
+      "html": "009怎样分析农村阶级.html",
+      "mdBytes": 15593,
+      "htmlBytes": 26427,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "010我们的经济政策",
+      "md": "010我们的经济政策.md",
+      "html": "010我们的经济政策.html",
+      "mdBytes": 12918,
+      "htmlBytes": 39114,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "011关心群众生活，注意工作方法",
+      "md": "011关心群众生活，注意工作方法.md",
+      "html": "011关心群众生活，注意工作方法.html",
+      "mdBytes": 15593,
+      "htmlBytes": 40015,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "012论反对日本帝国主义的策略",
+      "md": "012论反对日本帝国主义的策略.md",
+      "html": "012论反对日本帝国主义的策略.html",
+      "mdBytes": 15795,
+      "htmlBytes": 33539,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "013中国革命战争的战略问题",
+      "md": "013中国革命战争的战略问题.md",
+      "html": "013中国革命战争的战略问题.html",
+      "mdBytes": 16717,
+      "htmlBytes": 40882,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "014关于蒋介石声明的声明",
+      "md": "014关于蒋介石声明的声明.md",
+      "html": "014关于蒋介石声明的声明.html",
+      "mdBytes": 13422,
+      "htmlBytes": 36771,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "015中国共产党在抗日时期的任务",
+      "md": "015中国共产党在抗日时期的任务.md",
+      "html": "015中国共产党在抗日时期的任务.html",
+      "mdBytes": 18393,
+      "htmlBytes": 32928,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "016为争取千百万群众进入抗日民族统一战线而斗争",
+      "md": "016为争取千百万群众进入抗日民族统一战线而斗争.md",
+      "html": "016为争取千百万群众进入抗日民族统一战线而斗争.html",
+      "mdBytes": 12747,
+      "htmlBytes": 39458,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "017实践论",
+      "md": "017实践论.md",
+      "html": "017实践论.html",
+      "mdBytes": 15075,
+      "htmlBytes": 25403,
+      "workId": "mao-1937-practice",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "018矛盾论",
+      "md": "018矛盾论.md",
+      "html": "018矛盾论.html",
+      "mdBytes": 14468,
+      "htmlBytes": 0,
+      "workId": "mao-1937-contradiction",
+      "phase": "P0-inventoried",
+      "issues": [
+        "zero-byte"
+      ]
+    },
+    {
+      "base": "101反对日本进攻的方针、办法和前途",
+      "md": "101反对日本进攻的方针、办法和前途.md",
+      "html": "101反对日本进攻的方针、办法和前途.html",
+      "mdBytes": 17466,
+      "htmlBytes": 35904,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "102为动员一切力量争取抗战胜利而斗争",
+      "md": "102为动员一切力量争取抗战胜利而斗争.md",
+      "html": "102为动员一切力量争取抗战胜利而斗争.html",
+      "mdBytes": 26169,
+      "htmlBytes": 35462,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "103反对自由主义",
+      "md": "103反对自由主义.md",
+      "html": "103反对自由主义.html",
+      "mdBytes": 18238,
+      "htmlBytes": 43705,
+      "workId": "mao-1937-liberalism",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "104国共合作成立后的迫切任务",
+      "md": "104国共合作成立后的迫切任务.md",
+      "html": "104国共合作成立后的迫切任务.html",
+      "mdBytes": 15018,
+      "htmlBytes": 31187,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "105和英国记者贝特兰的谈话",
+      "md": "105和英国记者贝特兰的谈话.md",
+      "html": "105和英国记者贝特兰的谈话.html",
+      "mdBytes": 12004,
+      "htmlBytes": 32435,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "106上海太原失陷以后抗日战争的形势和任务",
+      "md": "106上海太原失陷以后抗日战争的形势和任务.md",
+      "html": "106上海太原失陷以后抗日战争的形势和任务.html",
+      "mdBytes": 13822,
+      "htmlBytes": 37278,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "107陕甘宁边区政府第八路军后方留守处布告",
+      "md": "107陕甘宁边区政府第八路军后方留守处布告.md",
+      "html": "107陕甘宁边区政府第八路军后方留守处布告.html",
+      "mdBytes": 19837,
+      "htmlBytes": 36861,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "108抗日游击战争的战略问题",
+      "md": "108抗日游击战争的战略问题.md",
+      "html": "108抗日游击战争的战略问题.html",
+      "mdBytes": 17964,
+      "htmlBytes": 34043,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "109论持久战",
+      "md": "109论持久战.md",
+      "html": "109论持久战.html",
+      "mdBytes": 20756,
+      "htmlBytes": 35390,
+      "workId": "mao-1938-protracted-war",
+      "phase": "P0-inventoried",
+      "issues": []
+    },
+    {
+      "base": "110中国共产党在民族战争中的地位",
+      "md": "110中国共产党在民族战争中的地位.md",
+      "html": "110中国共产党在民族战争中的地位.html",
+      "mdBytes": 16473,
+      "htmlBytes": 37680,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "111统一战线中的独立自主问题",
+      "md": "111统一战线中的独立自主问题.md",
+      "html": "111统一战线中的独立自主问题.html",
+      "mdBytes": 15599,
+      "htmlBytes": 36197,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "112战争和战略问题",
+      "md": "112战争和战略问题.md",
+      "html": "112战争和战略问题.html",
+      "mdBytes": 16772,
+      "htmlBytes": 40261,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "113五四运动",
+      "md": "113五四运动.md",
+      "html": "113五四运动.html",
+      "mdBytes": 15755,
+      "htmlBytes": 35548,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "114青年运动的方向",
+      "md": "114青年运动的方向.md",
+      "html": "114青年运动的方向.html",
+      "mdBytes": 17242,
+      "htmlBytes": 36995,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "115反对投降活动",
+      "md": "115反对投降活动.md",
+      "html": "115反对投降活动.html",
+      "mdBytes": 9448,
+      "htmlBytes": 27365,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "116必须制裁反动派",
+      "md": "116必须制裁反动派.md",
+      "html": "116必须制裁反动派.html",
+      "mdBytes": 13796,
+      "htmlBytes": 30253,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "117关于国际新形势对新华日报记者的谈话",
+      "md": "117关于国际新形势对新华日报记者的谈话.md",
+      "html": "117关于国际新形势对新华日报记者的谈话.html",
+      "mdBytes": 11930,
+      "htmlBytes": 40485,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "118和中央社、扫荡报、新民报三记者的谈话",
+      "md": "118和中央社、扫荡报、新民报三记者的谈话.md",
+      "html": "118和中央社、扫荡报、新民报三记者的谈话.html",
+      "mdBytes": 22549,
+      "htmlBytes": 29406,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "119苏联利益和人类利益的一致",
+      "md": "119苏联利益和人类利益的一致.md",
+      "html": "119苏联利益和人类利益的一致.html",
+      "mdBytes": 14115,
+      "htmlBytes": 36365,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "120《共产党人》发刊词",
+      "md": "120《共产党人》发刊词.md",
+      "html": "120《共产党人》发刊词.html",
+      "mdBytes": 23268,
+      "htmlBytes": 36925,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "121目前形势和党的任务",
+      "md": "121目前形势和党的任务.md",
+      "html": "121目前形势和党的任务.html",
+      "mdBytes": 11846,
+      "htmlBytes": 29377,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "122大量吸收知识分子",
+      "md": "122大量吸收知识分子.md",
+      "html": "122大量吸收知识分子.html",
+      "mdBytes": 22932,
+      "htmlBytes": 41427,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "123中国革命和中国共产党",
+      "md": "123中国革命和中国共产党.md",
+      "html": "123中国革命和中国共产党.html",
+      "mdBytes": 17225,
+      "htmlBytes": 29585,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "124斯大林是中国人民的朋友",
+      "md": "124斯大林是中国人民的朋友.md",
+      "html": "124斯大林是中国人民的朋友.html",
+      "mdBytes": 10810,
+      "htmlBytes": 25384,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "125纪念白求恩",
+      "md": "125纪念白求恩.md",
+      "html": "125纪念白求恩.html",
+      "mdBytes": 21586,
+      "htmlBytes": 39108,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "126新民主主义论",
+      "md": "126新民主主义论.md",
+      "html": "126新民主主义论.html",
+      "mdBytes": 11974,
+      "htmlBytes": 38374,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "127克服投降危险，力争时局好转",
+      "md": "127克服投降危险，力争时局好转.md",
+      "html": "127克服投降危险，力争时局好转.html",
+      "mdBytes": 15247,
+      "htmlBytes": 37502,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "128团结一切抗日力量，反对反共顽固派",
+      "md": "128团结一切抗日力量，反对反共顽固派.md",
+      "html": "128团结一切抗日力量，反对反共顽固派.html",
+      "mdBytes": 14678,
+      "htmlBytes": 31252,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "129向国民党的十点要求",
+      "md": "129向国民党的十点要求.md",
+      "html": "129向国民党的十点要求.html",
+      "mdBytes": 16479,
+      "htmlBytes": 39325,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "130《中国工人》发刊词",
+      "md": "130《中国工人》发刊词.md",
+      "html": "130《中国工人》发刊词.html",
+      "mdBytes": 19082,
+      "htmlBytes": 39149,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "131必须强调团结和进步",
+      "md": "131必须强调团结和进步.md",
+      "html": "131必须强调团结和进步.html",
+      "mdBytes": 12078,
+      "htmlBytes": 35107,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "132新民主主义的宪政",
+      "md": "132新民主主义的宪政.md",
+      "html": "132新民主主义的宪政.html",
+      "mdBytes": 22613,
+      "htmlBytes": 38580,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "133抗日根据地的政权问题",
+      "md": "133抗日根据地的政权问题.md",
+      "html": "133抗日根据地的政权问题.html",
+      "mdBytes": 15751,
+      "htmlBytes": 33026,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "134目前抗日统一战线中的策略问题",
+      "md": "134目前抗日统一战线中的策略问题.md",
+      "html": "134目前抗日统一战线中的策略问题.html",
+      "mdBytes": 17044,
+      "htmlBytes": 46378,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "135放手发展抗日力量，抵抗反共顽固派的进攻",
+      "md": "135放手发展抗日力量，抵抗反共顽固派的进攻.md",
+      "html": "135放手发展抗日力量，抵抗反共顽固派的进攻.html",
+      "mdBytes": 16573,
+      "htmlBytes": 30264,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "136团结到底",
+      "md": "136团结到底.md",
+      "html": "136团结到底.html",
+      "mdBytes": 14704,
+      "htmlBytes": 27503,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "137论政策",
+      "md": "137论政策.md",
+      "html": "137论政策.html",
+      "mdBytes": 11494,
+      "htmlBytes": 27632,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "138为皖南事变发表的命令和谈话",
+      "md": "138为皖南事变发表的命令和谈话.md",
+      "html": "138为皖南事变发表的命令和谈话.html",
+      "mdBytes": 0,
+      "htmlBytes": 0,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "zero-byte",
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "139打退第二次反共高潮后的时局",
+      "md": "139打退第二次反共高潮后的时局.md",
+      "html": "139打退第二次反共高潮后的时局.html",
+      "mdBytes": 0,
+      "htmlBytes": 0,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "zero-byte",
+        "not-yet-catalogued"
+      ]
+    },
+    {
+      "base": "140关于打退第二次反共高潮的总结",
+      "md": "140关于打退第二次反共高潮的总结.md",
+      "html": "140关于打退第二次反共高潮的总结.html",
+      "mdBytes": 0,
+      "htmlBytes": 0,
+      "workId": null,
+      "phase": "P0-inventoried",
+      "issues": [
+        "zero-byte",
+        "not-yet-catalogued"
+      ]
+    }
+  ]
+}
