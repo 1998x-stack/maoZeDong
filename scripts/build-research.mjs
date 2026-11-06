@@ -47,6 +47,25 @@ function renderForecastAudit(a){
  return {md,html};
 }
 
+function enhanceReaderHtml(html,a,w){
+ const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+ const tools='<div class="reader-tools" aria-label="阅读工具"><div class="reader-tools-group" role="group" aria-label="阅读字号">'+
+  '<button type="button" id="font-smaller" aria-label="缩小文字">A−</button><button type="button" id="font-reset" aria-label="重置文字大小">A</button><button type="button" id="font-larger" aria-label="放大文字">A+</button></div>'+
+  '<button type="button" id="reader-copy" class="reader-tool-link">复制本篇链接 ↗</button>'+
+  (a.chronology?.length?'<button type="button" id="reader-t0" class="reader-tool-link" aria-pressed="false">仅看当时节点</button>':'')+
+  '<span id="reader-status" class="reader-status" role="status" aria-live="polite"></span></div>';
+ let result=html
+  .replace('</head>','<meta name="theme-color" content="#183d35"><link rel="icon" href="../../web/favicon.svg" type="image/svg+xml"><script src="../../web/reader.js" defer></script></head>')
+  .replace('<body>','<body><div class="reading-progress-track" aria-hidden="true"><span id="reading-progress"></span></div>')
+  .replace('<p class="status" role="status">'+ '研究草案 · 尚未逐条史料审校'+'</p>','<p class="status" role="status">研究草案 · 尚未逐条史料审校</p>'+tools)
+  .replace('信息条件优先于事后结论。</p></aside>','信息条件优先于事后结论。</p><div class="reader-evidence-key" aria-label="证据等级提示"><strong>证据标记</strong><span>A / 同期直接材料</span><span>B / 多来源支持</span><span>C / 条件性推断</span><span>D / 待核实或争议</span></div></aside>')
+  .replace('<main id="main">','<main id="main"><div class="reader-path-label">RESEARCH ARTICLE · '+esc(a.t0.date)+'</div>')
+  .replace('<h1>'+esc(w.title)+'<small>五环决策研究</small></h1>','<h1>'+esc(w.title)+'<small>史境 · 历史决策与证据研究</small></h1>')
+  .replace('<footer>原创研究草案','<div class="reader-downloads"><a href="../articles/'+encodeURIComponent(a.workId)+'.json">查看结构化证据 JSON ↗</a><a href="./'+encodeURIComponent(a.workId)+'.md">阅读 Markdown 版本 ↗</a></div><footer>原创研究草案')
+  .replace('</body>','<button type="button" id="reader-back-to-top" class="reader-back-to-top" aria-label="回到顶部" hidden>↑</button></body>');
+ return result;
+}
+
 function renderResearch(a,w){
  const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  const urlRef=id=>a.sources.find(s=>s.id===id);
@@ -80,11 +99,11 @@ ${ringHtml}${alternativesHtml}
  if(supplement.preHtml)finalHtml=finalHtml.replace('<nav>','<nav><a href="#historical-scene">历史现场</a><a href="#chronology">时间截面</a><a href="#actors">人物信息</a><a href="#versions">版本沿革</a>');
  if(supplement.postHtml)finalHtml=finalHtml.replace('<a href="#alternatives">','<a href="#synthesis">研究结论</a><a href="#alternatives">');
  const audit=renderForecastAudit(a);
- if(!audit)return {md:finalMd,html:finalHtml};
+ if(!audit)return {md:finalMd,html:enhanceReaderHtml(finalHtml,a,w)};
  if(!finalMd.includes("\n\n## 仍待核实")||!finalHtml.includes('<section id="sources"'))throw Error('Research sections missing for forecast audit');
  const withAuditMd=finalMd.replace("\n\n## 仍待核实","\n\n"+audit.md+"\n\n## 仍待核实");
  const withAuditHtml=finalHtml.replace('<section id="sources"',audit.html+'\n<section id="sources"').replace('<a href="#sources">','<a href="#forecast-audit">预期检验</a><a href="#sources">');
- return {md:withAuditMd,html:withAuditHtml};
+ return {md:withAuditMd,html:enhanceReaderHtml(withAuditHtml,a,w)};
 }
 function validateArticle(a,w){
  if(a.schemaVersion!==1||a.workId!==w.id||a.status!=="draft")throw Error("Invalid pilot work metadata");

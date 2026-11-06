@@ -396,3 +396,14 @@ git diff --exit-code -- index.html
 - 已与原有研究目录链接；截至本批，`data/works.json` 中的**11/11篇样本作品已有五环研究草案**。此处是目录覆盖率，不是全《毛选》或历史审校覆盖率。
 
 **仍未完成**：1938年《解放》初刊与各订正本的逐字实物校勘、不同人物同期原稿比对、历史档案独立审校；所有新稿继续保留 `status=draft` 及 `reviewStatus=catalogued`。
+
+## GitHub Pages 网站与新 UI
+
+史境现新增编辑式研究首页：作品目录、主题阅读路径、历史年份导航、深链接、键盘搜索与移动端菜单。研究正文新增滚动进度、字号调整、当时与事后时间线切换、证据分级提示和结构化 JSON 来源入口。
+
+- 设计和部署说明：[docs/PAGES_DESIGN.md](docs/PAGES_DESIGN.md)
+- 静态发布包：node scripts/build-pages.mjs（输出 dist）
+- 路径与资源校验：node scripts/check-pages.mjs
+- Pages 部署流程：.github/workflows/pages.yml
+
+在合并本 PR 后，须在 GitHub 仓库 Settings → Pages → Build and deployment → Source 选择 GitHub Actions，然后查看 Actions 部署结果。默认的预期项目页面地址为 https://1998x-stack.github.io/maoZeDong/ ，只有部署成功后才能确认可访问。
