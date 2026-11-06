@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="史境：从原著出发，理解毛泽东著作形成的历史条件、人物信息世界和决策空间。">
+  <title>史境 · 毛泽东著作与党史研究</title>
+  <link rel="stylesheet" href="./web/styles.css">
+  <script id="works-data" type="application/json">__WORKS_JSON__</script>
+  <script src="./web/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">跳转至作品目录</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">史</span>
+        <div><strong>史境</strong><small>历史决策研究平台</small></div>
+      </div>
+      <div class="sidebar-section">
+        <div class="nav-heading">探索</div>
+        <a class="nav-link is-active" href="#catalog"><span aria-hidden="true">▤</span> 作品目录</a>
+        <a class="nav-link" href="#method"><span aria-hidden="true">◎</span> 研究方法</a>
+        <a class="nav-link" href="#sources"><span aria-hidden="true">↗</span> 来源说明</a>
+      </div>
+      <div class="sidebar-section">
+        <div class="nav-heading">按卷浏览</div>
+        <div id="volume-nav" class="volume-nav" role="group" aria-label="毛选卷次筛选"></div>
+      </div>
+      <div class="sidebar-foot">
+        <span class="foot-dot" aria-hidden="true"></span>
+        <p>历史曾经有多种可能。<br>先理解当时，再解释后来。</p>
+        <small>研究型目录 · 试运行版本</small>
+      </div>
+    </aside>
+    <div class="main-column">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>毛泽东著作</span><span class="slash" aria-hidden="true">/</span><strong>史料与研究</strong></div>
+        <div class="top-actions">
+          <a class="top-link" href="https://www.marxists.org/chinese/maozedong/index.htm" target="_blank" rel="noopener noreferrer">原著总目录 <span aria-hidden="true">↗</span></a>
+          <a class="top-link subtle-link" href="https://github.com/1998x-stack/maoZeDong" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </header>
+      <main id="main-content">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="hero-kicker"><span class="kicker-rule"></span> HISTORY · EVIDENCE · DECISION</div>
+            <h1 id="hero-title">读懂当时，<br><em>才能解释后来。</em></h1>
+            <p>从著作出发，回到信息尚不完整的历史现场。区分原文、编订、解释与证据，在真实约束中理解人物与选择。</p>
+            <a href="#catalog" class="hero-button">探索著作目录 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note" aria-hidden="true">
+            <div class="stamp"><span>1930</span><small>从问题出发</small></div>
+            <span class="vertical-label">HISTORICAL THINKING</span>
+          </div>
+        </section>
+        <section class="stats" aria-label="收录概况">
+          <div><b id="total-count">—</b><span>已关联原著页面</span></div>
+          <div><b>10</b><span>可复用研究技能</span></div>
+          <div><b>5</b><span>研究环节 · 迭代验证</span></div>
+          <div class="stats-caveat">当前为首批来源已定位的样本篇目，并非《毛选》全部篇章。历史解读尚需逐条审稿。</div>
+        </section>
+        <section class="catalogue-section" id="catalog" aria-labelledby="catalog-title">
+          <div class="section-head">
+            <div><div class="eyebrow">THE COLLECTION</div><h2 id="catalog-title">著作研究目录</h2><p>按卷次、主题与年份探索。原著入口直达中文马克思主义文库，旧研究稿独立标示。</p></div>
+            <span class="section-index">01 / CATALOGUE</span>
+          </div>
+          <div class="toolbar">
+            <div class="search-wrap"><label for="search">搜索著作与研究问题</label><div class="search-field"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="试试：调查研究、矛盾论、1938..." autocomplete="off"></div></div>
+            <div class="select-wrap"><label for="topic">研究主题</label><select id="topic"><option value="">全部主题</option></select></div>
+            <div class="select-wrap"><label for="period">历史阶段</label><select id="period"><option value="">全部时期</option></select></div>
+          </div>
+          <div class="result-line"><div><strong id="result-count" aria-live="polite">正在加载目录</strong><span class="result-separator">/</span><span>点击作品查看信息与旧稿</span></div><button class="reset-button" id="reset" type="button">清除筛选</button></div>
+          <div class="catalog-layout">
+            <div class="works-grid" id="works-grid" aria-label="检索结果"></div>
+            <aside class="inspector" id="inspector" aria-label="所选作品研究信息">
+              <div class="inspector-empty">选择左侧作品查看原著来源、历史研究问题及可阅读的旧研究报告。</div>
+            </aside>
+          </div>
+        </section>
+        <section class="method-section" id="method" aria-labelledby="method-title">
+          <div class="section-head compact"><div><div class="eyebrow">HOW TO STUDY</div><h2 id="method-title">从资料到历史判断</h2><p>不以结果倒推原因，研究每一轮认知和决策怎样形成。</p></div><span class="section-index">02 / METHOD</span></div>
+          <div class="method-steps">
+            <div class="method-step"><span>01</span><h3>核实文本</h3><p>识别原文、后期编辑与研究评论，核对具体版本。</p></div>
+            <div class="method-step"><span>02</span><h3>冻结时点</h3><p>只使用当时已经存在且可能传递的信息。</p></div>
+            <div class="method-step"><span>03</span><h3>比较行动者</h3><p>区分人物的权限、经验、信息来源与担忧。</p></div>
+            <div class="method-step"><span>04</span><h3>比较方案</h3><p>还原当时真实提出或有限条件下可行的道路。</p></div>
+            <div class="method-step"><span>05</span><h3>验证反馈</h3><p>分析实际执行与预期的差距，修正早先解释。</p></div>
+          </div>
+        </section>
+        <section class="source-section" id="sources" aria-labelledby="source-title">
+          <div class="source-overline">A NOTE ON SOURCES</div>
+          <div class="source-body"><h2 id="source-title">原著是起点，<br>不是研究的终点。</h2>
+            <div><p>本页面仅保存经逐篇定位的目录元数据和原著链接，没有复制外站全文。原文网页可能包含后期选集编者说明；旧 HTML 与 Markdown 是尚未完成研究级审校的解读稿，不代表作者原文。</p><p>研究中的人物心理、因果判断和历史反事实需要另外提供同期文献或可靠研究证据。来源冲突、无法获知的情况应如实标记。</p><a href="https://www.marxists.org/admin/legal/terms-of-use.htm" target="_blank" rel="noopener noreferrer">查看原站使用条款 <span aria-hidden="true">↗</span></a></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"><span>史境 · 历史决策研究平台</span><span>史料有边界，决策有时点，结论可追溯。</span></footer>
+    </div>
+  </div>
+</body>
+</html>

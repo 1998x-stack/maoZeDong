@@ -1,0 +1,17 @@
+name: Validate research platform
+on:
+  push:
+  pull_request:
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/validate-content.mjs
+      - run: node scripts/build-site.mjs
+      - run: node --test tests/*.test.mjs
+      - name: Ensure generated index is committed
+        run: git diff --exit-code -- index.html
