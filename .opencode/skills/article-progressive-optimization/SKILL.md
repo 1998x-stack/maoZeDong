@@ -26,3 +26,7 @@ metadata:
 
 ## 富研究字段
 研究数据可额外包含 `scene`、`chronology`（before/at/after）、`actors`、`versionNotes`、`synthesis`；`build-research.mjs` 将其在 MD 与 HTML 中同步发布。来源 ID 必须存在，事后时间线不能并入当时已知面板。不要用这些字段替代原五环的原子命题和证据等级。
+
+## 跨篇关联研究（1928—1930试点）
+
+相邻篇章的推论可互相提出研究问题，但不能因为主题相同就自动认定彼此独立印证。把1928年10月边界决议、11月致中央报告、1930年1月致林彪复信分为各自的T0；报告送达延迟与后期改题只在后续反馈和版本部分出现。下批原稿在 `research/articles/` 中建立，各篇由 `build-research.mjs` 产生独立MD和HTML，保持 `reports/` 历史稿不变。

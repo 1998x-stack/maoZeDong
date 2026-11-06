@@ -61,7 +61,8 @@
       "reports/html/003中国的红色政权为什么能够存在.html",
       "reports/md/003中国的红色政权为什么能够存在.md"
     ],
-    "notes": "选集标题带问号，仓库旧文件名不带问号。"
+    "notes": "选集标题带问号，仓库旧文件名不带问号。",
+    "researchBrief": "research/published/mao-1928-red-power.html"
   },
   {
     "id": "mao-1928-jinggang",
@@ -82,7 +83,8 @@
       "reports/html/004井冈山的斗争.html",
       "reports/md/004井冈山的斗争.md"
     ],
-    "notes": "调查事实、组织经验和后来编订的评价应分开。"
+    "notes": "调查事实、组织经验和后来编订的评价应分开。",
+    "researchBrief": "research/published/mao-1928-jinggang.html"
   },
   {
     "id": "mao-1929-party-thought",
@@ -124,7 +126,8 @@
       "reports/html/006星星之火，可以燎原.html",
       "reports/md/006星星之火，可以燎原.md"
     ],
-    "notes": "需进一步比较《时局估量和红军行动问题》相关版本。"
+    "notes": "需进一步比较《时局估量和红军行动问题》相关版本。",
+    "researchBrief": "research/published/mao-1930-spark.html"
   },
   {
     "id": "mao-1930-against-bookishness",

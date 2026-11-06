@@ -372,3 +372,11 @@ git diff --exit-code -- index.html
 本批新增《湖南农民运动考察报告》《实践论》《矛盾论》的结构化分析和 MD/HTML 双格式研究阅读页。每篇均有历史现场、时间截面、人物信息与版本沿革、五环的证据等级、备选方案和待核查问题；新稿独立于 `reports/` 旧稿。作品目录支持进入新版页面。
 
 本批为 **P2 研究草案与 P3 同源发布**，并非历史论断都已审校。可运行 `node scripts/build-research.mjs --check` 与 `node --test tests/*.test.mjs` 验证生成一致性。
+
+## 第二批：1928—1930年三个根据地决策专题
+
+- [《中国的红色政权为什么能够存在？》](research/published/mao-1928-red-power.md)：1928年10月的地方政权存在条件、边界组织及主客观约束。
+- [《井冈山的斗争》](research/published/mao-1928-jinggang.md)：1928年11月土地、贸易、给养、基层组织及报告延迟。
+- [《星星之火，可以燎原》](research/published/mao-1930-spark.md)：1930年1月毛泽东与林彪对时局和组织发展的不同估量，及后来的改题与删改。
+
+三篇均为 `status=draft` 研究草案，各自包含T0、行动者、版本链和五环证据命题，已从结构化JSON同源生成Markdown与HTML。独立史料审核尚未完成，不应将页面可读或CI通过视为历史结论全部证实。
