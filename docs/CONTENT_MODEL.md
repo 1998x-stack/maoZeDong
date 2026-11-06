@@ -29,3 +29,11 @@
 
 ## 审校状态
 `catalogued` 只表示目录及 URL 已登记；不代表全文、历史解释、版本和版权均经过核查。
+
+## 五环研究增量模型
+
+旧稿迁移位置为 `reports/md/`、`reports/html/`，CSS 在 `reports/css/`；迁移映射是 `data/migrations/report-files.json`。
+- `data/legacy-inventory.json`：扫描上述两个目录中三位编号旧稿的 P0 机器盘点，不表示史料核查。
+- `research/articles/<canonical-id>.json`：新增原创五环研究唯一输入源，包含 T0、sources、rings、alternatives、unresolved。
+- `research/published/<canonical-id>.md|html`：同源生成物，不手改。
+- `works[].researchBrief`：已经生成的新研究 HTML 链接，不能自动把 `reviewStatus` 升为 `verified`。

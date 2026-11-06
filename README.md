@@ -57,3 +57,14 @@ node --test tests/*.test.mjs
 - `scripts/audit-report-css.mjs`：检查 CSS 链接、样式提取情况和仍需单独审查的 `style=""` 属性。
 
 生成的 `index.html` 仍留在仓库根目录作为站点入口；`README.md` 与 `AGENTS.md` 保留在根目录供 GitHub/OpenCode 使用。旧书签如果直接指向根目录独立 HTML，需更新到新路径；迁移映射可用于后续服务端重定向。
+
+## 五环决策研究系统与渐进迁移
+
+五环专业 Prompt：`.opencode/skills/five-ring-decision-research/SKILL.md`；完整方法规范：`.opencode/references/five-ring-methodology.md`。
+分阶段文章优化：`.opencode/skills/article-progressive-optimization/SKILL.md`；路线图：`docs/FIVE_RING_ROADMAP.md`。
+
+原有研究稿已经迁往 `reports/md/`、`reports/html/`，各篇 CSS 位于 `reports/css/`。新流水线从这些路径盘点并保留旧稿；`data/legacy-inventory.json` 的 P0 不等于史料审校。
+
+《反对本本主义》试点研究草案：`research/published/mao-1930-against-bookishness.html`。研究 JSON 是唯一编辑源，MD/HTML 为同步生成物。
+
+校验命令：`node scripts/inventory-legacy.mjs --check`、`node scripts/build-research.mjs --check`，并继续运行原有 `node scripts/audit-report-css.mjs` 与测试。

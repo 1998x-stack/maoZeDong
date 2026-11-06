@@ -77,7 +77,7 @@
       <p>${escapeHtml(work.sourceLabel)}</p>
       <div class="inspector-label">研究状态</div>
       <p class="review-status">已完成来源索引 · 尚未逐条审校历史论断</p>
-      <div class="inspector-actions">${source}${report}</div>
+      <div class="inspector-actions">${source}${work.researchBrief ? `<a class="secondary" href="./${escapeHtml(encodeURI(work.researchBrief))}">五环研究草案 ↗</a>` : ''}${report}</div>
       ${links ? `<div class="inspector-label">可查看的 HTML 研究稿</div><p>${links}</p>` : ''}
       <div class="inspector-note">${escapeHtml(work.notes)}<br>注意：旧稿是后期研究性解读，不是原著全文。</div>
     `;

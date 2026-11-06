@@ -25,3 +25,10 @@ source-research → edition-comparison → time-slice → actor-model → decisi
 - 文章资料与研究分析分别存储；论断需要可点击的 source ID。
 - 元数据以 `data/works.json` 为准；`index.html` 为生成物，不直接手工编辑。
 - 历史研究成果必须清楚写明“已核实 / 有条件推测 / 仍有争议”，不能只写动人的结论。
+
+## 五环研究与分阶段迁移
+
+- 研究调度：`.opencode/skills/five-ring-decision-research/SKILL.md`，方法规范：`.opencode/references/five-ring-methodology.md`。
+- 逐篇迁移：`.opencode/skills/article-progressive-optimization/SKILL.md` 与 `docs/FIVE_RING_ROADMAP.md`。P0 是 `reports/md/` 和 `reports/html/` 目录盘点；不是史料审校。
+- 新研究数据保存在 `research/articles/<work-id>.json`，同源生成 `research/published/*.md` 与 `*.html`。不手动覆盖 `reports/` 中旧稿；保持原有 CSS 抽取与迁移映射。
+- 修改研究资料时额外执行 `node scripts/inventory-legacy.mjs --check`、`node scripts/build-research.mjs --check`。
