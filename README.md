@@ -68,3 +68,8 @@ node --test tests/*.test.mjs
 《反对本本主义》试点研究草案：`research/published/mao-1930-against-bookishness.html`。研究 JSON 是唯一编辑源，MD/HTML 为同步生成物。
 
 校验命令：`node scripts/inventory-legacy.mjs --check`、`node scripts/build-research.mjs --check`，并继续运行原有 `node scripts/audit-report-css.mjs` 与测试。
+
+## 三篇著作的五环研究草案
+本批新增《湖南农民运动考察报告》《实践论》《矛盾论》的结构化分析和 MD/HTML 双格式研究阅读页。每篇均有历史现场、时间截面、人物信息与版本沿革、五环的证据等级、备选方案和待核查问题；新稿独立于 `reports/` 旧稿。作品目录支持进入新版页面。
+
+本批为 **P2 研究草案与 P3 同源发布**，并非历史论断都已审校。可运行 `node scripts/build-research.mjs --check` 与 `node --test tests/*.test.mjs` 验证生成一致性。

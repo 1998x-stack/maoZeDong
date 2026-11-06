@@ -39,7 +39,8 @@
       "reports/html/002湖南农民运动考察报告.html",
       "reports/md/002湖南农民运动考察报告.md"
     ],
-    "notes": "不可用这篇1927年报告的内容证明1925年的写作心理。"
+    "notes": "不可用这篇1927年报告的内容证明1925年的写作心理。",
+    "researchBrief": "research/published/mao-1927-hunan-peasant.html"
   },
   {
     "id": "mao-1928-red-power",
@@ -168,7 +169,8 @@
       "reports/html/017实践论.html",
       "reports/md/017实践论.md"
     ],
-    "notes": "两个编号对应不同研究稿，不等于两个原著版本。"
+    "notes": "两个编号对应不同研究稿，不等于两个原著版本。",
+    "researchBrief": "research/published/mao-1937-practice.html"
   },
   {
     "id": "mao-1937-contradiction",
@@ -190,7 +192,8 @@
       "reports/md/000矛盾论.md",
       "reports/md/018矛盾论.md"
     ],
-    "notes": "018矛盾论.html 为零字节文件，不作为可阅读研究稿展示。"
+    "notes": "018矛盾论.html 为零字节文件，不作为可阅读研究稿展示。",
+    "researchBrief": "research/published/mao-1937-contradiction.html"
   },
   {
     "id": "mao-1937-liberalism",

@@ -23,3 +23,6 @@ metadata:
 
 ## 交付
 每批附已处理路径、P0-P4 真实状态、证据缺口、版本问题、生成产物与测试结果。禁止以“已生成 HTML”代替史料审校。
+
+## 富研究字段
+研究数据可额外包含 `scene`、`chronology`（before/at/after）、`actors`、`versionNotes`、`synthesis`；`build-research.mjs` 将其在 MD 与 HTML 中同步发布。来源 ID 必须存在，事后时间线不能并入当时已知面板。不要用这些字段替代原五环的原子命题和证据等级。

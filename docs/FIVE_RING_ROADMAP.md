@@ -17,3 +17,6 @@ P0 仅表示文件已发现；P2/P3 status=draft 仅代表研究草案，并不�
 技术设计：data/works.json 记录 canonical 身份、原著与旧稿映射；data/legacy-inventory.json 记录已迁移文件的机器盘点；research/articles/*.json 是五环研究唯一编辑源；research/published/*.md|html 为同源生成物；web/research.css 用于新研究阅读界面，不修改 reports/css 的旧稿样式。旧稿路径保持不变。
 
 验收：node scripts/inventory-legacy.mjs --check；node scripts/build-research.mjs --check；node scripts/validate-content.mjs；node scripts/build-site.mjs；node scripts/audit-report-css.mjs；node --test tests/*.test.mjs。未运行不得声称测试通过。
+
+## 本批 P2/P3：三篇研究草案
+本批对《湖南农民运动考察报告》《实践论》《矛盾论》各建立一份结构化研究数据，包含五环命题、人物信息、历史时间线与版本分层。已同步生成 Markdown/HTML 并接入作品目录。均标注 `status=draft`；P1 的逐版全文校勘和 P4 的人工历史审稿尚未完成。不要把构建和 CI 通过理解为史料鉴定完成。
