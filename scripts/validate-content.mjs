@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { resolve, join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isValidCalendarDate } from './calendar-date.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const failures = [];
@@ -10,7 +11,6 @@ const works = JSON.parse(readFileSync(join(root, 'data/works.json'), 'utf8'));
 check(Array.isArray(works) && works.length > 0, 'works.json must contain a non-empty array');
 const ids = new Set();
 const urls = new Set();
-const levels = { year: /^\d{4}$/, month: /^\d{4}-\d{2}$/, day: /^\d{4}-\d{2}-\d{2}$/ };
 const allowedStatus = new Set(['catalogued', 'in_review', 'verified']);
 const pathSafe = (path) => typeof path === 'string' && path.length > 0 && !path.startsWith('/') && !path.includes('..') && !path.includes('\\');
 
@@ -21,12 +21,7 @@ for (const [i, work] of works.entries()) {
   check(typeof work.title === 'string' && work.title.length >= 2, `${label}: invalid title`);
   check(Number.isInteger(work.volume) && work.volume >= 1 && work.volume <= 5, `${label}: invalid volume`);
   check(typeof work.period === 'string' && work.period.trim(), `${label}: missing period`);
-  check(levels[work.datePrecision]?.test(work.date), `${label}: mismatched date precision`);
-  if (typeof work.date === 'string') {
-    const parts = work.date.split('-').map(Number);
-    check(!parts[1] || (parts[1] >= 1 && parts[1] <= 12), `${label}: invalid month`);
-    check(!parts[2] || (parts[2] >= 1 && parts[2] <= 31), `${label}: invalid day`);
-  }
+  check(isValidCalendarDate(work.date, work.datePrecision), `${label}: invalid calendar date or precision`);
   check(Array.isArray(work.topics) && work.topics.length >= 1 && work.topics.every(t => typeof t === 'string' && t.length), `${label}: topics invalid`);
   check(typeof work.question === 'string' && work.question.length > 8, `${label}: question missing`);
   check(typeof work.sourceLabel === 'string' && work.sourceLabel.length > 3, `${label}: sourceLabel missing`);
