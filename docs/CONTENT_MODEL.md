@@ -15,7 +15,7 @@
 | `sourceUrl` | 经逐篇打开确认的原著网页地址 |
 | `sourceLabel` | 原文来源性质/版本局限说明 |
 | `reviewStatus` | `catalogued` / `in_review` / `verified` |
-| `legacyReports` | 仓库中已有的研究评论文件相对路径 |
+| `legacyReports` | 迁移后 `reports/md/` 或 `reports/html/` 中研究评论文件的仓库相对路径 |
 | `notes` | 来源不确定性或版本考证备注 |
 
 ## 数据边界
@@ -31,7 +31,9 @@
 `catalogued` 只表示目录及 URL 已登记；不代表全文、历史解释、版本和版权均经过核查。
 
 ## 五环研究增量模型
-data/legacy-inventory.json 为三位编号旧稿的 P0 文件盘点，不代表事实验证。
-research/articles/<id>.json 是新原创五环研究的唯一输入源，包含 T0、sources、rings（恰好五环）、alternatives、unresolved。
-research/published/<id>.md 与 .html 由 scripts/build-research.mjs 同源输出，不得手工改写。
-works[].researchBrief 是新研究 HTML 的链接；不能因为该字段存在就把 reviewStatus 自动升级为 verified。
+
+旧稿迁移位置为 `reports/md/`、`reports/html/`，CSS 在 `reports/css/`；迁移映射是 `data/migrations/report-files.json`。
+- `data/legacy-inventory.json`：扫描上述两个目录中三位编号旧稿的 P0 机器盘点，不表示史料核查。
+- `research/articles/<canonical-id>.json`：新增原创五环研究唯一输入源，包含 T0、sources、rings、alternatives、unresolved。
+- `research/published/<canonical-id>.md|html`：同源生成物，不手改。
+- `works[].researchBrief`：已经生成的新研究 HTML 链接，不能自动把 `reviewStatus` 升为 `verified`。

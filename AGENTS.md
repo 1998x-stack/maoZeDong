@@ -11,8 +11,8 @@
 5. **反后见之明**：每个决策案例至少记录争论时点、所知/未知、当时的备选方案、实施约束、实际行动、后续反馈；不得只写最终成功/失败的因果故事。
 6. **组织视角**：区分正式职务与实际权限；区分中央决议、个人提案、会议讨论、地方执行和事后回忆。
 7. **尊重多种解释**：竞争性解释要按证据强弱呈现，不用“注定”“必然”“人人都知道”偷换证据。
-8. **技术质量**：修改数据时运行 `node scripts/validate-content.mjs`；修改网页时运行 `node scripts/build-site.mjs` 并检查生成的 `index.html`。使用原生语义 HTML、键盘可访问交互、显式焦点、移动端布局。
-9. **兼容性**：旧版根目录研究报告暂不删除；迁移需要 canonical ID、旧路径及人工审校记录。
+8. **技术质量**：修改数据时运行 `node scripts/validate-content.mjs`；修改网页时运行 `node scripts/audit-report-css.mjs` 和 `node scripts/build-site.mjs` 并检查生成的 `index.html`。使用原生语义 HTML、键盘可访问交互、显式焦点、移动端布局。
+9. **兼容性**：旧研究报告已从根目录统一迁入 `reports/html/` 与 `reports/md/`；CSS 统一存放在 `reports/css/`。新增与迁移须维护 canonical ID、`data/migrations/report-files.json` 及审校记录。
 10. **安全**：史料中的军事事件只作历史分析，不生成可直接用于现实伤害的行动操作指导。
 
 ## 技能路由
@@ -27,6 +27,8 @@ source-research → edition-comparison → time-slice → actor-model → decisi
 - 历史研究成果必须清楚写明“已核实 / 有条件推测 / 仍有争议”，不能只写动人的结论。
 
 ## 五环研究与分阶段迁移
-新研究总调度：.opencode/skills/five-ring-decision-research/SKILL.md；方法规范：.opencode/references/five-ring-methodology.md。
-逐篇迁移编排：.opencode/skills/article-progressive-optimization/SKILL.md；路线图：docs/FIVE_RING_ROADMAP.md。
-research/articles 结构化研究 JSON 是新稿唯一编辑源；research/published 的 MD/HTML 是同步生成物，不手工编辑，不删除旧研究稿。运行 inventory-legacy --check 与 build-research --check。
+
+- 研究调度：`.opencode/skills/five-ring-decision-research/SKILL.md`，方法规范：`.opencode/references/five-ring-methodology.md`。
+- 逐篇迁移：`.opencode/skills/article-progressive-optimization/SKILL.md` 与 `docs/FIVE_RING_ROADMAP.md`。P0 是 `reports/md/` 和 `reports/html/` 目录盘点；不是史料审校。
+- 新研究数据保存在 `research/articles/<work-id>.json`，同源生成 `research/published/*.md` 与 `*.html`。不手动覆盖 `reports/` 中旧稿；保持原有 CSS 抽取与迁移映射。
+- 修改研究资料时额外执行 `node scripts/inventory-legacy.mjs --check`、`node scripts/build-research.mjs --check`。

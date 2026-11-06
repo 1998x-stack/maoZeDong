@@ -14,6 +14,7 @@ jobs:
       - run: node scripts/build-research.mjs --check
       - run: node scripts/validate-content.mjs
       - run: node scripts/build-site.mjs
+      - run: node scripts/audit-report-css.mjs
       - run: node --test tests/*.test.mjs
       - name: Ensure generated index is committed
         run: git diff --exit-code -- index.html

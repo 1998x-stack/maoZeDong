@@ -43,6 +43,8 @@ for (const [i, work] of works.entries()) {
   check(Array.isArray(work.legacyReports), `${label}: legacyReports must be array`);
   for (const p of work.legacyReports ?? []) {
     if (!pathSafe(p) || !/\.(html|md)$/.test(p)) { failures.push(`${label}: unsafe legacy path ${p}`); continue; }
+    const dir = p.endsWith('.html') ? 'reports/html/' : 'reports/md/';
+    check(p.startsWith(dir), `${label}: legacy file must live in ${dir}: ${p}`);
     const abs = resolve(root, p);
     check(relative(root, abs) !== '..' && !relative(root,abs).startsWith(`..${process.platform === 'win32' ? '\\' : '/'}`), `${label}: path traversal`);
     check(existsSync(abs), `${label}: legacy file missing ${p}`);

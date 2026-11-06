@@ -1,0 +1,1006 @@
+{
+  "version": 1,
+  "description": "Old root-level research files moved to reports; original Git blob preserved for audit. Site entrypoint and repository instructions remain at root.",
+  "files": [
+    {
+      "original": "000公务员考试知识点系统.html",
+      "target": "reports/html/000公务员考试知识点系统.html",
+      "kind": "html",
+      "originalBlobSha": "c004e648fdb62e0a536c16f14d5a7eb4f9522bc6",
+      "empty": false,
+      "css": "reports/css/000公务员考试知识点系统.css"
+    },
+    {
+      "original": "000公务员考试知识点系统.md",
+      "target": "reports/md/000公务员考试知识点系统.md",
+      "kind": "markdown",
+      "originalBlobSha": "f57c65ead28baa96965eb1099442705e4021d71b",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "000矛盾论.html",
+      "target": "reports/html/000矛盾论.html",
+      "kind": "html",
+      "originalBlobSha": "a66ad8b7aa5444ccc8abef7695ce940416409e06",
+      "empty": false,
+      "css": "reports/css/000矛盾论.css"
+    },
+    {
+      "original": "000矛盾论.md",
+      "target": "reports/md/000矛盾论.md",
+      "kind": "markdown",
+      "originalBlobSha": "1465c37e8b495a0e2da0885cb4b9951fb0926fa4",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "000实践论.html",
+      "target": "reports/html/000实践论.html",
+      "kind": "html",
+      "originalBlobSha": "d7b678a54273f451af3e6f421c4b043b81540c24",
+      "empty": false,
+      "css": "reports/css/000实践论.css"
+    },
+    {
+      "original": "000实践论.md",
+      "target": "reports/md/000实践论.md",
+      "kind": "markdown",
+      "originalBlobSha": "4e5d0f2b28c22f172e64f6044117e2600086d0c8",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "001中国社会各阶级的分析.html",
+      "target": "reports/html/001中国社会各阶级的分析.html",
+      "kind": "html",
+      "originalBlobSha": "36a17c439c006425029c0a8d01ab69f451b80de4",
+      "empty": false,
+      "css": "reports/css/001中国社会各阶级的分析.css"
+    },
+    {
+      "original": "001中国社会各阶级的分析.md",
+      "target": "reports/md/001中国社会各阶级的分析.md",
+      "kind": "markdown",
+      "originalBlobSha": "4950c1eb2590e2afd2b97068949606c19d3027fe",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "002湖南农民运动考察报告.html",
+      "target": "reports/html/002湖南农民运动考察报告.html",
+      "kind": "html",
+      "originalBlobSha": "518d433fddc71cd43f5c51d07c9b8ab06e6f690e",
+      "empty": false,
+      "css": "reports/css/002湖南农民运动考察报告.css"
+    },
+    {
+      "original": "002湖南农民运动考察报告.md",
+      "target": "reports/md/002湖南农民运动考察报告.md",
+      "kind": "markdown",
+      "originalBlobSha": "ce932ac55add47a0a9b5f5ccfb1d7d61adbfcee2",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "003中国的红色政权为什么能够存在.html",
+      "target": "reports/html/003中国的红色政权为什么能够存在.html",
+      "kind": "html",
+      "originalBlobSha": "1e80b4896497ec72e4ae45884effb07916a22690",
+      "empty": false,
+      "css": "reports/css/003中国的红色政权为什么能够存在.css"
+    },
+    {
+      "original": "003中国的红色政权为什么能够存在.md",
+      "target": "reports/md/003中国的红色政权为什么能够存在.md",
+      "kind": "markdown",
+      "originalBlobSha": "33f2d14daeaf3d45e03bddf9ea404c6770580f17",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "004井冈山的斗争.html",
+      "target": "reports/html/004井冈山的斗争.html",
+      "kind": "html",
+      "originalBlobSha": "98fd208737d744b29ff76da75263ce20ba335125",
+      "empty": false,
+      "css": "reports/css/004井冈山的斗争.css"
+    },
+    {
+      "original": "004井冈山的斗争.md",
+      "target": "reports/md/004井冈山的斗争.md",
+      "kind": "markdown",
+      "originalBlobSha": "a65e575271df6a8eaa8f495191f6b101e037e7ab",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "005关于纠正党内的错误思想.html",
+      "target": "reports/html/005关于纠正党内的错误思想.html",
+      "kind": "html",
+      "originalBlobSha": "57b28c1592da7a82d1b53ff4aa73c02a24b362e0",
+      "empty": false,
+      "css": "reports/css/005关于纠正党内的错误思想.css"
+    },
+    {
+      "original": "005关于纠正党内的错误思想.md",
+      "target": "reports/md/005关于纠正党内的错误思想.md",
+      "kind": "markdown",
+      "originalBlobSha": "f9f67b85693ac6b891d9a09572486b31149f15dd",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "006星星之火，可以燎原.html",
+      "target": "reports/html/006星星之火，可以燎原.html",
+      "kind": "html",
+      "originalBlobSha": "800807bff215da4140007ad23e0913b932d52529",
+      "empty": false,
+      "css": "reports/css/006星星之火，可以燎原.css"
+    },
+    {
+      "original": "006星星之火，可以燎原.md",
+      "target": "reports/md/006星星之火，可以燎原.md",
+      "kind": "markdown",
+      "originalBlobSha": "ff50950c920697eb889305203ee9e38cb6b1421b",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "007反对本本主义.html",
+      "target": "reports/html/007反对本本主义.html",
+      "kind": "html",
+      "originalBlobSha": "55bdd3ceac121a4b5a76a42f97a2d8ee608f089d",
+      "empty": false,
+      "css": "reports/css/007反对本本主义.css"
+    },
+    {
+      "original": "007反对本本主义.md",
+      "target": "reports/md/007反对本本主义.md",
+      "kind": "markdown",
+      "originalBlobSha": "661b23b6c94f1d5c15cb571a5f0448efe35c92ba",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "008必须注意经济工作.html",
+      "target": "reports/html/008必须注意经济工作.html",
+      "kind": "html",
+      "originalBlobSha": "b4c356c187941000433f3f626e8af8eb9cdf3f7a",
+      "empty": false,
+      "css": "reports/css/008必须注意经济工作.css"
+    },
+    {
+      "original": "008必须注意经济工作.md",
+      "target": "reports/md/008必须注意经济工作.md",
+      "kind": "markdown",
+      "originalBlobSha": "e6bd7fe8efb3449fddc64f74b5c46eb4be9f1c7c",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "009怎样分析农村阶级.html",
+      "target": "reports/html/009怎样分析农村阶级.html",
+      "kind": "html",
+      "originalBlobSha": "d20442bacce4f6814cc53044a71c4f37a1a07a9e",
+      "empty": false,
+      "css": "reports/css/009怎样分析农村阶级.css"
+    },
+    {
+      "original": "009怎样分析农村阶级.md",
+      "target": "reports/md/009怎样分析农村阶级.md",
+      "kind": "markdown",
+      "originalBlobSha": "379008e92a59eb8c73c31aeda3cf4ff4ab6d14bb",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "010我们的经济政策.html",
+      "target": "reports/html/010我们的经济政策.html",
+      "kind": "html",
+      "originalBlobSha": "9f910587b0ac9341fd5063da20a9dac021946d38",
+      "empty": false,
+      "css": "reports/css/010我们的经济政策.css"
+    },
+    {
+      "original": "010我们的经济政策.md",
+      "target": "reports/md/010我们的经济政策.md",
+      "kind": "markdown",
+      "originalBlobSha": "5c2b5baf1808fab12bb743832040584f4e709551",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "011关心群众生活，注意工作方法.html",
+      "target": "reports/html/011关心群众生活，注意工作方法.html",
+      "kind": "html",
+      "originalBlobSha": "97409d7f0d7889af6711e2f779df9df28ba79324",
+      "empty": false,
+      "css": "reports/css/011关心群众生活，注意工作方法.css"
+    },
+    {
+      "original": "011关心群众生活，注意工作方法.md",
+      "target": "reports/md/011关心群众生活，注意工作方法.md",
+      "kind": "markdown",
+      "originalBlobSha": "5274bb5b12230c69a9cfb1bc20cc424f214d5e47",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "012论反对日本帝国主义的策略.html",
+      "target": "reports/html/012论反对日本帝国主义的策略.html",
+      "kind": "html",
+      "originalBlobSha": "307e4a9ad09b5d1ac635316606dcdd09d5bee856",
+      "empty": false,
+      "css": "reports/css/012论反对日本帝国主义的策略.css"
+    },
+    {
+      "original": "012论反对日本帝国主义的策略.md",
+      "target": "reports/md/012论反对日本帝国主义的策略.md",
+      "kind": "markdown",
+      "originalBlobSha": "9475ae026a8b4ffb3e844eecf8522876744319bf",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "013中国革命战争的战略问题.html",
+      "target": "reports/html/013中国革命战争的战略问题.html",
+      "kind": "html",
+      "originalBlobSha": "1490b716d7f3ae31d115c29461f170a8bbf22b5f",
+      "empty": false,
+      "css": "reports/css/013中国革命战争的战略问题.css"
+    },
+    {
+      "original": "013中国革命战争的战略问题.md",
+      "target": "reports/md/013中国革命战争的战略问题.md",
+      "kind": "markdown",
+      "originalBlobSha": "658d09c5f8e76fd54da10c14c28eb7c30f09edda",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "014关于蒋介石声明的声明.html",
+      "target": "reports/html/014关于蒋介石声明的声明.html",
+      "kind": "html",
+      "originalBlobSha": "fe7b239c3426ff5b97092660f16d30f07a2b9e01",
+      "empty": false,
+      "css": "reports/css/014关于蒋介石声明的声明.css"
+    },
+    {
+      "original": "014关于蒋介石声明的声明.md",
+      "target": "reports/md/014关于蒋介石声明的声明.md",
+      "kind": "markdown",
+      "originalBlobSha": "49c0f1a0b88da3b2278ac3d599d3a215e3ac12dd",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "015中国共产党在抗日时期的任务.html",
+      "target": "reports/html/015中国共产党在抗日时期的任务.html",
+      "kind": "html",
+      "originalBlobSha": "257021123638f6aba4ea5c8a2839c11eb3280a35",
+      "empty": false,
+      "css": "reports/css/015中国共产党在抗日时期的任务.css"
+    },
+    {
+      "original": "015中国共产党在抗日时期的任务.md",
+      "target": "reports/md/015中国共产党在抗日时期的任务.md",
+      "kind": "markdown",
+      "originalBlobSha": "c90d1d8783455d59c13481423c0a32e0289cc685",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "016为争取千百万群众进入抗日民族统一战线而斗争.html",
+      "target": "reports/html/016为争取千百万群众进入抗日民族统一战线而斗争.html",
+      "kind": "html",
+      "originalBlobSha": "e910cc85abeb2579ad3d6ae28d9ab65a71cac927",
+      "empty": false,
+      "css": "reports/css/016为争取千百万群众进入抗日民族统一战线而斗争.css"
+    },
+    {
+      "original": "016为争取千百万群众进入抗日民族统一战线而斗争.md",
+      "target": "reports/md/016为争取千百万群众进入抗日民族统一战线而斗争.md",
+      "kind": "markdown",
+      "originalBlobSha": "26ac89ea3a97f5d2823bbaadc9c8752626291ed0",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "017实践论.html",
+      "target": "reports/html/017实践论.html",
+      "kind": "html",
+      "originalBlobSha": "5448ebb907c86793957cbb01a687cb9d3cd5af84",
+      "empty": false,
+      "css": "reports/css/017实践论.css"
+    },
+    {
+      "original": "017实践论.md",
+      "target": "reports/md/017实践论.md",
+      "kind": "markdown",
+      "originalBlobSha": "71627ebf791cd25f32943572bf594e4533ad23a7",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "018矛盾论.html",
+      "target": "reports/html/018矛盾论.html",
+      "kind": "html",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "018矛盾论.md",
+      "target": "reports/md/018矛盾论.md",
+      "kind": "markdown",
+      "originalBlobSha": "8706d6aebf980989dbf489e7e9e6b1f0b11386c3",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "101反对日本进攻的方针、办法和前途.html",
+      "target": "reports/html/101反对日本进攻的方针、办法和前途.html",
+      "kind": "html",
+      "originalBlobSha": "479c49b9582491ebb9c4caad95f21eaaa883487b",
+      "empty": false,
+      "css": "reports/css/101反对日本进攻的方针、办法和前途.css"
+    },
+    {
+      "original": "101反对日本进攻的方针、办法和前途.md",
+      "target": "reports/md/101反对日本进攻的方针、办法和前途.md",
+      "kind": "markdown",
+      "originalBlobSha": "2e0ef552c99460b8270f4ac342fa80e643db197c",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "102为动员一切力量争取抗战胜利而斗争.html",
+      "target": "reports/html/102为动员一切力量争取抗战胜利而斗争.html",
+      "kind": "html",
+      "originalBlobSha": "52a7e02db6ac82113851cda0719d76edcdd9854a",
+      "empty": false,
+      "css": "reports/css/102为动员一切力量争取抗战胜利而斗争.css"
+    },
+    {
+      "original": "102为动员一切力量争取抗战胜利而斗争.md",
+      "target": "reports/md/102为动员一切力量争取抗战胜利而斗争.md",
+      "kind": "markdown",
+      "originalBlobSha": "ad319a23b98f0f7cfbda67a57d6ba826b2087df7",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "103反对自由主义.html",
+      "target": "reports/html/103反对自由主义.html",
+      "kind": "html",
+      "originalBlobSha": "01a5eaf1b564f32edb66569ceea4e7a4172e5d93",
+      "empty": false,
+      "css": "reports/css/103反对自由主义.css"
+    },
+    {
+      "original": "103反对自由主义.md",
+      "target": "reports/md/103反对自由主义.md",
+      "kind": "markdown",
+      "originalBlobSha": "f6664c8d444dcc93289c6611cba0754c8721f073",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "104国共合作成立后的迫切任务.html",
+      "target": "reports/html/104国共合作成立后的迫切任务.html",
+      "kind": "html",
+      "originalBlobSha": "a72808dcda171cf82c376000964e5f99ddebb839",
+      "empty": false,
+      "css": "reports/css/104国共合作成立后的迫切任务.css"
+    },
+    {
+      "original": "104国共合作成立后的迫切任务.md",
+      "target": "reports/md/104国共合作成立后的迫切任务.md",
+      "kind": "markdown",
+      "originalBlobSha": "dc5336ce26bf7513828429bce663209a8263c988",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "105和英国记者贝特兰的谈话.html",
+      "target": "reports/html/105和英国记者贝特兰的谈话.html",
+      "kind": "html",
+      "originalBlobSha": "e47b04a2994dc79c898f9425c6589f804473bd0c",
+      "empty": false,
+      "css": "reports/css/105和英国记者贝特兰的谈话.css"
+    },
+    {
+      "original": "105和英国记者贝特兰的谈话.md",
+      "target": "reports/md/105和英国记者贝特兰的谈话.md",
+      "kind": "markdown",
+      "originalBlobSha": "503bf354f05e35e2de8cd80a5e80d26dc50ba649",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "106上海太原失陷以后抗日战争的形势和任务.html",
+      "target": "reports/html/106上海太原失陷以后抗日战争的形势和任务.html",
+      "kind": "html",
+      "originalBlobSha": "def9b42f54354090910dec6e51d54d3373062eb6",
+      "empty": false,
+      "css": "reports/css/106上海太原失陷以后抗日战争的形势和任务.css"
+    },
+    {
+      "original": "106上海太原失陷以后抗日战争的形势和任务.md",
+      "target": "reports/md/106上海太原失陷以后抗日战争的形势和任务.md",
+      "kind": "markdown",
+      "originalBlobSha": "f67d2adf79861dbe8a10f4ae92f0688304f24219",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "107陕甘宁边区政府第八路军后方留守处布告.html",
+      "target": "reports/html/107陕甘宁边区政府第八路军后方留守处布告.html",
+      "kind": "html",
+      "originalBlobSha": "51200f3d4a09e0cad859c35a9adfa87471931ff8",
+      "empty": false,
+      "css": "reports/css/107陕甘宁边区政府第八路军后方留守处布告.css"
+    },
+    {
+      "original": "107陕甘宁边区政府第八路军后方留守处布告.md",
+      "target": "reports/md/107陕甘宁边区政府第八路军后方留守处布告.md",
+      "kind": "markdown",
+      "originalBlobSha": "27afa0fa82d8fa2d751786cb64103578b9edb17c",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "108抗日游击战争的战略问题.html",
+      "target": "reports/html/108抗日游击战争的战略问题.html",
+      "kind": "html",
+      "originalBlobSha": "2bf1d6411f6fb25e0bff8739999cec52bb9c94f1",
+      "empty": false,
+      "css": "reports/css/108抗日游击战争的战略问题.css"
+    },
+    {
+      "original": "108抗日游击战争的战略问题.md",
+      "target": "reports/md/108抗日游击战争的战略问题.md",
+      "kind": "markdown",
+      "originalBlobSha": "9b279c117a09479181623e5d4e39a3aa9274004d",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "109论持久战.html",
+      "target": "reports/html/109论持久战.html",
+      "kind": "html",
+      "originalBlobSha": "89d3ec820a6911e18cc022845e039a6771ca4621",
+      "empty": false,
+      "css": "reports/css/109论持久战.css"
+    },
+    {
+      "original": "109论持久战.md",
+      "target": "reports/md/109论持久战.md",
+      "kind": "markdown",
+      "originalBlobSha": "254e0c97a3909513057a8604d869cdbef5b85a55",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "110中国共产党在民族战争中的地位.html",
+      "target": "reports/html/110中国共产党在民族战争中的地位.html",
+      "kind": "html",
+      "originalBlobSha": "6437b60b1338d6941243d44b60172db7e7ca2205",
+      "empty": false,
+      "css": "reports/css/110中国共产党在民族战争中的地位.css"
+    },
+    {
+      "original": "110中国共产党在民族战争中的地位.md",
+      "target": "reports/md/110中国共产党在民族战争中的地位.md",
+      "kind": "markdown",
+      "originalBlobSha": "66f92f0d149ed278d9dce4b3cd22144728c9f088",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "111统一战线中的独立自主问题.html",
+      "target": "reports/html/111统一战线中的独立自主问题.html",
+      "kind": "html",
+      "originalBlobSha": "515e201b78f0abe0e5d7f5cd465d78a959406ca8",
+      "empty": false,
+      "css": "reports/css/111统一战线中的独立自主问题.css"
+    },
+    {
+      "original": "111统一战线中的独立自主问题.md",
+      "target": "reports/md/111统一战线中的独立自主问题.md",
+      "kind": "markdown",
+      "originalBlobSha": "9f6d1ba22c8144b3c7d8b982e03274d86e348dda",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "112战争和战略问题.html",
+      "target": "reports/html/112战争和战略问题.html",
+      "kind": "html",
+      "originalBlobSha": "888eefc113bf467ac96483df57d7919699fbf1e5",
+      "empty": false,
+      "css": "reports/css/112战争和战略问题.css"
+    },
+    {
+      "original": "112战争和战略问题.md",
+      "target": "reports/md/112战争和战略问题.md",
+      "kind": "markdown",
+      "originalBlobSha": "cc191be18bd70b601edc872a4cd395afe1d0bf31",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "113五四运动.html",
+      "target": "reports/html/113五四运动.html",
+      "kind": "html",
+      "originalBlobSha": "eb056acabfb25d5c0985a645791362f8ab21e565",
+      "empty": false,
+      "css": "reports/css/113五四运动.css"
+    },
+    {
+      "original": "113五四运动.md",
+      "target": "reports/md/113五四运动.md",
+      "kind": "markdown",
+      "originalBlobSha": "7709598657ae6496470ce980e83c8d868bf497b2",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "114青年运动的方向.html",
+      "target": "reports/html/114青年运动的方向.html",
+      "kind": "html",
+      "originalBlobSha": "8ba6f7d56e97294ae0e4320c25248db2b0ad8b87",
+      "empty": false,
+      "css": "reports/css/114青年运动的方向.css"
+    },
+    {
+      "original": "114青年运动的方向.md",
+      "target": "reports/md/114青年运动的方向.md",
+      "kind": "markdown",
+      "originalBlobSha": "c65673a070fc417039332dc93bba83479614b5cc",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "115反对投降活动.html",
+      "target": "reports/html/115反对投降活动.html",
+      "kind": "html",
+      "originalBlobSha": "d62d31b92e510fe28f8fb474c06e5b7fc43a17a4",
+      "empty": false,
+      "css": "reports/css/115反对投降活动.css"
+    },
+    {
+      "original": "115反对投降活动.md",
+      "target": "reports/md/115反对投降活动.md",
+      "kind": "markdown",
+      "originalBlobSha": "3e87d6120d81e98f7569797062fd76a923fbab36",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "116必须制裁反动派.html",
+      "target": "reports/html/116必须制裁反动派.html",
+      "kind": "html",
+      "originalBlobSha": "6583a6e2a46f12306546a154e017d22aa898ceb7",
+      "empty": false,
+      "css": "reports/css/116必须制裁反动派.css"
+    },
+    {
+      "original": "116必须制裁反动派.md",
+      "target": "reports/md/116必须制裁反动派.md",
+      "kind": "markdown",
+      "originalBlobSha": "bccfbd00389f18815e7048150908788f5ebc4cc6",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "117关于国际新形势对新华日报记者的谈话.html",
+      "target": "reports/html/117关于国际新形势对新华日报记者的谈话.html",
+      "kind": "html",
+      "originalBlobSha": "9542bb62e1321d6fb210bf344254ddea69a5fc72",
+      "empty": false,
+      "css": "reports/css/117关于国际新形势对新华日报记者的谈话.css"
+    },
+    {
+      "original": "117关于国际新形势对新华日报记者的谈话.md",
+      "target": "reports/md/117关于国际新形势对新华日报记者的谈话.md",
+      "kind": "markdown",
+      "originalBlobSha": "e0b044fa65a625dec28db27d7f739bd7eec22ecc",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "118和中央社、扫荡报、新民报三记者的谈话.html",
+      "target": "reports/html/118和中央社、扫荡报、新民报三记者的谈话.html",
+      "kind": "html",
+      "originalBlobSha": "f54f0a642cf588c110dcb50cb9937a7dab680ce7",
+      "empty": false,
+      "css": "reports/css/118和中央社、扫荡报、新民报三记者的谈话.css"
+    },
+    {
+      "original": "118和中央社、扫荡报、新民报三记者的谈话.md",
+      "target": "reports/md/118和中央社、扫荡报、新民报三记者的谈话.md",
+      "kind": "markdown",
+      "originalBlobSha": "c36a8c966bbc7c94f607ed047032f8cf686e1e6a",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "119苏联利益和人类利益的一致.html",
+      "target": "reports/html/119苏联利益和人类利益的一致.html",
+      "kind": "html",
+      "originalBlobSha": "701de1e2e011a72d8dfbd0a3d644b37018785ca1",
+      "empty": false,
+      "css": "reports/css/119苏联利益和人类利益的一致.css"
+    },
+    {
+      "original": "119苏联利益和人类利益的一致.md",
+      "target": "reports/md/119苏联利益和人类利益的一致.md",
+      "kind": "markdown",
+      "originalBlobSha": "3a3dea183ec03edf64723ae9647327fb8189aff5",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "120《共产党人》发刊词.html",
+      "target": "reports/html/120《共产党人》发刊词.html",
+      "kind": "html",
+      "originalBlobSha": "f66c80a22d618484115a5969f8fb1e446a4fc349",
+      "empty": false,
+      "css": "reports/css/120《共产党人》发刊词.css"
+    },
+    {
+      "original": "120《共产党人》发刊词.md",
+      "target": "reports/md/120《共产党人》发刊词.md",
+      "kind": "markdown",
+      "originalBlobSha": "84cfa843e6e375cdfd00f74ae22316f76f60a119",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "121目前形势和党的任务.html",
+      "target": "reports/html/121目前形势和党的任务.html",
+      "kind": "html",
+      "originalBlobSha": "8d23ac4a9f1d400daf2cc1b1c35919ffa7a8478c",
+      "empty": false,
+      "css": "reports/css/121目前形势和党的任务.css"
+    },
+    {
+      "original": "121目前形势和党的任务.md",
+      "target": "reports/md/121目前形势和党的任务.md",
+      "kind": "markdown",
+      "originalBlobSha": "23d631769c0178a956742ee7f3a9381f4ff3d9ac",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "122大量吸收知识分子.html",
+      "target": "reports/html/122大量吸收知识分子.html",
+      "kind": "html",
+      "originalBlobSha": "ddea8d471c02b917578059cf6b4a22f9037faa08",
+      "empty": false,
+      "css": "reports/css/122大量吸收知识分子.css"
+    },
+    {
+      "original": "122大量吸收知识分子.md",
+      "target": "reports/md/122大量吸收知识分子.md",
+      "kind": "markdown",
+      "originalBlobSha": "6cd9df94ca8e59af1bd558972b8773990d09ea3e",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "123中国革命和中国共产党.html",
+      "target": "reports/html/123中国革命和中国共产党.html",
+      "kind": "html",
+      "originalBlobSha": "7631a53b5c548bd0e6f3f5bdf5be9cd8ae8b8e22",
+      "empty": false,
+      "css": "reports/css/123中国革命和中国共产党.css"
+    },
+    {
+      "original": "123中国革命和中国共产党.md",
+      "target": "reports/md/123中国革命和中国共产党.md",
+      "kind": "markdown",
+      "originalBlobSha": "c366f96aa4d94fb964f481c73bb066e751b9621b",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "124斯大林是中国人民的朋友.html",
+      "target": "reports/html/124斯大林是中国人民的朋友.html",
+      "kind": "html",
+      "originalBlobSha": "e2aac2d11c905a2eb61b989a584a2f48548e854c",
+      "empty": false,
+      "css": "reports/css/124斯大林是中国人民的朋友.css"
+    },
+    {
+      "original": "124斯大林是中国人民的朋友.md",
+      "target": "reports/md/124斯大林是中国人民的朋友.md",
+      "kind": "markdown",
+      "originalBlobSha": "ac9312a849343e7aa3b90490e394dd5e53b1fe68",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "125纪念白求恩.html",
+      "target": "reports/html/125纪念白求恩.html",
+      "kind": "html",
+      "originalBlobSha": "f2a88468f559dfd623a08f58704d37c06f1529ac",
+      "empty": false,
+      "css": "reports/css/125纪念白求恩.css"
+    },
+    {
+      "original": "125纪念白求恩.md",
+      "target": "reports/md/125纪念白求恩.md",
+      "kind": "markdown",
+      "originalBlobSha": "02c6dbecfafa8b984e3e6ff4e807ee6bab378d1a",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "126新民主主义论.html",
+      "target": "reports/html/126新民主主义论.html",
+      "kind": "html",
+      "originalBlobSha": "ada1907cd0295b3481fb446d77cc8e27b32493a9",
+      "empty": false,
+      "css": "reports/css/126新民主主义论.css"
+    },
+    {
+      "original": "126新民主主义论.md",
+      "target": "reports/md/126新民主主义论.md",
+      "kind": "markdown",
+      "originalBlobSha": "28a48a278f41ad6df121a796725b2b58222cd2b6",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "127克服投降危险，力争时局好转.html",
+      "target": "reports/html/127克服投降危险，力争时局好转.html",
+      "kind": "html",
+      "originalBlobSha": "916e71cf888316ceec7342cde96ca0a592a3481b",
+      "empty": false,
+      "css": "reports/css/127克服投降危险，力争时局好转.css"
+    },
+    {
+      "original": "127克服投降危险，力争时局好转.md",
+      "target": "reports/md/127克服投降危险，力争时局好转.md",
+      "kind": "markdown",
+      "originalBlobSha": "fc3ef8dc2fc1ba060842aa82bb1525643913ec18",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "128团结一切抗日力量，反对反共顽固派.html",
+      "target": "reports/html/128团结一切抗日力量，反对反共顽固派.html",
+      "kind": "html",
+      "originalBlobSha": "339df31bc9418a18889e3c30e923ec7994691cb2",
+      "empty": false,
+      "css": "reports/css/128团结一切抗日力量，反对反共顽固派.css"
+    },
+    {
+      "original": "128团结一切抗日力量，反对反共顽固派.md",
+      "target": "reports/md/128团结一切抗日力量，反对反共顽固派.md",
+      "kind": "markdown",
+      "originalBlobSha": "8e0e56216c73026ba9e671d2a347a2e6de78fc7a",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "129向国民党的十点要求.html",
+      "target": "reports/html/129向国民党的十点要求.html",
+      "kind": "html",
+      "originalBlobSha": "af8e56566e6690020313fafdcc8a6b1ad019e719",
+      "empty": false,
+      "css": "reports/css/129向国民党的十点要求.css"
+    },
+    {
+      "original": "129向国民党的十点要求.md",
+      "target": "reports/md/129向国民党的十点要求.md",
+      "kind": "markdown",
+      "originalBlobSha": "598dc8f743bea35f42f3535c2c90d4b82882f40c",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "130《中国工人》发刊词.html",
+      "target": "reports/html/130《中国工人》发刊词.html",
+      "kind": "html",
+      "originalBlobSha": "be751e7feaae691bb649c3a2702c38b6e4de1bec",
+      "empty": false,
+      "css": "reports/css/130《中国工人》发刊词.css"
+    },
+    {
+      "original": "130《中国工人》发刊词.md",
+      "target": "reports/md/130《中国工人》发刊词.md",
+      "kind": "markdown",
+      "originalBlobSha": "c4b7fc9b3727db8085c5c9fdcbc1a41b060b6644",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "131必须强调团结和进步.html",
+      "target": "reports/html/131必须强调团结和进步.html",
+      "kind": "html",
+      "originalBlobSha": "93bb4a8268eda95784b74154cd7a8e0fa03b40c2",
+      "empty": false,
+      "css": "reports/css/131必须强调团结和进步.css"
+    },
+    {
+      "original": "131必须强调团结和进步.md",
+      "target": "reports/md/131必须强调团结和进步.md",
+      "kind": "markdown",
+      "originalBlobSha": "92fc48fbd5d769268f104f20373756708918be23",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "132新民主主义的宪政.html",
+      "target": "reports/html/132新民主主义的宪政.html",
+      "kind": "html",
+      "originalBlobSha": "798c8305d71b0aa98fec4bc1f2f0ce160aa0568f",
+      "empty": false,
+      "css": "reports/css/132新民主主义的宪政.css"
+    },
+    {
+      "original": "132新民主主义的宪政.md",
+      "target": "reports/md/132新民主主义的宪政.md",
+      "kind": "markdown",
+      "originalBlobSha": "195ca1c3fff9ed356d41c7f22d55b5b4066b81af",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "133抗日根据地的政权问题.html",
+      "target": "reports/html/133抗日根据地的政权问题.html",
+      "kind": "html",
+      "originalBlobSha": "3bc4d28d3533fbce2284c75f7324454ea72d5f15",
+      "empty": false,
+      "css": "reports/css/133抗日根据地的政权问题.css"
+    },
+    {
+      "original": "133抗日根据地的政权问题.md",
+      "target": "reports/md/133抗日根据地的政权问题.md",
+      "kind": "markdown",
+      "originalBlobSha": "6ac5f883a7c0e7397baf0358babcf5cfadf839f7",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "134目前抗日统一战线中的策略问题.html",
+      "target": "reports/html/134目前抗日统一战线中的策略问题.html",
+      "kind": "html",
+      "originalBlobSha": "6ea61497e14e3080dfc046bedb09030e6f173a8a",
+      "empty": false,
+      "css": "reports/css/134目前抗日统一战线中的策略问题.css"
+    },
+    {
+      "original": "134目前抗日统一战线中的策略问题.md",
+      "target": "reports/md/134目前抗日统一战线中的策略问题.md",
+      "kind": "markdown",
+      "originalBlobSha": "858e547fea7373c7bf8fe123f2edcb3ade9f1bf1",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "135放手发展抗日力量，抵抗反共顽固派的进攻.html",
+      "target": "reports/html/135放手发展抗日力量，抵抗反共顽固派的进攻.html",
+      "kind": "html",
+      "originalBlobSha": "a911acb40292b05e0317d9fdb36a5d4901ae372b",
+      "empty": false,
+      "css": "reports/css/135放手发展抗日力量，抵抗反共顽固派的进攻.css"
+    },
+    {
+      "original": "135放手发展抗日力量，抵抗反共顽固派的进攻.md",
+      "target": "reports/md/135放手发展抗日力量，抵抗反共顽固派的进攻.md",
+      "kind": "markdown",
+      "originalBlobSha": "a1969073e7623946c5b464c66c34002b53086902",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "136团结到底.html",
+      "target": "reports/html/136团结到底.html",
+      "kind": "html",
+      "originalBlobSha": "2e81a6220c803da82de60506d1821a3a21eecc81",
+      "empty": false,
+      "css": "reports/css/136团结到底.css"
+    },
+    {
+      "original": "136团结到底.md",
+      "target": "reports/md/136团结到底.md",
+      "kind": "markdown",
+      "originalBlobSha": "7f41e1477df489bfdce574920f348dbef8da5e09",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "137论政策.html",
+      "target": "reports/html/137论政策.html",
+      "kind": "html",
+      "originalBlobSha": "8058ead1b85e2533bae2c667de131e1b093b5a1d",
+      "empty": false,
+      "css": "reports/css/137论政策.css"
+    },
+    {
+      "original": "137论政策.md",
+      "target": "reports/md/137论政策.md",
+      "kind": "markdown",
+      "originalBlobSha": "9a189bc7d09fa67c340a7769fc39ad51887e714d",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "138为皖南事变发表的命令和谈话.html",
+      "target": "reports/html/138为皖南事变发表的命令和谈话.html",
+      "kind": "html",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "138为皖南事变发表的命令和谈话.md",
+      "target": "reports/md/138为皖南事变发表的命令和谈话.md",
+      "kind": "markdown",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "139打退第二次反共高潮后的时局.html",
+      "target": "reports/html/139打退第二次反共高潮后的时局.html",
+      "kind": "html",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "139打退第二次反共高潮后的时局.md",
+      "target": "reports/md/139打退第二次反共高潮后的时局.md",
+      "kind": "markdown",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "140关于打退第二次反共高潮的总结.html",
+      "target": "reports/html/140关于打退第二次反共高潮的总结.html",
+      "kind": "html",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "140关于打退第二次反共高潮的总结.md",
+      "target": "reports/md/140关于打退第二次反共高潮的总结.md",
+      "kind": "markdown",
+      "originalBlobSha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "empty": true,
+      "css": null
+    },
+    {
+      "original": "罗荣桓元帅.html",
+      "target": "reports/html/罗荣桓元帅.html",
+      "kind": "html",
+      "originalBlobSha": "39ea6c7a1e4508f3555a5eb99ed7df8486410818",
+      "empty": false,
+      "css": "reports/css/罗荣桓元帅.css"
+    },
+    {
+      "original": "罗荣桓元帅.md",
+      "target": "reports/md/罗荣桓元帅.md",
+      "kind": "markdown",
+      "originalBlobSha": "1ab1aec99a221cfa2fe6fe281eb7fa50c3e54fb6",
+      "empty": false,
+      "css": null
+    },
+    {
+      "original": "朱德元帅.md",
+      "target": "reports/md/朱德元帅.md",
+      "kind": "markdown",
+      "originalBlobSha": "35bc2e5e3e0c928bedc65de52ae55cfd3bd31da7",
+      "empty": false,
+      "css": null
+    }
+  ]
+}

@@ -5,7 +5,7 @@
 ## 在线原著与本站内容有什么区别？
 
 - **原著来源**：中文马克思主义文库毛泽东目录 https://www.marxists.org/chinese/maozedong/index.htm ，本站只建立可验证的文章链接和目录元数据。
-- **本站旧稿**：根目录保留历史专题 HTML 和 Markdown；这些是研究报告，不是《毛泽东选集》原文，尚未完成逐条引证审校。
+- **本站旧稿**：历史专题 HTML、Markdown 已分类迁移到 `reports/html/` 与 `reports/md/`；这些是研究报告，不是《毛泽东选集》原文，尚未完成逐条引证审校。
 - **新作品目录**：`data/works.json`，首批 11 篇已逐一核对原文 URL 的样本；不代表已收录全部《毛选》。
 - **版本意识**：MIA 展示的编订文本、后期编者按、初刊与手稿可能有差异，不能混称原始全文。
 - **转载限制**：文章仅作外链，未核实转载权利前不复制原文全文。
@@ -21,10 +21,11 @@
 ```bash
 node scripts/validate-content.mjs
 node scripts/build-site.mjs
+node scripts/audit-report-css.mjs
 node --test tests/*.test.mjs
 ```
 
-`index.html` 由 `data/works.json` 和 `web/template.html` 生成，**不要手工编辑**。CSS 在 `web/styles.css`，前端交互在 `web/app.js`。
+`index.html` 由 `data/works.json` 和 `web/template.html` 生成，**不要手工编辑**。主站 CSS 在 `web/styles.css`，前端交互在 `web/app.js`。旧研究页 CSS 已按篇提取到 `reports/css/`，文件对应关系见 [reports/README.md](reports/README.md)。
 
 ## OpenCode 研究能力
 
@@ -45,12 +46,25 @@ node --test tests/*.test.mjs
 
 ## 迁移状态
 
-当前是结构化重构的第一阶段：统一数据与研究技能，搭建可使用的阅读目录，同时原有 HTML/Markdown 完整保留。研究级全文审校、整套选集目录、复杂的时间截面交互及人物关系网络属于后续增量。
+当前是结构化重构的第一阶段：统一数据与研究技能，搭建可使用的阅读目录，同时原有 HTML/Markdown 的内容完整保留并迁移至 `reports/`。研究级全文审校、整套选集目录、复杂的时间截面交互及人物关系网络属于后续增量。
+
+## 旧研究报告目录迁移
+
+- `reports/md/`：63 个历史 Markdown 原稿，内容不改动。
+- `reports/html/`：62 个原独立 HTML，保留其结构与交互。
+- `reports/css/`：从 58 个非空 HTML 中拆出的独立页面样式文件；空白 HTML 不生成空 CSS。
+- `data/migrations/report-files.json`：旧路径到新路径映射，含零字节文件记录。
+- `scripts/audit-report-css.mjs`：检查 CSS 链接、样式提取情况和仍需单独审查的 `style=""` 属性。
+
+生成的 `index.html` 仍留在仓库根目录作为站点入口；`README.md` 与 `AGENTS.md` 保留在根目录供 GitHub/OpenCode 使用。旧书签如果直接指向根目录独立 HTML，需更新到新路径；迁移映射可用于后续服务端重定向。
 
 ## 五环决策研究系统与渐进迁移
-五环专业 Prompt：.opencode/skills/five-ring-decision-research/SKILL.md；全文方法规范：.opencode/references/five-ring-methodology.md。
-文章阶段优化：.opencode/skills/article-progressive-optimization/SKILL.md；路线图：docs/FIVE_RING_ROADMAP.md。
-旧稿 61 组盘点见 data/legacy-inventory.json；P0 仅代表文件已发现，不是内容已审校。
-首篇新稿为《反对本本主义》五环研究草案：research/published/mao-1930-against-bookishness.html。研究 JSON 为唯一编辑源，两种呈现文件均由脚本生成，旧稿保持不变。
 
-同步校验：node scripts/inventory-legacy.mjs --check；node scripts/build-research.mjs --check。
+五环专业 Prompt：`.opencode/skills/five-ring-decision-research/SKILL.md`；完整方法规范：`.opencode/references/five-ring-methodology.md`。
+分阶段文章优化：`.opencode/skills/article-progressive-optimization/SKILL.md`；路线图：`docs/FIVE_RING_ROADMAP.md`。
+
+原有研究稿已经迁往 `reports/md/`、`reports/html/`，各篇 CSS 位于 `reports/css/`。新流水线从这些路径盘点并保留旧稿；`data/legacy-inventory.json` 的 P0 不等于史料审校。
+
+《反对本本主义》试点研究草案：`research/published/mao-1930-against-bookishness.html`。研究 JSON 是唯一编辑源，MD/HTML 为同步生成物。
+
+校验命令：`node scripts/inventory-legacy.mjs --check`、`node scripts/build-research.mjs --check`，并继续运行原有 `node scripts/audit-report-css.mjs` 与测试。
