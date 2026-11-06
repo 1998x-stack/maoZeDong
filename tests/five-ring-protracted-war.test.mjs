@@ -28,7 +28,7 @@ test('1938 decision study separates information at T0 from later events',()=>{
  assert.ok(a.chronology.length>=9);
  assert.ok(a.versionNotes.length>=4);
  assert.ok(a.chronology.some(x=>x.horizon==='before'&&x.event.includes('徐州')));
- assert.ok(a.chronology.some(x=>x.horizon==='after'&&x.event.includes('初次全文')));
+ assert.ok(a.chronology.some(x=>x.horizon==='after'&&x.event.includes('首次全文')));
  const ids=new Set(a.sources.map(s=>s.id));
  assert.equal(ids.size,a.sources.length);
  for(const entry of [...a.chronology,...a.actors,...a.versionNotes,...a.forecastAudit,...a.rings.flatMap(r=>r.claims)]){
