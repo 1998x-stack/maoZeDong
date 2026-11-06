@@ -380,3 +380,10 @@ git diff --exit-code -- index.html
 - [《星星之火，可以燎原》](research/published/mao-1930-spark.md)：1930年1月毛泽东与林彪对时局和组织发展的不同估量，及后来的改题与删改。
 
 三篇均为 `status=draft` 研究草案，各自包含T0、行动者、版本链和五环证据命题，已从结构化JSON同源生成Markdown与HTML。独立史料审核尚未完成，不应将页面可读或CI通过视为历史结论全部证实。
+
+## 第三批五环研究草案（1925／1929／1937）
+- [《中国社会各阶级的分析》](research/published/mao-1925-class-analysis.md)：1925年初刊与后期版本差异、联盟判断和群体信息边界。
+- [《关于纠正党内的错误思想》](research/published/mao-1929-party-thought.md)：红四军党内争论、中央九月来信与古田会议的组织决策形成。
+- [《反对自由主义》](research/published/mao-1937-liberalism.md)：1937年内部传播、1942年公开发表与组织内真实意见反馈。
+
+三篇均独立保留五环、T0、人物信息、决策方案、执行与反馈、版本谱系。Markdown与HTML由研究JSON同源生成，旧稿保留在 `reports/`。所有新稿仍为 **研究草案**，不表示全面史料审核完成；仓库现有登记作品中仅《论持久战》尚未进入这一五环新稿阶段。

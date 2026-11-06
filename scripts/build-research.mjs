@@ -59,7 +59,7 @@ function renderResearch(a,w){
 <div class="layout"><aside class="side" aria-label="研究环节导航"><strong>FIVE RINGS</strong><nav>${a.rings.map((r,i)=>`<a href="#${esc(r.id)}"><span>${i+1}</span>${esc(r.title)}</a>`).join("")}<a href="#alternatives">方案对照</a><a href="#sources">证据与争议</a></nav><p>信息条件优先于事后结论。</p></aside>
 <main id="main"><div class="eyebrow">HISTORICAL DECISION RESEARCH · ${esc(a.t0.date)}</div><h1>${esc(w.title)}<small>五环决策研究</small></h1><p class="status" role="status">${status}</p><section class="lead" aria-label="研究摘要"><h2>历史信息截面</h2><p><strong>T0：</strong>${esc(a.t0.label)}</p><p><strong>核心问题：</strong>${esc(a.thesis)}</p><p>${esc(a.intro)}</p></section>
 ${ringHtml}${alternativesHtml}
-<section id="sources" class="other-section"><h2>史料、版本与待证问题</h2><p>材料是当前证据链的入口；部分回顾性研究不等于1930年的可用信息。</p><ol class="sources">${sourcesHtml}</ol><h3>仍未核实</h3><ul>${a.unresolved.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></section><footer>原创研究草案 · 证据等级 A / B / C / D 并非可靠性自动认证。<a href="../../index.html">返回作品目录</a></footer></main></div></body></html>
+<section id="sources" class="other-section"><h2>史料、版本与待证问题</h2><p>材料是当前证据链的入口；回顾性史料及编订注释不等于${esc(a.t0.date)}当时的人物已知信息。</p><ol class="sources">${sourcesHtml}</ol><h3>仍未核实</h3><ul>${a.unresolved.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></section><footer>原创研究草案 · 证据等级 A / B / C / D 并非可靠性自动认证。<a href="../../index.html">返回作品目录</a></footer></main></div></body></html>
 `;
  const supplement=renderSupplement(a);
  const joinedMd=supplement.preMd ? md.replace("\n\n## 1. 认识现实","\n\n"+supplement.preMd+"\n\n## 1. 认识现实") : md;

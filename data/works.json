@@ -18,7 +18,8 @@
       "reports/html/001中国社会各阶级的分析.html",
       "reports/md/001中国社会各阶级的分析.md"
     ],
-    "notes": "页面含选集编者说明；编者的事后判断不能写成1925年的已知信息。"
+    "notes": "页面含选集编者说明；编者的事后判断不能写成1925年的已知信息。",
+    "researchBrief": "research/published/mao-1925-class-analysis.html"
   },
   {
     "id": "mao-1927-hunan-peasant",
@@ -105,7 +106,8 @@
       "reports/html/005关于纠正党内的错误思想.html",
       "reports/md/005关于纠正党内的错误思想.md"
     ],
-    "notes": "根据来源页面采用月份精度，不伪造具体写作日。"
+    "notes": "根据来源页面采用月份精度，不伪造具体写作日。",
+    "researchBrief": "research/published/mao-1929-party-thought.html"
   },
   {
     "id": "mao-1930-spark",
@@ -217,7 +219,8 @@
       "reports/html/103反对自由主义.html",
       "reports/md/103反对自由主义.md"
     ],
-    "notes": "研究稿引用来源需单独核查。"
+    "notes": "研究稿引用来源需单独核查。",
+    "researchBrief": "research/published/mao-1937-liberalism.html"
   },
   {
     "id": "mao-1938-protracted-war",
