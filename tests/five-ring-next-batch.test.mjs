@@ -23,6 +23,7 @@ test('1928–1930 second batch preserves dates, sources, T0 and draft status',()
    assert.ok(['A','B','C','D'].includes(claim.grade));
    assert.ok(claim.sourceIds.every(s=>known.has(s)));
    if(claim.grade==='A'||claim.grade==='B')assert.ok(claim.sourceIds.length>0);
+   if(claim.grade==='B')assert.ok(claim.sourceIds.length>=2,id+': B requires independent evidence review');
   }
   for(const x of [...a.actors,...a.chronology,...a.versionNotes])
    assert.ok(x.sourceIds.every(s=>known.has(s)));
