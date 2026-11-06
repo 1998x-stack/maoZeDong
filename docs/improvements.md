@@ -13,4 +13,4 @@
 - Risk & rollback: Low. Close the Draft PR without merging, or revert the validator integration and associated new files on this feature branch. Before merging, run the full node --test tests/*.test.mjs and node scripts/validate-content.mjs on the complete checkout, and confirm all existing works pass.
 - Follow-up: Add fixture-driven integration tests for scripts/validate-content.mjs and check whether research article dates use the same precision rules.
 - Commit: e8ee6c94eb0b74c68817e4038ae7c668f151fde3 (integration); 7c1aa22545d06fe4e33b9b8ab52f842d5bf9769e (validator); 0e44ee88deb453b6abdd992b088275d942839332 (tests)
-- PR: pending
+- PR: https://github.com/1998x-stack/maoZeDong/pull/7 (Draft)
