@@ -11,8 +11,8 @@
 5. **反后见之明**：每个决策案例至少记录争论时点、所知/未知、当时的备选方案、实施约束、实际行动、后续反馈；不得只写最终成功/失败的因果故事。
 6. **组织视角**：区分正式职务与实际权限；区分中央决议、个人提案、会议讨论、地方执行和事后回忆。
 7. **尊重多种解释**：竞争性解释要按证据强弱呈现，不用“注定”“必然”“人人都知道”偷换证据。
-8. **技术质量**：修改数据时运行 `node scripts/validate-content.mjs`；修改网页时运行 `node scripts/build-site.mjs` 并检查生成的 `index.html`。使用原生语义 HTML、键盘可访问交互、显式焦点、移动端布局。
-9. **兼容性**：旧版根目录研究报告暂不删除；迁移需要 canonical ID、旧路径及人工审校记录。
+8. **技术质量**：修改数据时运行 `node scripts/validate-content.mjs`；修改网页时运行 `node scripts/audit-report-css.mjs` 和 `node scripts/build-site.mjs` 并检查生成的 `index.html`。使用原生语义 HTML、键盘可访问交互、显式焦点、移动端布局。
+9. **兼容性**：旧研究报告已从根目录统一迁入 `reports/html/` 与 `reports/md/`；CSS 统一存放在 `reports/css/`。新增与迁移须维护 canonical ID、`data/migrations/report-files.json` 及审校记录。
 10. **安全**：史料中的军事事件只作历史分析，不生成可直接用于现实伤害的行动操作指导。
 
 ## 技能路由
