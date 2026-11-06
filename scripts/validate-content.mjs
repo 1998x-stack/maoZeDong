@@ -36,6 +36,10 @@ for (const [i, work] of works.entries()) {
     check(url.protocol === 'https:' && url.hostname === 'www.marxists.org' && url.pathname.startsWith('/chinese/maozedong/') && url.pathname.endsWith('.htm'), `${label}: source URL outside verified archive`);
     check(!urls.has(work.sourceUrl), `${label}: duplicate source URL`); urls.add(work.sourceUrl);
   } catch { failures.push(`${label}: invalid sourceUrl`); }
+  if (work.researchBrief !== undefined) {
+    check(pathSafe(work.researchBrief) && /^research\/published\/[a-z0-9-]+\.html$/.test(work.researchBrief), `${label}: invalid researchBrief`);
+    if (pathSafe(work.researchBrief)) check(existsSync(resolve(root, work.researchBrief)), `${label}: missing researchBrief file`);
+  }
   check(Array.isArray(work.legacyReports), `${label}: legacyReports must be array`);
   for (const p of work.legacyReports ?? []) {
     if (!pathSafe(p) || !/\.(html|md)$/.test(p)) { failures.push(`${label}: unsafe legacy path ${p}`); continue; }

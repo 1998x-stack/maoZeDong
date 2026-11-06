@@ -34,7 +34,7 @@
 | 历史研究 Markdown | **63 份** | 存放于 `reports/md/`，保留原稿内容 |
 | 历史研究 HTML | **62 份** | 存放于 `reports/html/`，其中 **4 份为空白占位文件** |
 | 独立页面 CSS | **58 份** | 存放于 `reports/css/`，由非空历史 HTML 提取 |
-| OpenCode 研究技能 | **10 个** | 位于 `.opencode/skills/`，覆盖资料研究到发布验收 |
+| OpenCode 研究技能 | **12 个** | 位于 `.opencode/skills/`，覆盖资料研究到发布验收 |
 | 自动化校验 | **已配置** | Node.js 测试、目录校验、CSS 审计、GitHub Actions |
 
 ### 已实现
@@ -43,7 +43,8 @@
 - **双入口阅读**：区分“前往外部原著”和“查看仓库内旧研究稿”。
 - **结构化元数据**：作品 ID、日期精度、来源 URL、审校状态和旧稿关联。
 - **归档与样式分离**：Markdown、HTML、CSS 分目录保存；旧路径可通过迁移清单追踪。
-- **研究工作流**：10 个 OpenCode Skills 及全局 `AGENTS.md` 规则。
+- **研究工作流**：12 个 OpenCode Skills 及全局 `AGENTS.md` 规则。
+- **研究生成试点**：已建立《反对本本主义》的结构化研究 JSON，支持同步生成 Markdown 与 HTML，当前仍是待审校草案。
 - **质量门禁**：内容格式、文件完整性、页面生成与样式链接检查。
 
 ### 尚未实现
@@ -89,6 +90,12 @@ python3 -m http.server 8000
 # 校验作品目录、来源路径与技能元数据
 node scripts/validate-content.mjs
 
+# 核对旧研究文件清单
+node scripts/inventory-legacy.mjs --check
+
+# 核对研究 JSON 与生成的 MD / HTML
+node scripts/build-research.mjs --check
+
 # 从数据和模板重新生成首页
 node scripts/build-site.mjs
 
@@ -123,15 +130,20 @@ maoZeDong/
 │   └── workflows/validate.yml        # CI：内容、生成、CSS 与测试
 ├── .opencode/
 │   ├── references/                    # 共同的史料与认知规范
-│   └── skills/                        # 10 个专业研究技能
+│   └── skills/                        # 12 个专业研究技能
 ├── data/
 │   ├── works.json                     # 作品目录的单一数据源
+│   ├── legacy-inventory.json          # 历史研究稿盘点清单
 │   └── migrations/report-files.json   # 历史文件迁移映射
 ├── docs/
 │   ├── ARCHITECTURE.md                # 架构与迁移策略
 │   ├── CONTENT_MODEL.md               # 内容数据契约
 │   ├── SOURCE_POLICY.md               # 来源、版本与转载边界
+│   ├── FIVE_RING_ROADMAP.md           # 五环研究分阶段迁移路线
 │   └── KNOWN_ISSUES.md                # 已知问题
+├── research/
+│   ├── articles/                      # 研究 JSON（唯一编辑源）
+│   └── published/                     # 同源生成的研究 MD / HTML
 ├── reports/
 │   ├── md/                            # 历史 Markdown 研究稿
 │   ├── html/                          # 历史 HTML 研究页
@@ -139,6 +151,8 @@ maoZeDong/
 │   └── README.md                      # 归档及样式拆分说明
 ├── scripts/
 │   ├── validate-content.mjs           # 校验元数据与文件关联
+│   ├── inventory-legacy.mjs           # 旧稿盘点一致性检查
+│   ├── build-research.mjs             # 研究 MD / HTML 同源生成
 │   ├── build-site.mjs                 # 生成首页
 │   ├── audit-report-css.mjs           # 审计旧页面样式
 │   └── extract-report-css.mjs         # 提取新旧式页面的 <style>
@@ -146,6 +160,7 @@ maoZeDong/
 ├── web/
 │   ├── template.html                  # 首页语义结构
 │   ├── styles.css                     # 主站 UI 设计
+│   ├── research.css                   # 五环研究页面样式
 │   └── app.js                         # 检索、筛选和作品信息
 ├── AGENTS.md                          # 仓库级历史研究规范
 ├── opencode.json                      # OpenCode 配置
@@ -153,7 +168,7 @@ maoZeDong/
 └── README.md
 ```
 
-**设计约束：** `data/works.json` 管理作品身份，`reports/` 保存尚待审校的研究成果，`web/` 负责阅读界面，`.opencode/skills/` 负责研究过程，`docs/` 描述证据与内容边界。这几个层次不应混写。
+**设计约束：** `data/works.json` 管理作品身份，`reports/` 保留历史研究稿，`research/articles/` 是新研究的唯一编辑源、`research/published/` 是对应生成物，`web/` 负责阅读界面，`.opencode/skills/` 负责研究过程，`docs/` 描述证据与内容边界。这几个层次不应混写。
 
 ## 研究方法
 
@@ -214,7 +229,7 @@ T0 之后：
 
 ## OpenCode Skills
 
-项目采用可组合的 OpenCode Skills。每个技能定义任务边界、输入、执行步骤、产出要求及质量限制。
+项目采用可组合的 **12 个 OpenCode Skills**。每个技能定义任务边界、输入、执行步骤、产出要求及质量限制。
 
 | 技能 | 主要职责 |
 | :--- | :--- |
@@ -228,6 +243,8 @@ T0 之后：
 | [`content-authoring`](.opencode/skills/content-authoring/SKILL.md) | 结构化研究内容与作品数据编写 |
 | [`research-ui`](.opencode/skills/research-ui/SKILL.md) | 历史研究的阅读体验、信息层级和交互设计 |
 | [`content-qa`](.opencode/skills/content-qa/SKILL.md) | 史料与工程质量门禁 |
+| [`five-ring-decision-research`](.opencode/skills/five-ring-decision-research/SKILL.md) | 五环决策研究框架与历史分析统筹 |
+| [`article-progressive-optimization`](.opencode/skills/article-progressive-optimization/SKILL.md) | P0–P4 分阶段文章迁移、研究与双格式发布 |
 
 **任务示例**
 
@@ -235,8 +252,30 @@ T0 之后：
 - “重建遵义会议前后的权力与信息变化” → `time-slice` + `actor-model` + `decision-mapping`
 - “分析1938年《论持久战》形成时的判断空间” → `time-slice` + `decision-sandbox` + `evidence-audit`
 - “把核实后的新作品加入阅读站” → `content-authoring` + `research-ui` + `content-qa`
+- “按五环逐篇改进并生成研究 Markdown / HTML” → `five-ring-decision-research` + `article-progressive-optimization`
 
 查看 [Skills 完整指南](.opencode/skills/README.md)。技能文件提供研究**工作规范**，不代表网站目前已实现所有可视化研究功能。
+
+### 五环研究试点与逐篇优化
+
+最新 `main` 已引入“五环决策研究系统”和 P0–P4 渐进式文章优化流水线：
+
+| 阶段 | 工作内容 | 核心产物 |
+| :--- | :--- | :--- |
+| P0 · 盘点 | 核对现有研究稿、配对关系与空文件 | `data/legacy-inventory.json` |
+| P1 · 史料 | 检查原著身份、版本、时间和证据缺口 | 来源与争议记录 |
+| P2 · 五环 | 分析现实、结构、选择、执行与反馈 | `research/articles/<id>.json` |
+| P3 · 发布 | 从研究 JSON 同步生成 Markdown 和 HTML | `research/published/<id>.md` 与 `.html` |
+| P4 · 验收 | 数据与生成物检查，加上独立的历史证据审查 | CI 与人工审稿记录 |
+
+首批试点为**《反对本本主义》**：
+[结构化 JSON](research/articles/mao-1930-against-bookishness.json) ·
+[研究 Markdown](research/published/mao-1930-against-bookishness.md) ·
+[研究 HTML](research/published/mao-1930-against-bookishness.html)。
+
+**这是研究草案，不是经过逐条史料审定的正式结论。** 编辑 `research/articles/` 下的 JSON，运行 `node scripts/build-research.mjs` 同步生成文档，再使用 `--check` 检查生成一致性。旧稿仍保留在 `reports/`，不会被流水线覆盖。
+
+参见 [五环研究方法](.opencode/references/five-ring-methodology.md) 与 [P0–P4 迁移路线图](docs/FIVE_RING_ROADMAP.md)。
 
 ## 内容与来源
 
@@ -273,6 +312,8 @@ T0 之后：
 提交前可使用以下一组命令：
 
 ```bash
+node scripts/inventory-legacy.mjs --check
+node scripts/build-research.mjs --check
 node scripts/validate-content.mjs
 node scripts/build-site.mjs
 node scripts/audit-report-css.mjs
@@ -289,6 +330,8 @@ git diff --exit-code -- index.html
 - [x] 建立作品目录及旧文件迁移映射
 - [x] 构建静态作品检索与原著外链入口
 - [x] 建立 OpenCode 专业研究技能与证据规范
+- [x] 引入五环研究系统及 P0–P4 文章优化流水线
+- [x] 完成《反对本本主义》研究 JSON 和双格式草案试点
 - [x] 增加目录校验、CSS 审计、自动化测试与 CI
 - [ ] 补齐《毛泽东选集》逐篇目录及版本元数据
 - [ ] 逐篇核对旧研究报告的重要断言与直接引文
@@ -306,6 +349,8 @@ git diff --exit-code -- index.html
 - [已知问题和待核查项目](docs/KNOWN_ISSUES.md)
 - [历史 HTML / Markdown / CSS 归档指南](reports/README.md)
 - [OpenCode Skills 使用指南](.opencode/skills/README.md)
+- [五环研究方法规范](.opencode/references/five-ring-methodology.md)
+- [文章渐进迁移路线图](docs/FIVE_RING_ROADMAP.md)
 
 ## 版权与使用声明
 

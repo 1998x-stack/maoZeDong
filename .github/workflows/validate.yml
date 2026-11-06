@@ -10,6 +10,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - run: node scripts/inventory-legacy.mjs --check
+      - run: node scripts/build-research.mjs --check
       - run: node scripts/validate-content.mjs
       - run: node scripts/build-site.mjs
       - run: node scripts/audit-report-css.mjs
