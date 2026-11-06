@@ -32,3 +32,12 @@ h2{font-size:25px;line-height:1.35;margin:0 0 18px}h3{font-size:18px;margin-top:
 .edition-panel ol{list-style:none;margin:0;padding:0}.edition-panel li{border-top:1px solid var(--line);padding:14px 0}.edition-panel li strong{display:block}.edition-panel li p{margin:4px 0;font-size:14px;color:var(--muted)}
 .synthesis-panel{background:#f5f7f2;border-color:#c8d2c6}.synthesis-panel p{font-size:16px;line-height:1.9}
 @media(max-width:760px){.actor-grid{grid-template-columns:1fr}.chronicle{margin-left:3px}}
+
+/* Optional forecast audit: explicitly separates 1938 claims from later observations. */
+.forecast-panel{border-top:4px solid var(--green)}
+.forecast-intro{font-size:14px;color:var(--muted)}
+.forecast-panel table{min-width:920px}
+.forecast-panel tbody th{min-width:190px;width:23%;color:var(--ink);font-weight:650}
+.forecast-panel td{min-width:155px;font-size:13px}
+.forecast-panel .table-scroll:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
+@media(max-width:760px){.forecast-panel table{min-width:950px}}

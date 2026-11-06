@@ -36,6 +36,17 @@ function renderSupplement(a){
  const postHtml=a.synthesis?`<section id="synthesis" class="other-section synthesis-panel"><div class="ring-index">SYNTHESIS · EVIDENCE FIRST</div><h2>五环综合结论与适用边界</h2><p>${e(a.synthesis)}</p></section>`:"";
  return {preMd:preMd.join("\n\n"),postMd,preHtml:preHtml.join("\n"),postHtml};
 }
+function renderForecastAudit(a){
+ if(!Array.isArray(a.forecastAudit)||!a.forecastAudit.length)return null;
+ const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const refs=new Map(a.sources.map(s=>[s.id,s]));
+ const mdCite=ids=>ids.length?'（'+ids.map(id=>'['+id+']('+refs.get(id).url+')').join('、')+'）':'（待证）';
+ const htmlCite=ids=>ids.length?'<span class="citations">'+ids.map(id=>'<a href="'+esc(refs.get(id).url)+'" rel="noopener noreferrer" target="_blank">'+esc(id)+'</a>').join(' ')+'</span>':'<span class="uncited">待证</span>';
+ const md='## 预期与结果：在T0之后检验，而不是倒推\n\n本节是史料对照表；“后来观察”只用于事后检验，不代表1938年已知。评估描述的是可核验的范围，而非历史预言的准确率。\n\n| T0时的判断 | 当时判断依据 | 成立条件或不确定性 | 后来观察（仅事后） | 检验与边界 |\n| --- | --- | --- | --- | --- |\n'+a.forecastAudit.map(x=>'| '+x.prediction+' | '+x.basis+' | '+x.conditions+' | '+x.laterObservation+' | '+x.assessment+' '+mdCite(x.sourceIds)+' |').join('\n');
+ const html='<section id="forecast-audit" class="other-section forecast-panel"><div class="ring-index">EXPECTATION VS EVIDENCE · AFTER T0</div><h2>预期与结果：事后检验表</h2><p class="forecast-intro">后来的观察只用于评估1938年的条件性判断，不能放入当时人物的已知信息。</p><div class="table-scroll" role="region" aria-label="1938年判断与事后检验对照表" tabindex="0"><table><thead><tr><th scope="col">当时判断</th><th scope="col">T0依据</th><th scope="col">成立条件</th><th scope="col">后来观察</th><th scope="col">检验边界</th></tr></thead><tbody>'+a.forecastAudit.map(x=>'<tr><th scope="row">'+esc(x.prediction)+'</th><td>'+esc(x.basis)+'</td><td>'+esc(x.conditions)+'</td><td>'+esc(x.laterObservation)+'</td><td>'+esc(x.assessment)+' '+htmlCite(x.sourceIds)+'</td></tr>').join('')+'</tbody></table></div></section>';
+ return {md,html};
+}
+
 function renderResearch(a,w){
  const esc=x=>String(x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  const urlRef=id=>a.sources.find(s=>s.id===id);
@@ -68,7 +79,12 @@ ${ringHtml}${alternativesHtml}
  if(supplement.postHtml)finalHtml=finalHtml.replace('<section id="alternatives"',supplement.postHtml+'\n<section id="alternatives"');
  if(supplement.preHtml)finalHtml=finalHtml.replace('<nav>','<nav><a href="#historical-scene">历史现场</a><a href="#chronology">时间截面</a><a href="#actors">人物信息</a><a href="#versions">版本沿革</a>');
  if(supplement.postHtml)finalHtml=finalHtml.replace('<a href="#alternatives">','<a href="#synthesis">研究结论</a><a href="#alternatives">');
- return {md:finalMd,html:finalHtml};
+ const audit=renderForecastAudit(a);
+ if(!audit)return {md:finalMd,html:finalHtml};
+ if(!finalMd.includes("\n\n## 仍待核实")||!finalHtml.includes('<section id="sources"'))throw Error('Research sections missing for forecast audit');
+ const withAuditMd=finalMd.replace("\n\n## 仍待核实","\n\n"+audit.md+"\n\n## 仍待核实");
+ const withAuditHtml=finalHtml.replace('<section id="sources"',audit.html+'\n<section id="sources"').replace('<a href="#sources">','<a href="#forecast-audit">预期检验</a><a href="#sources">');
+ return {md:withAuditMd,html:withAuditHtml};
 }
 function validateArticle(a,w){
  if(a.schemaVersion!==1||a.workId!==w.id||a.status!=="draft")throw Error("Invalid pilot work metadata");
@@ -80,6 +96,13 @@ function validateArticle(a,w){
   if(!Array.isArray(a.actors)||a.actors.length<3||!Array.isArray(a.chronology)||a.chronology.length<3||!Array.isArray(a.versionNotes)||a.versionNotes.length<2)throw Error("Research supplement incomplete");
   if(a.rings.some(r=>r.claims.length<3))throw Error("Expected deeper evidence claims in each ring");
   if(!a.synthesis || !Array.isArray(a.unresolved)||a.unresolved.length<2)throw Error("Missing synthesis or open issues");
+ }
+ if(a.forecastAudit!==undefined){
+  if(!Array.isArray(a.forecastAudit)||a.forecastAudit.length<3)throw Error("Insufficient forecast audit");
+  for(const f of a.forecastAudit){
+   if(!f.prediction||!f.basis||!f.conditions||!f.laterObservation||!f.assessment||!Array.isArray(f.sourceIds)||!f.sourceIds.length)throw Error("Incomplete forecast evidence");
+   if(f.sourceIds.some(id=>!ids.has(id)))throw Error("Unknown forecast source");
+  }
  }
  for(const s of a.sources)if(!s.url.startsWith("https://"))throw Error("Non-https source");
  for(const record of [...(a.chronology??[]),...(a.actors??[]),...(a.versionNotes??[])]){
